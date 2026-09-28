@@ -1,0 +1,499 @@
+---
+import Icon from "./Icon.astro";
+import { content, href, articleHref, formatDate, type Lang } from "../i18n";
+
+interface Props {
+  lang: Lang;
+  sections: any[];
+  crumbs?: { label: string; href?: string }[];
+}
+
+const { lang, sections, crumbs } = Astro.props;
+const t = content[lang];
+const f = t.ui.form;
+// Content marks important passages with **double asterisks**; they render as <strong>.
+const rich = (text: string) =>
+  String(text)
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>");
+const link = (page: string) => href(lang, page);
+// Alternate backgrounds so two neighbouring sections never share one.
+const BASE: Record<string, string> = { duo: "tint", steps: "tint", panel: "tint", cta: "tint", proof: "tint" };
+let prev = "white";
+const bgs = sections.map((s: any, idx: number) => {
+  if (s.type === "hero" || s.type === "pageHead") return (prev = "white");
+  let bg = BASE[s.type] ?? "white";
+  if (bg === prev) bg = bg === "white" ? "tint" : "white";
+  return (prev = bg);
+});
+const cls = (i: number) => `section ${bgs[i] === "white" ? "" : bgs[i]}`.trim();
+const articles = t.articles.map((a: any, i: number) => ({ ...a, url: articleHref(lang, i) }));
+---
+
+{
+  sections.map((s: any, idx: number) => {
+    switch (s.type) {
+      case "hero":
+        return (
+          <section class="hero">
+              <picture class="hero-bg">
+              <source media="(max-width: 700px)" type="image/webp" srcset="/images/hero-narrow-600.webp 600w, /images/hero-narrow-900.webp 900w" sizes="100vw" />
+              <img
+                src="/images/hero-wide-1600.webp"
+                srcset="/images/hero-wide-1100.webp 1100w, /images/hero-wide-1600.webp 1600w, /images/hero-wide-2400.webp 2400w"
+                sizes="100vw"
+                width="1600"
+                height="615"
+                alt={s.photoAlt}
+                fetchpriority="high"
+                decoding="async"
+              />
+            </picture>
+              <div class="wrap">
+              <div class="hero-grid">
+                <h1 class="hero-title">
+                  {s.h1.split(" ").map((w: string, n: number) => (
+                    <>
+                      <span class="word" style={`--i:${n}`}><span>{w}</span></span>{" "}
+                    </>
+                  ))}
+                </h1>
+                <div class="hero-side">
+                  <p class="lead" set:html={rich(s.lead)} />
+                  <div class="actions">
+                    <a class="button" href={link(s.primary.page)}>{s.primary.label}</a>
+                    <a class="button button--quiet" href={link(s.secondary.page)}>{s.secondary.label}</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            </section>
+        );
+
+      case "pageHead":
+        return (
+          <section class="page-head">
+            <div class="wrap">
+              {crumbs && (
+                <nav class="crumbs" aria-label={t.ui.breadcrumb}>
+                  <ol>
+                    {crumbs.map((c) => (
+                      <li>{c.href ? <a href={c.href}>{c.label}</a> : <span aria-current="page">{c.label}</span>}</li>
+                    ))}
+                  </ol>
+                </nav>
+              )}
+              <h1>{s.h1}</h1>
+              <p class="lead" set:html={rich(s.lead)} />
+            </div>
+          </section>
+        );
+
+      case "duo":
+        return (
+          <section class={cls(idx)}>
+            <div class="wrap">
+              <div class="section-head">
+                <h2>{s.h2}</h2>
+                {s.intro && <p set:html={rich(s.intro)} />}
+              </div>
+              <div class="duo">
+                {s.columns.map((c: any) => (
+                  <div class="duo-col" style={`--rows:${c.items ? c.items.length + 1 : 3}`}>
+                    <h3>{c.h3}</h3>
+                    {c.items && (
+                      <ul>
+                        {c.items.map((i: string) => (
+                          <li set:html={rich(i)} />
+                        ))}
+                      </ul>
+                    )}
+                    {c.text && <p set:html={rich(c.text)} />}
+                    {c.page && <a class="textlink" href={link(c.page)}>{c.linkLabel}</a>}
+                  </div>
+                ))}
+              </div>
+            </div>
+          </section>
+        );
+
+      case "rows":
+        return (
+          <section class={cls(idx)}>
+            <div class="wrap">
+              <div class="section-head">
+                <h2>{s.h2}</h2>
+                {s.intro && <p set:html={rich(s.intro)} />}
+              </div>
+              <ul class="rows">
+                {s.items.map((i: any) => (
+                  <li class="row">
+                    <h3>{i.page ? <a href={link(i.page)} style="color:inherit;text-decoration:none">{i.h3}</a> : i.h3}</h3>
+                    <div>
+                      <p set:html={rich(i.text)} />
+                      {i.page && <a class="textlink" href={link(i.page)}>{i.linkLabel}</a>}
+                    </div>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </section>
+        );
+
+      case "services":
+        return (
+          <section class={cls(idx)} id="services">
+            <div class="wrap">
+              <div class="section-head">
+                <h2>{s.h2}</h2>
+              </div>
+              <div class="services">
+                <div class="services-list">
+                  {s.items.map((i: any, n: number) => (
+                    <details class="service" name="services" id={`svc-${n}`} open={n === 0}>
+                      <summary>
+                        <h3>{i.h3}</h3>
+                      </summary>
+                      <div class="service-body">
+                        <p set:html={rich(i.text)} />
+                        <a class="textlink" href={link(i.page)}>{i.linkLabel}</a>
+                      </div>
+                    </details>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </section>
+        );
+
+      case "steps":
+        return (
+          <section class={cls(idx)}>
+            <div class="wrap">
+              <div class="section-head">
+                <h2>{s.h2}</h2>
+                {s.intro && <p set:html={rich(s.intro)} />}
+              </div>
+              <ol class="steps" data-focus-group>
+                {s.items.map((i: any) => (
+                  <li class="step" data-focus-item tabindex="0">
+                    <h3>{i.h3}</h3>
+                    <p set:html={rich(i.text)} />
+                  </li>
+                ))}
+              </ol>
+            </div>
+          </section>
+        );
+
+      case "rules":
+        return (
+          <section class={cls(idx)}>
+            <div class="wrap">
+              <div class="section-head">
+                <h2>{s.h2}</h2>
+                {s.intro && <p set:html={rich(s.intro)} />}
+              </div>
+              <ul class="rules">
+                {s.items.map((i: any) => (
+                  <li class="rule">
+                    <h3>{i.h3}</h3>
+                    <p set:html={rich(i.text)} />
+                    {i.basis ? (
+                      <div class="basis">
+                        <span>{t.ui.basis}</span>
+                        {i.basis}
+                      </div>
+                    ) : (
+                      <span />
+                    )}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </section>
+        );
+
+      case "proof":
+        return (
+          <section class={cls(idx)}>
+            <div class="wrap">
+              <div class="section-head">
+                <h2>{s.h2}</h2>
+                <p set:html={rich(s.intro)} />
+              </div>
+              <ul class="guarantees">
+                {s.items.map((i: any, n: number) => (
+                  <li class="guarantee">
+                    <Icon name={["sealed", "law", "returned"][n] as any} class="guarantee-icon" />
+                    <h3>{i.term}</h3>
+                    <p set:html={rich(i.text)} />
+                  </li>
+                ))}
+              </ul>
+              <ul class="proof-links">
+                {s.links.map((l: any) => (
+                  <li>
+                    <a class="textlink" href={link(l.page)}>{l.label}</a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </section>
+        );
+
+      case "panel":
+        return (
+          <section class={cls(idx)}>
+            <div class="wrap panel">
+              <h2>{s.h2}</h2>
+              <div class="panel-body">
+                {s.body.map((p: string) => (
+                  <p set:html={rich(p)} />
+                ))}
+                <a class="textlink" href={link(s.link.page)}>{s.link.label}</a>
+              </div>
+            </div>
+          </section>
+        );
+
+      case "split":
+        return (
+          <section class={cls(idx)}>
+            <div class:list={["wrap", s.statement ? "statement" : "split"]}>
+              <h2>{s.h2}</h2>
+              <div class="split-body">
+                {s.body.map((p: string) => (
+                  <p set:html={rich(p)} />
+                ))}
+                {s.link && <a class="textlink" href={link(s.link.page)}>{s.link.label}</a>}
+              </div>
+            </div>
+          </section>
+        );
+
+      case "articles":
+      case "articleList":
+        return (
+          <section class={cls(idx)}>
+            <div class="wrap">
+              {s.h2 && (
+                <div class="section-head">
+                  <h2>{s.h2}</h2>
+                  {s.intro && <p set:html={rich(s.intro)} />}
+                </div>
+              )}
+              <ul class="articles">
+                {articles.map((a: any) => (
+                  <li class="article-item">
+                    <time datetime={a.date}>{formatDate(lang, a.date)}</time>
+                    <div>
+                      <h3>
+                        <a href={a.url}>{a.title}</a>
+                      </h3>
+                      <p>{a.description}</p>
+                    </div>
+                  </li>
+                ))}
+              </ul>
+              {s.link && (
+                <p class="articles-more">
+                  <a class="textlink" href={link(s.link.page)}>{s.link.label}</a>
+                </p>
+              )}
+            </div>
+          </section>
+        );
+
+      case "cta":
+        return (
+          <section class={cls(idx)}>
+            <div class="wrap cta-form">
+              <div class="cta">
+                <h2>{s.h2}</h2>
+                <p set:html={rich(s.text)} />
+              </div>
+              <form class="form form--short" method="post" action="/api/contact">
+                <input type="hidden" name="lang" value={lang} />
+                <div class="form-row">
+                  <div class="field">
+                    <label for={`q-name-${idx}`}>{f.name}</label>
+                    <input id={`q-name-${idx}`} name="name" type="text" autocomplete="name" required />
+                  </div>
+                  <div class="field">
+                    <label for={`q-email-${idx}`}>{f.email}</label>
+                    <input id={`q-email-${idx}`} name="email" type="email" autocomplete="email" required />
+                  </div>
+                </div>
+                <div class="field">
+                  <label for={`q-msg-${idx}`}>{f.message}</label>
+                  <textarea id={`q-msg-${idx}`} name="message" rows="4" required />
+                </div>
+                <div class="form-foot">
+                  <p class="form-note">{f.note}</p>
+                  <button class="button" type="submit">{f.submit}</button>
+                </div>
+              </form>
+            </div>
+          </section>
+        );
+
+      case "table":
+        return (
+          <section class={cls(idx)}>
+            <div class="wrap">
+              <div class="section-head">
+                <h2>{s.h2}</h2>
+                {s.intro && <p set:html={rich(s.intro)} />}
+              </div>
+              <div class="table-wrap" tabindex="0" role="region" aria-label={s.h2}>
+                <table>
+                  <thead>
+                    <tr>
+                      {s.columns.map((c: string) => (
+                        <th scope="col">{c}</th>
+                      ))}
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {s.rows.map((r: string[]) => (
+                      <tr>
+                        {r.map((c) => (
+                          <td>{c}</td>
+                        ))}
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </section>
+        );
+
+      case "prose":
+        return (
+          <section class={cls(idx)}>
+            <div class="wrap">
+              <div class="prose">
+                {s.blocks.map((b: any) => (
+                  <>
+                    {b.h2 && <h2>{b.h2}</h2>}
+                    {b.paras?.map((p: string) => (
+                      <p set:html={rich(p)} />
+                    ))}
+                    {b.list && (
+                      <ul>
+                        {b.list.map((i: string) => (
+                          <li set:html={rich(i)} />
+                        ))}
+                      </ul>
+                    )}
+                  </>
+                ))}
+              </div>
+            </div>
+          </section>
+        );
+
+      case "team":
+        return (
+          <section class={cls(idx)}>
+            <div class="wrap">
+              <div class="section-head">
+                <h2>{s.h2}</h2>
+              </div>
+              <ul class="team">
+                {s.people.map((p: any) => (
+                  <li class="person">
+                    <h3>{p.name}</h3>
+                    <p class="role">{p.role}</p>
+                    <p>{p.text}</p>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </section>
+        );
+
+      case "newsletter":
+        return (
+          <section class={cls(idx)}>
+            <div class="wrap">
+              <form class="newsletter" method="post" action="/api/newsletter">
+                <div>
+                  <h2>{s.h2}</h2>
+                  <p set:html={rich(s.text)} />
+                </div>
+                <div class="field">
+                  <label for="nl-email">{s.label}</label>
+                  <div class="newsletter-row">
+                    <input id="nl-email" name="email" type="email" autocomplete="email" required />
+                    <input type="hidden" name="lang" value={lang} />
+                    <button class="button" type="submit">{s.button}</button>
+                  </div>
+                  <p class="hint">
+                    <a href={link("privacyPolicy")}>{s.consent}</a>
+                  </p>
+                </div>
+              </form>
+            </div>
+          </section>
+        );
+
+      case "contact":
+        return (
+          <section class={cls(idx)}>
+            <div class="wrap contact-grid">
+              <form class="form" method="post" action="/api/contact">
+                <input type="hidden" name="lang" value={lang} />
+                <div class="field">
+                  <label for="c-name">{f.name}</label>
+                  <input id="c-name" name="name" type="text" autocomplete="name" required />
+                </div>
+                <div class="field">
+                  <label for="c-email">{f.email}</label>
+                  <input id="c-email" name="email" type="email" autocomplete="email" required />
+                </div>
+                <div class="field">
+                  <label for="c-org">
+                    {f.org} <span class="hint">({f.optional})</span>
+                  </label>
+                  <input id="c-org" name="organisation" type="text" autocomplete="organization" />
+                </div>
+                <fieldset class="field">
+                  <legend>{f.topic}</legend>
+                  <div class="choices">
+                    {f.topics.map((topic: string, i: number) => (
+                      <label class="choice">
+                        <input type="radio" name="topic" value={["vote", "administration", "press", "job", "other"][i]} required />
+                        {topic}
+                      </label>
+                    ))}
+                  </div>
+                </fieldset>
+                <div class="field">
+                  <label for="c-message">{f.message}</label>
+                  <textarea id="c-message" name="message" required />
+                </div>
+                <p class="form-note">{f.note}</p>
+                <div>
+                  <button class="button" type="submit">{f.submit}</button>
+                </div>
+              </form>
+              <aside>
+                <div class="aside-block">
+                  <h2>{f.pressTitle}</h2>
+                  <p>{f.pressText}</p>
+                </div>
+              </aside>
+            </div>
+          </section>
+        );
+
+      default:
+        return null;
+    }
+  })
+}

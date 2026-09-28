@@ -1,0 +1,1109 @@
+{
+  "lang": "de",
+  "locale": "de-CH",
+  "ui": {
+    "skip": "Zum Inhalt springen",
+    "menu": "Menü",
+    "close": "Schliessen",
+    "primaryNav": "Hauptnavigation",
+    "languageNav": "Sprache",
+    "languageNames": {
+      "fr": "Français",
+      "de": "Deutsch",
+      "it": "Italiano",
+      "en": "English"
+    },
+    "headerCta": "Termin vereinbaren",
+    "breadcrumb": "Sie sind hier",
+    "home": "Startseite",
+    "readMore": "Lesen",
+    "published": "Veröffentlicht",
+    "sources": "Quellen",
+    "basis": "Grundlage",
+    "footerTagline": "Politische Kommunikation in der Schweiz, mit der neuesten Technologie, sorgfältig eingesetzt und im Einklang mit Schweizer Recht.",
+    "footerOffer": "Angebot",
+    "footerAgency": "Agentur",
+    "footerLegal": "Rechtliches",
+    "footerNote": "Diese Website setzt keine Cookies, lädt nichts von Dritten und braucht kein Cookie-Banner.",
+    "chooseLanguage": "Sprache wählen",
+    "form": {
+      "legend": "Ihre Anfrage",
+      "name": "Name",
+      "email": "E-Mail-Adresse",
+      "org": "Partei, Komitee oder Institution",
+      "optional": "freiwillig",
+      "topic": "Worum geht es?",
+      "topics": [
+        "Eine Wahl oder eine Abstimmung",
+        "Ein Mandat für eine Verwaltung",
+        "Eine Medienanfrage",
+        "Eine Stelle oder eine Partnerschaft",
+        "Anderes"
+      ],
+      "message": "Ihre Nachricht",
+      "submit": "Anfrage senden",
+      "note": "Wir verwenden diese Angaben nur, um Ihre Anfrage zu beantworten, und löschen sie nach der Antwort, wenn kein Mandat zustande kommt.",
+      "pressTitle": "Medien",
+      "pressText": "Medienschaffende nutzen dasselbe Formular und wählen «Eine Medienanfrage», und eine Person aus dem Team antwortet innert 3 Tagen."
+    }
+  },
+  "nav": [
+    {
+      "page": "offer",
+      "label": "Leistungen"
+    },
+    {
+      "page": "policies",
+      "label": "Richtlinie"
+    },
+    {
+      "page": "about",
+      "label": "Über uns"
+    },
+    {
+      "page": "contact",
+      "label": "Kontakt"
+    }
+  ],
+  "pages": {
+    "home": {
+      "title": "Tribea, politische Kommunikation in der Schweiz",
+      "description": "Tribea hilft Parteien, Kandidierenden, Komitees und Verwaltungen in der Schweiz, Gehör zu finden: mit der neuesten Technologie, sorgfältig eingesetzt und im Einklang mit Schweizer Recht.",
+      "sections": [
+        {
+          "type": "hero",
+          "h1": "Eine Bühne für jede Idee, die zählt",
+          "lead": "Tribea hilft Parteien, Kandidierenden, Komitees und Verwaltungen in der Schweiz, Gehör zu finden: mit der neuesten Technologie, sorgfältig eingesetzt und im Einklang mit Schweizer Recht.",
+          "primary": {
+            "label": "Termin vereinbaren",
+            "page": "contact"
+          },
+          "secondary": {
+            "label": "Die drei Leistungen ansehen",
+            "page": "offer"
+          },
+          "edge": "Die neueste Technologie, mit Sorgfalt eingesetzt und im Einklang mit Schweizer Recht.",
+          "photoAlt": "Luzern vom See aus, mit den Türmen der Hofkirche und einem Dampfschiff mit Schweizer Flagge"
+        },
+        {
+          "type": "duo",
+          "h2": "Technische und rechtliche Arbeit im selben Team",
+          "intro": "Die Personen, die Ihre Kampagnenwerkzeuge entwickeln, und die Personen, die sie am Schweizer Recht messen, arbeiten im selben Team. So wird **jedes Werkzeug, jedes Inserat und jede Datenbank geprüft, bevor sie zum Einsatz kommt**.",
+          "columns": [
+            {
+              "h3": "Wir beherrschen die Werkzeuge",
+              "items": [
+                "Wir entwickeln Kampagnenwebsites, Tools für Unterstützerinnen und Unterstützer sowie Partizipations-Apps selbst.",
+                "Wir führen bezahlte digitale Kampagnen nach den Regeln der jeweiligen Plattform durch.",
+                "Wir nutzen KI zum Entwerfen, Übersetzen und Analysieren, und eine Person prüft jedes Ergebnis.",
+                "Wir führen lokale und nationale Kampagnen, vom Sitz im Gemeinderat bis zur eidgenössischen Abstimmung."
+              ]
+            },
+            {
+              "h3": "Wir setzen sie mit Sorgfalt ein",
+              "items": [
+                "Wir setzen nie Deepfakes oder synthetische Personen ein.",
+                "Wir wählen Zielgruppen nie anhand der politischen Ansichten von Personen aus.",
+                "Wir speichern nur die Daten, die der jeweilige Zweck erfordert, auf Servern in der Schweiz oder in der EU.",
+                "Wir prüfen jedes Plakat, jeden Beitrag und jedes Inserat vor der Veröffentlichung rechtlich."
+              ]
+            }
+          ]
+        },
+        {
+          "type": "services",
+          "h2": "Unsere drei Leistungen",
+          "items": [
+            {
+              "h3": "Profil",
+              "text": "Eine schriftliche Position, ein visueller Auftritt sowie eine Website, ein Newsletter und Kontaktlisten, über die Sie selbst verfügen, damit die Stimmberechtigten vor Beginn der Kampagne wissen, wer Sie sind.",
+              "page": "profile",
+              "linkLabel": "Was Profil umfasst"
+            },
+            {
+              "h3": "Kampagne",
+              "text": "Wir führen Ihre Wahl- oder Abstimmungskampagne nach den geltenden Regeln, von der Unterschriftensammlung bis zur Offenlegung der Finanzierung nach der Abstimmung.",
+              "page": "campaign",
+              "linkLabel": "Was Kampagne umfasst"
+            },
+            {
+              "h3": "Vertrauen",
+              "text": "Medienarbeit, Medienbeobachtung, Antworten auf Falschbehauptungen und der Schutz Ihrer Unterstützerdaten, vor, während und nach einer Abstimmung.",
+              "page": "trust",
+              "linkLabel": "Was Vertrauen umfasst"
+            }
+          ]
+        },
+        {
+          "type": "split",
+          "h2": "Von der Gemeinde bis zum Bund",
+          "body": [
+            "Wir arbeiten auf jeder Ebene der Schweizer Politik: für einen Sitz im Gemeinderat, eine kantonale Abstimmung oder eine eidgenössische Volksinitiative. Jede Ebene hat eigene Regeln, Fristen und Medien, und eine Kampagne muss sich danach richten.",
+            "**Lokale und mehrsprachige Kommunikation gehört zu jedem Mandat**. Die Texte für jede Region schreiben muttersprachliche Autorinnen und Autoren, die den regionalen Sprachgebrauch und die Lokalpresse kennen. So liest sich eine Kampagne, die eine Sprachgrenze überschreitet, als wäre sie dort entstanden."
+          ],
+          "statement": true
+        },
+        {
+          "type": "proof",
+          "h2": "Volle Diskretion, im Rahmen des Gesetzes",
+          "intro": "Politische Arbeit beruht auf Vertrauen. Wir führen jedes Mandat so, dass Sie nichts davon in den Medien überrascht.",
+          "items": [
+            {
+              "term": "Ihr Mandat bleibt vertraulich",
+              "value": "",
+              "text": "Wir nennen keine Auftraggebenden, zeigen keine Arbeiten und **sprechen über kein Mandat ohne schriftliche Zustimmung**. Nur die Personen, die Ihrem Mandat zugeteilt sind, haben Zugriff auf die Unterlagen, und wir erheben nur die Daten, die es braucht, denn **was nie erhoben wird, kann auch nicht abfliessen**."
+            },
+            {
+              "term": "Jeder Schritt im Rahmen des Gesetzes",
+              "value": "",
+              "text": "Jedes Element wird vor der Veröffentlichung rechtlich geprüft, jedes bezahlte Inserat nennt, wer es finanziert hat, und jede Spende wird ab dem ersten Franken erfasst. Fragen Medienschaffende nach, **ist die Antwort bereits dokumentiert**."
+            },
+            {
+              "term": "Ihre Daten gehen mit Ihnen",
+              "value": "",
+              "text": "Am Ende des Mandats werden Ihre Kontaktlisten und Unterlagen nach Ihrer Wahl zurückgegeben oder gelöscht. **Sie werden nie für andere Auftraggebende verwendet**, auch nicht für Kandidierende oder Komitees der Gegenseite."
+            }
+          ],
+          "links": [
+            {
+              "label": "Alle eingesetzten Tools und ihr Zweck",
+              "page": "privacy"
+            },
+            {
+              "label": "Unsere Technologierichtlinie lesen",
+              "page": "techPolicy"
+            }
+          ]
+        },
+        {
+          "type": "panel",
+          "h2": "Für Kantone und Gemeinden",
+          "body": [
+            "Ein eigener Bereich für die öffentliche Hand unterstützt Kantone und Gemeinden dabei, die Bevölkerung sachlich zu informieren und barrierefreie Websites und Online-Dienste aufzubauen. Nur das Team dieses Bereichs hat Zugriff auf dessen Dateien, er schliesst eigene Verträge ab und speichert seine Daten getrennt, sodass **die Arbeit für eine Verwaltung nie mit der Arbeit für eine Partei oder ein Komitee vermischt wird**."
+          ],
+          "link": {
+            "label": "Bereich öffentliche Hand kontaktieren",
+            "page": "publicSector"
+          }
+        },
+        {
+          "type": "articles",
+          "h2": "Analysen",
+          "intro": "Kurze Beiträge mit Quellenangaben zum Schweizer Kampagnenrecht, zum Datenschutz und zu neuen Instrumenten der direkten Demokratie wie der elektronischen Unterschriftensammlung und der E-ID.",
+          "link": {
+            "label": "Alle Analysen",
+            "page": "analysis"
+          }
+        },
+        {
+          "type": "cta",
+          "h2": "Schildern Sie Ihr Anliegen vertraulich",
+          "text": "Ihre Nachricht liest nur eine Person aus unserem Team, die Ihnen innert 3 Tagen persönlich antwortet. **Nichts von dem, was Sie uns schreiben, wird an andere Auftraggebende oder an die Medien weitergegeben**, und Ihre Angaben werden gelöscht, wenn kein Mandat zustande kommt. Das erste Gespräch verpflichtet Sie zu nichts: Wir sagen Ihnen offen, ob wir helfen können oder ob Sie uns gar nicht brauchen.",
+          "primary": {
+            "label": "Erstgespräch vereinbaren",
+            "page": "contact"
+          }
+        }
+      ]
+    },
+    "offer": {
+      "title": "Leistungen",
+      "description": "Profil, Kampagne und Vertrauen: die drei Leistungen, die Tribea Parteien, Kandidierenden und Komitees in der Schweiz anbietet.",
+      "sections": [
+        {
+          "type": "pageHead",
+          "h1": "Was wir für Parteien, Kandidierende und Komitees tun",
+          "lead": "Profil deckt die Zeit zwischen den Kampagnen ab, Kampagne die Monate vor einer Wahl oder Abstimmung, und Vertrauen die Medienarbeit und die Daten, die in beiden Phasen anfallen. Sie können mit jeder dieser Leistungen beginnen."
+        },
+        {
+          "type": "rows",
+          "h2": "Die drei Leistungen",
+          "items": [
+            {
+              "h3": "Profil",
+              "text": "Eine schriftliche Position, ein visueller Auftritt, ein monatlicher Inhaltsplan für Ihre Website, Ihren Newsletter und Ihre Kontaktlisten sowie Medientraining.",
+              "page": "profile",
+              "linkLabel": "Markengespräch vereinbaren"
+            },
+            {
+              "h3": "Kampagne",
+              "text": "Kampagnenplan, Unterschriftensammlungen, bezahlte digitale Kampagnen, Mobilisierung, Kampagnenwebsites und Offenlegung der Finanzierung.",
+              "page": "campaign",
+              "linkLabel": "Kampagne planen"
+            },
+            {
+              "h3": "Vertrauen",
+              "text": "Medienarbeit, Medienbeobachtung, Antworten auf Falschbehauptungen, Datenschutz und eine rechtliche Prüfung aller Kampagnenmaterialien.",
+              "page": "trust",
+              "linkLabel": "Überprüfung anfragen"
+            },
+            {
+              "h3": "Öffentliche Hand",
+              "text": "Ein eigener Bereich, der Kantone und Gemeinden dabei unterstützt, die Bevölkerung sachlich zu informieren und barrierefreie Online-Dienste aufzubauen.",
+              "page": "publicSector",
+              "linkLabel": "Zum Bereich öffentliche Hand"
+            }
+          ]
+        },
+        {
+          "type": "split",
+          "h2": "Regeln für alle drei Leistungen",
+          "body": [
+            "Jede Leistung folgt derselben Methode: eine rechtliche Prüfung vor jeder Veröffentlichung, eine Datenschutz-Folgenabschätzung vor dem Aufbau einer Unterstützerdatenbank und ein Terminplan für die Meldungen zur Finanzierung, die Ihre Kampagne einreichen muss.",
+            "Verwaltungen werden von einem separaten Bereich mit eigenem Team, eigenen Verträgen und eigenen Daten betreut."
+          ],
+          "link": {
+            "label": "So arbeiten wir",
+            "page": "method"
+          }
+        },
+        {
+          "type": "cta",
+          "h2": "Noch unklar, wo Sie beginnen sollen",
+          "text": "Nennen Sie uns die Wahl oder Abstimmung, die Sie vorbereiten, und ihr Datum. Wir sagen Ihnen, welche Leistung passt oder ob Sie uns überhaupt brauchen.",
+          "primary": {
+            "label": "Erstgespräch vereinbaren",
+            "page": "contact"
+          }
+        }
+      ]
+    },
+    "profile": {
+      "title": "Profil",
+      "description": "Profil bereitet Kandidierende, Parteien und Komitees auf eine Kampagne vor: mit einer schriftlichen Position, einem visuellen Auftritt sowie einer Website, einem Newsletter und Kontaktlisten, über die sie selbst verfügen.",
+      "sections": [
+        {
+          "type": "pageHead",
+          "h1": "Bekannt sein, bevor die Kampagne beginnt",
+          "lead": "Profil bereitet Kandidierende, Parteien und Komitees vor Beginn einer Kampagne vor: mit einer schriftlichen Position, einem visuellen Auftritt sowie einer Website, einem Newsletter und Kontaktlisten, über die sie selbst verfügen."
+        },
+        {
+          "type": "rows",
+          "h2": "Was Sie erhalten",
+          "items": [
+            {
+              "h3": "Position und Argumente",
+              "text": "Ein bis zwei Seiten, die festhalten, wofür Sie stehen, bei welchen Themen und mit welchen Begriffen, verglichen mit den Begriffen, die Ihre Gegnerinnen und Gegner für dieselben Themen verwenden."
+            },
+            {
+              "h3": "Marke und visueller Auftritt",
+              "text": "Ein Logo, Farben und Vorlagen für Plakate, Beiträge in sozialen Medien und Briefe, ausgelegt für den lokalen und mehrsprachigen Einsatz, von einer einzelnen Gemeinde bis zur ganzen Schweiz."
+            },
+            {
+              "h3": "Inhaltsplan",
+              "text": "Ein Monatsplan, der festlegt, was wann und von wem auf Ihrer Website, in Ihrem Newsletter und in Ihren Messaging-Gruppen veröffentlicht wird. Über diese Kanäle erreichen Sie Ihre Kontakte direkt, unabhängig davon, was ein soziales Netzwerk an seinen Regeln ändert."
+            },
+            {
+              "h3": "Medientraining",
+              "text": "Vorbereitung auf Interviews und Debatten am Radio, im Fernsehen und mit Lokalzeitungen, mit Übungssitzungen, die aufgezeichnet und gemeinsam besprochen werden."
+            }
+          ]
+        },
+        {
+          "type": "steps",
+          "h2": "So funktioniert es",
+          "items": [
+            {
+              "h3": "Marken-Sprint",
+              "text": "In wenigen Wochen legen wir gemeinsam Ihre Positionierung und Ihren visuellen Auftritt fest, mit einer Entscheidungssitzung am Ende jeder Woche."
+            },
+            {
+              "h3": "Monatlicher Inhaltsplan",
+              "text": "Jeden Monat vereinbaren wir, was Sie zwischen den Kampagnen veröffentlichen, und jeder Beitrag wird vor dem Versand geprüft."
+            }
+          ]
+        },
+        {
+          "type": "rules",
+          "h2": "Welche Regeln wir einhalten",
+          "items": [
+            {
+              "h3": "Keine Hoheitszeichen",
+              "text": "Ihre Marke verwendet weder das Schweizerkreuz noch ein Kantons- oder Gemeindewappen und vermeidet so jeden Anschein einer amtlichen Verbindung.",
+              "basis": "Wappenschutzgesetz (WSchG)"
+            },
+            {
+              "h3": "Kontakte auf Einwilligung gestützt",
+              "text": "Ihre Kontaktlisten beruhen auf Einwilligungen, deren Datum, Quelle und Wortlaut jeweils dokumentiert werden.",
+              "basis": "Bundesgesetz über den Datenschutz (DSG), Bundesgesetz gegen den unlauteren Wettbewerb (UWG)"
+            },
+            {
+              "h3": "Vor der Veröffentlichung geprüft",
+              "text": "Jeder Beitrag wird vor der Veröffentlichung von einer zweiten Person geprüft.",
+              "basis": "Unsere Methode"
+            }
+          ]
+        },
+        {
+          "type": "cta",
+          "h2": "Beginnen Sie mit einem Markengespräch",
+          "text": "In einem ersten Gespräch prüfen wir Ihre bestehenden Unterlagen, Ihre Website und Ihre Medienpräsenz und halten fest, was zuerst geändert werden sollte.",
+          "primary": {
+            "label": "Markengespräch vereinbaren",
+            "page": "contact"
+          }
+        }
+      ]
+    },
+    "campaign": {
+      "title": "Kampagne",
+      "description": "Kampagne führt Wahl- und Abstimmungskampagnen nach Schweizer Recht, von der Analyse der Stimmberechtigten bis zur Offenlegung der Finanzierung nach der Abstimmung.",
+      "sections": [
+        {
+          "type": "pageHead",
+          "h1": "Ihre Kampagne nach den geltenden Regeln führen",
+          "lead": "Eine Wahl oder Abstimmung bringt über mehrere Monate verteilt Sammelfristen, Werberegeln und Meldungen zur Finanzierung mit sich. Kampagne deckt all das ab, von der ersten Analyse der Stimmberechtigten bis zu den Meldungen, die nach der Abstimmung eingereicht werden."
+        },
+        {
+          "type": "rows",
+          "h2": "Was Sie erhalten",
+          "items": [
+            {
+              "h3": "Kampagnenplan",
+              "text": "Ziele, Botschaften, Kanäle, Budget und Zeitplan auf wenigen Seiten, mit Ihnen vereinbart, bevor Geld ausgegeben wird."
+            },
+            {
+              "h3": "Unterschriftensammlungen",
+              "text": "Sammlungen für Volksinitiativen und Referenden nach dem Verhaltenskodex der Bundeskanzlei, mit geschulten Sammlerinnen und Sammlern und geprüften Unterschriftenlisten."
+            },
+            {
+              "h3": "Bezahlte digitale Kampagnen",
+              "text": "Werbung nach den Regeln der jeweiligen Plattform für politische Inhalte, wobei jede bezahlte Botschaft angibt, wer sie finanziert hat."
+            },
+            {
+              "h3": "Mobilisierung",
+              "text": "Erinnerungen und Aufrufe zur Stimmabgabe, ausschliesslich an Personen, die dem Empfang zugestimmt haben."
+            },
+            {
+              "h3": "Kampagnenwebsites",
+              "text": "Schnelle, barrierefreie Websites mit rechtskonformen Spendenformularen, die erfassen, was die Finanzierungsregeln verlangen."
+            },
+            {
+              "h3": "Offenlegung der Finanzierung",
+              "text": "Die Meldungen an die Eidgenössische Finanzkontrolle (EFK) und an die Kantone mit eigenen Regeln, fristgerecht vorbereitet."
+            }
+          ]
+        },
+        {
+          "type": "split",
+          "h2": "E-Collecting und E-ID",
+          "body": [
+            "Die elektronische Unterschriftensammlung (E-Collecting) wird auf Bundesebene vorbereitet, und die staatliche elektronische Identität, die E-ID, wurde am 28. September 2025 in der Volksabstimmung angenommen.",
+            "Wir bereiten Ihre Kampagne auf beides vor, damit sie Unterschriften online sammeln und Unterstützende online identifizieren kann, sobald das Gesetz es erlaubt."
+          ],
+          "link": {
+            "label": "Unsere Analysen lesen",
+            "page": "analysis"
+          }
+        },
+        {
+          "type": "rules",
+          "h2": "Welche Regeln wir einhalten",
+          "items": [
+            {
+              "h3": "Keine Auswahl nach politischer Ansicht",
+              "text": "Politische Ansichten sind besonders schützenswerte Personendaten, und wir nutzen sie nicht, um festzulegen, wer eine Werbung sieht.",
+              "basis": "Bundesgesetz über den Datenschutz (DSG), Art. 5"
+            },
+            {
+              "h3": "Keine Deepfakes",
+              "text": "Wir erstellen und veröffentlichen nie synthetische Bilder, Stimmen oder Videos realer Personen.",
+              "basis": "Unsere Technologierichtlinie"
+            },
+            {
+              "h3": "Jede bezahlte Botschaft nennt den Absender",
+              "text": "Jede Werbung nennt die Person oder das Komitee, von der oder dem sie bezahlt wurde.",
+              "basis": "Plattformregeln und unsere Methode"
+            },
+            {
+              "h3": "Finanzen lückenlos erfasst",
+              "text": "Spenden und Kampagnenbudgets werden ab dem ersten Franken erfasst, sodass die Offenlegung auf vollständigen Aufzeichnungen beruht.",
+              "basis": "Bundesgesetz über die politischen Rechte (BPR), Art. 76b bis 76d"
+            }
+          ]
+        },
+        {
+          "type": "cta",
+          "h2": "Planen Sie Ihre Kampagne",
+          "text": "Nennen Sie uns das Abstimmungsdatum und Ihren Budgetrahmen, und wir senden Ihnen einen ersten Entwurf des Plans.",
+          "primary": {
+            "label": "Kampagne planen",
+            "page": "contact"
+          }
+        }
+      ]
+    },
+    "trust": {
+      "title": "Vertrauen",
+      "description": "Vertrauen umfasst Medienarbeit, Medienbeobachtung, Antworten auf Falschbehauptungen, den Schutz von Unterstützerdaten und die rechtliche Prüfung von Kampagnenmaterial, vor, während und nach einer Abstimmung.",
+      "sections": [
+        {
+          "type": "pageHead",
+          "h1": "Medien, Daten und rechtliche Prüfung",
+          "lead": "Vertrauen umfasst die Arbeit rund um eine Kampagne: Fragen von Medienschaffenden, kursierende Falschbehauptungen, die Sicherheit Ihrer Unterstützerdaten und die rechtliche Prüfung aller Plakate, Beiträge und Inserate vor der Veröffentlichung."
+        },
+        {
+          "type": "rows",
+          "h2": "Was Sie erhalten",
+          "items": [
+            {
+              "h3": "Medienarbeit",
+              "text": "Medienmitteilungen, Interviews und Hintergrundgespräche für lokale, regionale und nationale Redaktionen, jeweils in der Sprache, in der sie publizieren."
+            },
+            {
+              "h3": "Medienbeobachtung",
+              "text": "Eine tägliche Beobachtung der Medien und sozialen Netzwerke, die über Ihr Thema berichten, zugestellt als kurze schriftliche Zusammenfassung."
+            },
+            {
+              "h3": "Reaktion auf Falschbehauptungen",
+              "text": "Eine rasche, dokumentierte Antwort, wenn eine Fälschung oder eine Falschbehauptung über Sie kursiert, mit den Belegen für die Richtigstellung."
+            },
+            {
+              "h3": "Datenschutz für Unterstützerdatenbanken",
+              "text": "Das Verzeichnis der Bearbeitungstätigkeiten, die Datenschutz-Folgenabschätzung und die Sicherheitsmassnahmen, die Ihre Datenbanken erfordern."
+            },
+            {
+              "h3": "Rechtliche Prüfung jedes Kampagnenelements",
+              "text": "Plakate, Beiträge, Briefe und Inserate werden vor der Veröffentlichung rechtlich geprüft."
+            }
+          ]
+        },
+        {
+          "type": "steps",
+          "h2": "So funktioniert es",
+          "items": [
+            {
+              "h3": "Eine feste Ansprechperson",
+              "text": "Eine Person in unserem Team kennt Ihr Dossier und antwortet, wenn etwas geschieht."
+            },
+            {
+              "h3": "Ein vorab vereinbarter Reaktionsplan",
+              "text": "Wer entscheidet, wer spricht und was gesagt wird, ist vor einer Krise geregelt, damit niemand unter Druck improvisieren muss."
+            },
+            {
+              "h3": "Eine monatliche Überprüfung",
+              "text": "Jeden Monat gehen wir durch, was sich in den Medien, im Recht und bei Ihren Daten verändert hat, und passen den Plan an."
+            }
+          ]
+        },
+        {
+          "type": "cta",
+          "h2": "Überprüfung anfragen",
+          "text": "Wir prüfen Ihre Medienarbeit, Ihre Unterstützerdaten und Ihre Kampagnenunterlagen und senden Ihnen eine schriftliche Liste der festgestellten Risiken, nach Dringlichkeit geordnet.",
+          "primary": {
+            "label": "Überprüfung anfragen",
+            "page": "contact"
+          }
+        }
+      ]
+    },
+    "publicSector": {
+      "title": "Öffentliche Hand",
+      "description": "Der separate Bereich öffentliche Hand von Tribea unterstützt Kantone und Gemeinden dabei, die Bevölkerung sachlich zu informieren und barrierefreie digitale Dienste aufzubauen.",
+      "sections": [
+        {
+          "type": "pageHead",
+          "h1": "Die Bevölkerung sachlich informieren",
+          "lead": "Kantone und Gemeinden müssen Abstimmungen, Vorhaben und Dienstleistungen der ganzen Bevölkerung erklären, und zwar vollständig, ausgewogen und barrierefrei. Unser Bereich öffentliche Hand unterstützt sie dabei."
+        },
+        {
+          "type": "rows",
+          "h2": "Was der Bereich leistet",
+          "items": [
+            {
+              "h3": "Sachliche Abstimmungsinformation",
+              "text": "Erläuterungen, die eine Vorlage und ihre Folgen vollständig und ohne Parteinahme darstellen, wie es von Behörden verlangt wird."
+            },
+            {
+              "h3": "Barrierefreie digitale Dienste",
+              "text": "Websites und Online-Dienste, die die WCAG-Richtlinien zur Barrierefreiheit erfüllen und für Menschen mit Behinderungen funktionieren."
+            },
+            {
+              "h3": "Lokale und mehrsprachige Kommunikation",
+              "text": "Texte, die muttersprachliche Autorinnen und Autoren für jede Gemeinde, jede Region oder jeden Kanton verfassen, mit den Begriffen, die Ihre Verwaltung bereits verwendet."
+            },
+            {
+              "h3": "Mitwirkungsinstrumente",
+              "text": "Mitwirkungsverfahren und Partizipations-Apps, die nur die für den Zweck nötigen Daten erheben und offenlegen, wie die Ergebnisse verwendet werden."
+            }
+          ]
+        },
+        {
+          "type": "rules",
+          "h2": "Wie der Bereich getrennt bleibt",
+          "intro": "Weil wir auch für Parteien und Komitees arbeiten, ist der Bereich öffentliche Hand vom Rest der Agentur durch Regeln getrennt, die wir bei jedem Mandat anwenden.",
+          "items": [
+            {
+              "h3": "Getrennter Zugriff",
+              "text": "Nur die Personen, die dem Mandat einer Verwaltung zugeteilt sind, können dessen Dateien öffnen."
+            },
+            {
+              "h3": "Eigene Verträge",
+              "text": "Mandate folgen dem öffentlichen Beschaffungsrecht und werden nie mit Aufträgen für politische Kundschaft gebündelt."
+            },
+            {
+              "h3": "Eigene Daten",
+              "text": "Daten einer Verwaltung werden getrennt gespeichert und nie für andere Kundschaft verwendet."
+            },
+            {
+              "h3": "Keine kollidierenden Mandate",
+              "text": "Wir beraten keine Partei und kein Komitee zu einer Abstimmung, während wir im Auftrag einer Verwaltung die Bevölkerung über dieselbe Abstimmung informieren."
+            }
+          ]
+        },
+        {
+          "type": "cta",
+          "h2": "Bereich öffentliche Hand kontaktieren",
+          "text": "Erzählen Sie uns von Ihrem Vorhaben, oder fragen Sie nach Referenzen von Verwaltungen, für die wir gearbeitet haben.",
+          "primary": {
+            "label": "Bereich öffentliche Hand kontaktieren",
+            "page": "contact"
+          }
+        }
+      ]
+    },
+    "method": {
+      "title": "Arbeitsweise",
+      "description": "Die Methode von Tribea: eine rechtliche Prüfung vor der Veröffentlichung, eine Datenschutz-Folgenabschätzung für jede Unterstützerdatenbank und ein Terminplan für die Offenlegung der Finanzierung.",
+      "sections": [
+        {
+          "type": "pageHead",
+          "h1": "So arbeiten wir",
+          "lead": "Jedes Mandat folgt derselben Methode, damit die Regeln gleich angewendet werden, ob wir für Kandidierende, eine Partei, ein Komitee oder eine Verwaltung arbeiten."
+        },
+        {
+          "type": "steps",
+          "h2": "Die Methode, vom ersten Treffen bis zum Schlussbericht",
+          "items": [
+            {
+              "h3": "Analyse der Ausgangslage",
+              "text": "Wir beginnen mit den Fakten: dem Abstimmungskalender, den Stimmberechtigten, den bereits kursierenden Argumenten und den geltenden Regeln."
+            },
+            {
+              "h3": "Der Plan",
+              "text": "Ein kurzer Plan legt Ziele, Botschaften, Kanäle, Budget und Fristen fest, und Sie genehmigen ihn, bevor die Arbeit beginnt."
+            },
+            {
+              "h3": "Folgenabschätzung für Unterstützerdatenbanken",
+              "text": "Bevor wir Personendaten erheben, halten wir schriftlich fest, wozu sie benötigt werden, wie lange sie aufbewahrt und wie sie geschützt werden."
+            },
+            {
+              "h3": "Rechtliche Prüfung vor der Veröffentlichung",
+              "text": "Eine zweite Person prüft jedes Element vor der Veröffentlichung anhand der Regeln zu Kampagnen, Datenschutz und Werbung."
+            },
+            {
+              "h3": "Terminplan für die Offenlegung",
+              "text": "Die Fristen für die Offenlegung von Spenden und Budgets werden zu Beginn festgelegt und bis zur letzten Einreichung verfolgt."
+            },
+            {
+              "h3": "Schlussbericht",
+              "text": "Nach der Abstimmung erhalten Sie eine Übersicht darüber, was getan wurde, was es gekostet hat und was daraus gelernt wurde, und die Daten werden wie vereinbart gelöscht oder zurückgegeben."
+            }
+          ]
+        },
+        {
+          "type": "duo",
+          "h2": "Zwei Dokumente, die wir veröffentlichen",
+          "intro": "Unsere Regeln sind schriftlich festgehalten und öffentlich, damit Kundschaft, Medienschaffende und Datenschutzbeauftragte uns daran messen können.",
+          "columns": [
+            {
+              "h3": "Technologierichtlinie",
+              "text": "Wofür wir KI einsetzen, wer ihre Ergebnisse prüft und was wir ablehnen.",
+              "page": "techPolicy",
+              "linkLabel": "Technologierichtlinie lesen"
+            },
+            {
+              "h3": "Datenschutz verständlich erklärt",
+              "text": "Jedes Tool, das die Website und die Agentur nutzen, wo es gehostet wird und warum.",
+              "page": "privacy",
+              "linkLabel": "Alle eingesetzten Tools ansehen"
+            }
+          ]
+        },
+        {
+          "type": "cta",
+          "h2": "Die Methode auf Ihr Vorhaben anwenden",
+          "text": "Im Erstgespräch prüfen wir gemeinsam, ob die Methode zu Ihrer Situation passt.",
+          "primary": {
+            "label": "Erstgespräch vereinbaren",
+            "page": "contact"
+          }
+        }
+      ]
+    },
+    "techPolicy": {
+      "title": "Technologierichtlinie",
+      "description": "Wofür Tribea KI und andere Technologien einsetzt, wer die Ergebnisse prüft und was die Agentur ablehnt.",
+      "sections": [
+        {
+          "type": "pageHead",
+          "h1": "Technologierichtlinie",
+          "lead": "Diese Richtlinie hält fest, wofür wir Technologie einsetzen, wer für das Ergebnis verantwortlich ist und was wir für keine Kundschaft tun. Sie gilt für alle Mitarbeitenden und jedes Mandat."
+        },
+        {
+          "type": "prose",
+          "blocks": [
+            {
+              "h2": "Wofür wir KI einsetzen",
+              "paras": [
+                "Wir setzen KI-Tools für drei Aufgaben ein:"
+              ],
+              "list": [
+                "Entwürfe von Texten, die eine Person anschliessend überarbeitet und freigibt",
+                "Übersetzungen zwischen den Landessprachen, die eine muttersprachliche Fachperson anschliessend prüft",
+                "Auswertungen grosser Mengen öffentlicher Materialien, etwa Medienberichte oder Stellungnahmen aus Vernehmlassungen"
+              ]
+            },
+            {
+              "h2": "Wer die Ergebnisse prüft",
+              "paras": [
+                "Kein Ergebnis eines KI-Tools wird veröffentlicht oder an Kundschaft gesendet, ohne dass eine namentlich bestimmte Person aus unserem Team es geprüft hat. Diese Person trägt die Verantwortung für das Ergebnis, als hätte sie es selbst geschrieben."
+              ]
+            },
+            {
+              "h2": "Was wir nie tun",
+              "list": [
+                "synthetische Bilder, Stimmen oder Videos realer Personen erstellen",
+                "eine maschinell erzeugte Person als real ausgeben, etwa fiktive Unterstützende oder Zeugen",
+                "verdeckte Automatisierung betreiben, etwa Bots, die als Bürgerinnen und Bürger auftreten",
+                "anhand politischer Ansichten auswählen, wer eine politische Botschaft sieht",
+                "Personendaten unserer Kundschaft in ein Tool eingeben, das sie zum Training seiner Modelle verwendet"
+              ]
+            },
+            {
+              "h2": "Wie wir Tools auswählen",
+              "paras": [
+                "Wir wählen ein Tool nur, wenn wir verstehen, was es mit den erhaltenen Daten macht. Tools, die Personendaten bearbeiten, werden in der Schweiz oder in der Europäischen Union gehostet und sind durch einen Auftragsbearbeitungsvertrag abgedeckt. Die derzeit eingesetzten Tools sind auf unserer Datenschutzseite aufgeführt."
+              ]
+            },
+            {
+              "h2": "Änderungen dieser Richtlinie",
+              "paras": [
+                "Diese Richtlinie wurde zuletzt am 28. September 2026 aktualisiert. Jede Änderung wird datiert und auf dieser Seite veröffentlicht."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "privacy": {
+      "title": "Datenschutz verständlich erklärt",
+      "description": "Jedes Tool, das Website und Agentur von Tribea nutzen, wo es gehostet wird und warum, erklärt für Bürgerinnen und Bürger, ohne juristische Fachsprache.",
+      "sections": [
+        {
+          "type": "pageHead",
+          "h1": "Datenschutz verständlich erklärt",
+          "lead": "Diese Seite führt jedes Tool auf, das die Website und die Agentur nutzen, wo es gehostet wird und warum wir es einsetzen. Sie erklärt unsere Praxis für Bürgerinnen, Bürger und Medienschaffende und ergänzt die rechtliche Datenschutzerklärung, ohne sie zu ersetzen."
+        },
+        {
+          "type": "table",
+          "h2": "Die Tools, die wir nutzen",
+          "columns": [
+            "Funktion",
+            "Hosting-Standort",
+            "Zweck"
+          ],
+          "rows": [
+            [
+              "Stellt diese Website bereit",
+              "Schweiz",
+              "Um die Website von Servern in der Schweiz aus zu veröffentlichen"
+            ],
+            [
+              "Zählt Besuche ohne Cookies",
+              "Schweiz",
+              "Um zu wissen, welche Seiten gelesen werden, ausschliesslich in aggregierter Form"
+            ],
+            [
+              "Empfängt das Kontaktformular",
+              "Schweiz",
+              "Um Ihre Anfrage zu beantworten"
+            ],
+            [
+              "Versendet den Newsletter",
+              "Schweiz oder Europäische Union",
+              "Um Analysen an Personen zu senden, die sie angefordert haben"
+            ],
+            [
+              "Bucht ein Erstgespräch",
+              "Schweiz oder Europäische Union",
+              "Damit Sie einen Termin ohne E-Mail-Austausch wählen können"
+            ],
+            [
+              "Betreibt unsere E-Mail",
+              "Schweiz oder Europäische Union",
+              "Für die Korrespondenz mit Kundschaft und Medienschaffenden"
+            ]
+          ]
+        },
+        {
+          "type": "split",
+          "h2": "Was diese Website nicht tut",
+          "body": [
+            "Sie setzt keine Cookies, lädt keine Werbepixel und keine Social-Media-Plugins und bettet keine Karten oder Videos ein, die vor Ihrem Klick geladen werden. Deshalb braucht sie kein Cookie-Banner.",
+            "Unsere Besucherstatistik erfasst gekürzte IP-Adressen und wird ausschliesslich als Gesamtzahlen ausgewertet."
+          ],
+          "link": {
+            "label": "Vollständige Datenschutzerklärung lesen",
+            "page": "privacyPolicy"
+          }
+        }
+      ]
+    },
+    "analysis": {
+      "title": "Analysen",
+      "description": "Kurze Beiträge mit Quellenangaben zum Schweizer Kampagnenrecht, zum Datenschutz und zu neuen Instrumenten der direkten Demokratie.",
+      "sections": [
+        {
+          "type": "pageHead",
+          "h1": "Analysen",
+          "lead": "Kurze Beiträge mit Quellenangaben zum Schweizer Kampagnenrecht, zum Datenschutz und zu neuen Instrumenten wie der elektronischen Unterschriftensammlung (E-Collecting) und der E-ID. Jeder Beitrag nennt seine Quellen, damit Sie sie überprüfen können."
+        },
+        {
+          "type": "articleList"
+        },
+        {
+          "type": "newsletter",
+          "h2": "Neue Beiträge per E-Mail erhalten",
+          "text": "Wir senden eine kurze E-Mail, wenn ein neuer Beitrag erscheint. Sie bestätigen Ihre Adresse mit einer zweiten E-Mail, und jede Nachricht enthält einen Link zur Abmeldung mit einem Klick.",
+          "label": "E-Mail-Adresse",
+          "button": "Abonnieren",
+          "consent": "Ihre Adresse wird ausschliesslich für den Versand dieser Beiträge verwendet. Siehe Datenschutzerklärung."
+        }
+      ]
+    },
+    "about": {
+      "title": "Über uns",
+      "description": "Das Team von Tribea, seine Unabhängigkeit und seine Regeln zu Kundschaft und Interessenkonflikten.",
+      "sections": [
+        {
+          "type": "pageHead",
+          "h1": "Wer wir sind",
+          "lead": "Tribea ist eine Agentur für politische Kommunikation in der Schweiz. Ihr Team verbindet Personen, die digitale Werkzeuge entwickeln, mit Personen, die das Schweizer Kampagnen- und Datenschutzrecht kennen."
+        },
+        {
+          "type": "rules",
+          "h2": "Kundschaft und Interessenkonflikte",
+          "intro": "Wir arbeiten für politische Akteure und für Verwaltungen. Diese Regeln machen das möglich.",
+          "items": [
+            {
+              "h3": "Eine Seite pro Abstimmung",
+              "text": "Wir beraten nie zwei gegnerische Lager in derselben Wahl oder Abstimmung."
+            },
+            {
+              "h3": "Konflikte offengelegt",
+              "text": "Könnte ein neues Mandat mit einem bestehenden kollidieren, informieren wir vor der Annahme beide Auftraggebenden, oder wir lehnen das Mandat ab."
+            },
+            {
+              "h3": "Keine Arbeit gegen unsere Regeln",
+              "text": "Wir lehnen jedes Mandat ab, das Deepfakes, eine Auswahl nach politischer Ansicht oder eine nicht offengelegte Finanzierung erfordern würde."
+            },
+            {
+              "h3": "Neutral im eigenen Namen",
+              "text": "Die Agentur bezieht auf ihren eigenen Kanälen keine Position zu Abstimmungen und Wahlen, weil auch Verwaltungen zu ihrer Kundschaft gehören."
+            },
+            {
+              "h3": "Referenzen nur mit Einwilligung",
+              "text": "Wir nennen Auftraggebende oder veröffentlichen eine Fallstudie nur mit deren schriftlicher Einwilligung."
+            }
+          ]
+        },
+        {
+          "type": "cta",
+          "h2": "Mit uns arbeiten",
+          "text": "Wir suchen Personen, die in einer oder mehreren Landessprachen schreiben, entwickeln oder beraten, sowie Partnerorganisationen, die dieselben Regeln anwenden.",
+          "primary": {
+            "label": "Kontakt aufnehmen",
+            "page": "contact"
+          }
+        }
+      ]
+    },
+    "contact": {
+      "title": "Kontakt",
+      "description": "Kontakt zu Tribea: ein kurzes Formular, ein Buchungslink und eine namentlich genannte Person, die antwortet.",
+      "sections": [
+        {
+          "type": "pageHead",
+          "h1": "Kontakt",
+          "lead": "Beschreiben Sie, was Sie vorbereiten. Eine Person aus dem Team liest jede Anfrage und antwortet innert 3 Tagen."
+        },
+        {
+          "type": "contact"
+        }
+      ]
+    },
+    "legal": {
+      "title": "Impressum",
+      "description": "Impressum von Tribea.",
+      "sections": [
+        {
+          "type": "pageHead",
+          "h1": "Impressum",
+          "lead": "Angaben zum Unternehmen, das für diese Website verantwortlich ist."
+        },
+        {
+          "type": "prose",
+          "blocks": [
+            {
+              "h2": "Unternehmen",
+              "paras": [
+                "Tribea, Schweiz"
+              ]
+            },
+            {
+              "h2": "Kontakt",
+              "paras": [
+                "Bitte verwenden Sie das Kontaktformular auf dieser Website. Eine Person aus dem Team antwortet innert 3 Tagen."
+              ]
+            },
+            {
+              "h2": "Haftung",
+              "paras": [
+                "Wir prüfen die Inhalte dieser Website sorgfältig, können jedoch nicht garantieren, dass sie jederzeit vollständig, richtig und aktuell sind. Links zu anderen Websites dienen der Information, und für deren Inhalte sind wir nicht verantwortlich."
+              ]
+            },
+            {
+              "h2": "Bildnachweis",
+              "paras": [
+                "Foto auf der Startseite: Diana Shturm, Unsplash."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "privacyPolicy": {
+      "title": "Datenschutzerklärung",
+      "description": "Die Datenschutzerklärung von Tribea nach dem Bundesgesetz über den Datenschutz (DSG).",
+      "sections": [
+        {
+          "type": "pageHead",
+          "h1": "Datenschutzerklärung",
+          "lead": "Diese Erklärung legt dar, welche Personendaten wir über diese Website bearbeiten, zu welchem Zweck, wo sie gespeichert werden, wer sie erhält, wie lange sie aufbewahrt werden und wie Sie Ihre Rechte nach dem Bundesgesetz über den Datenschutz (DSG) ausüben können."
+        },
+        {
+          "type": "prose",
+          "blocks": [
+            {
+              "h2": "Verantwortliche Stelle",
+              "paras": [
+                "Tribea, Schweiz. Für Fragen zum Datenschutz schreiben Sie uns über das Kontaktformular auf dieser Website."
+              ]
+            },
+            {
+              "h2": "Besuch der Website",
+              "paras": [
+                "Wenn Sie eine Seite aufrufen, erfasst der Server die technischen Daten, die für die Anzeige und den Schutz der Website nötig sind: Datum und Uhrzeit, die aufgerufene Seite, den Browsertyp und eine gekürzte IP-Adresse, die Sie nicht mehr identifiziert. Diese Daten werden nur so lange aufbewahrt, wie die Sicherheit der Website es erfordert, und danach gelöscht.",
+                "Unsere Besucherstatistik verwendet dieselben gekürzten Daten, setzt keine Cookies und wird ausschliesslich als Gesamtzahlen ausgewertet."
+              ]
+            },
+            {
+              "h2": "Kontaktformular und Terminbuchung",
+              "paras": [
+                "Wenn Sie uns schreiben, bearbeiten wir Ihren Namen, Ihre E-Mail-Adresse, Ihre Organisation, falls Sie sie angeben, und Ihre Nachricht ausschliesslich, um Ihre Anfrage zu beantworten. Wir bewahren diese Korrespondenz nur so lange auf, wie die Antwort es erfordert, es sei denn, daraus entsteht ein Mandat; dann gelten die Aufbewahrungsregeln des Mandats."
+              ]
+            },
+            {
+              "h2": "Newsletter",
+              "paras": [
+                "Wenn Sie den Newsletter abonnieren, bearbeiten wir Ihre E-Mail-Adresse, um Ihnen unsere Beiträge zu senden. Ihr Abonnement wird mit einer zweiten E-Mail bestätigt, und wir bewahren Datum, Quelle und Wortlaut Ihrer Einwilligung auf. Sie können sich jederzeit über den Link in jeder Nachricht abmelden."
+              ]
+            },
+            {
+              "h2": "Weitergabe und Hosting",
+              "paras": [
+                "Ihre Daten werden von den auf unserer Datenschutzseite genannten Dienstleistern bearbeitet, die in unserem Auftrag und gestützt auf einen Auftragsbearbeitungsvertrag handeln. Die Website und ihre Daten werden in der Schweiz gehostet, und einzelne Dienste können Daten in der Europäischen Union bearbeiten, deren Datenschutz die Schweiz als angemessen anerkennt."
+              ]
+            },
+            {
+              "h2": "Ihre Rechte",
+              "paras": [
+                "Sie können über das Kontaktformular Auskunft darüber verlangen, welche Daten wir über Sie bearbeiten, sie berichtigen oder löschen lassen und der Bearbeitung widersprechen. Wenn Sie der Ansicht sind, dass wir das Gesetz nicht eingehalten haben, können Sie sich an den Eidgenössischen Datenschutz- und Öffentlichkeitsbeauftragten (EDÖB) wenden."
+              ]
+            },
+            {
+              "h2": "Änderungen",
+              "paras": [
+                "Diese Datenschutzerklärung wurde zuletzt am 28. September 2026 aktualisiert."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "accessibility": {
+      "title": "Barrierefreiheit",
+      "description": "Erklärung zur Barrierefreiheit der Website von Tribea.",
+      "sections": [
+        {
+          "type": "pageHead",
+          "h1": "Barrierefreiheit",
+          "lead": "Diese Website ist darauf ausgelegt, die Konformitätsstufe AA der Web Content Accessibility Guidelines (WCAG) 2.2 zu erfüllen, damit Menschen mit Behinderungen sie mit ihren gewohnten Hilfsmitteln nutzen können."
+        },
+        {
+          "type": "prose",
+          "blocks": [
+            {
+              "h2": "Was wir umgesetzt haben",
+              "list": [
+                "Textkontrast von mindestens 4,5 zu 1 auf allen Seiten",
+                "vollständige Bedienung per Tastatur, mit sichtbarer Fokusanzeige",
+                "Überschriften und Orientierungsbereiche, denen Screenreader folgen können",
+                "Text, der ohne Inhaltsverlust auf 200 Prozent vergrössert werden kann",
+                "Animationen, die sich abschalten, wenn Ihr Gerät reduzierte Bewegung anfordert"
+              ]
+            },
+            {
+              "h2": "Stand",
+              "paras": [
+                "Vor der Aufschaltung ist eine externe Prüfung der Barrierefreiheit vorgesehen. Die Ergebnisse und allfällige bekannte Mängel werden auf dieser Seite veröffentlicht."
+              ]
+            },
+            {
+              "h2": "Problem melden",
+              "paras": [
+                "Wenn etwas auf dieser Website schwer zu bedienen ist, teilen Sie es uns über das Kontaktformular mit. Wir antworten innert 3 Tagen."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "policies": {
+      "title": "Richtlinie",
+      "description": "Die Regeln, die Tribea bei jedem Mandat anwendet: die Arbeitsweise, die Technologie-Richtlinie, der Umgang mit Daten und die Barrierefreiheit der Website.",
+      "sections": [
+        {
+          "type": "pageHead",
+          "h1": "Die Regeln, nach denen wir arbeiten",
+          "lead": "Jedes Mandat folgt schriftlichen Regeln, und wir veröffentlichen sie, damit Auftraggebende, Medienschaffende oder Datenschutzberatende prüfen können, dass wir sie einhalten."
+        },
+        {
+          "type": "rows",
+          "h2": "Unsere veröffentlichten Regeln",
+          "items": [
+            {
+              "h3": "Unsere Arbeitsweise",
+              "text": "Die sechs Schritte jedes Mandats, von der ersten Analyse bis zum Schlussbericht, mit der rechtlichen Prüfung vor jeder Veröffentlichung.",
+              "page": "method",
+              "linkLabel": "Arbeitsweise lesen"
+            },
+            {
+              "h3": "Technologie-Richtlinie",
+              "text": "Wofür wir KI einsetzen, wer die Ergebnisse prüft und was wir für niemanden tun.",
+              "page": "techPolicy",
+              "linkLabel": "Richtlinie lesen"
+            },
+            {
+              "h3": "Datenschutz verständlich erklärt",
+              "text": "Jedes Werkzeug, das die Website und die Agentur nutzen, was es tut und wo es gehostet wird.",
+              "page": "privacy",
+              "linkLabel": "Werkzeuge ansehen"
+            },
+            {
+              "h3": "Datenschutzerklärung",
+              "text": "Der rechtliche Text dazu, welche Daten wir bearbeiten, weshalb, wie lange und wie Sie Ihre Rechte ausüben.",
+              "page": "privacyPolicy",
+              "linkLabel": "Datenschutzerklärung lesen"
+            },
+            {
+              "h3": "Barrierefreiheit",
+              "text": "Wie die Website für Menschen mit Behinderungen gebaut ist und wie Sie ein Problem melden.",
+              "page": "accessibility",
+              "linkLabel": "Erklärung zur Barrierefreiheit lesen"
+            },
+            {
+              "h3": "Auftraggebende und Interessenkonflikte",
+              "text": "Warum wir nie zwei gegnerische Lager in derselben Abstimmung beraten und wann wir ein Mandat ablehnen.",
+              "page": "about",
+              "linkLabel": "Unsere Regeln lesen"
+            }
+          ]
+        },
+        {
+          "type": "cta",
+          "h2": "Eine Frage zu unseren Regeln",
+          "text": "Schreiben Sie uns Ihre Frage, und eine Person aus dem Team antwortet innert 3 Tagen.",
+          "primary": {
+            "label": "Frage stellen",
+            "page": "contact"
+          }
+        }
+      ]
+    }
+  },
+  "articles": [
+    {
+      "slug": "transparenz-politikfinanzierung",
+      "date": "2026-09-28",
+      "title": "Was die Transparenzregeln des Bundes von Kampagnen verlangen",
+      "description": "Seit dem 23. Oktober 2022 müssen Parteien und Kampagnenkomitees auf Bundesebene ihre Finanzierung offenlegen. Eine kurze Übersicht darüber, wer betroffen ist und was offengelegt werden muss.",
+      "blocks": [
+        {
+          "paras": [
+            "Seit dem 23. Oktober 2022 verpflichtet das Bundesgesetz über die politischen Rechte (BPR) politische Akteure auf Bundesebene, ihre Finanzierung offenzulegen. Die Eidgenössische Finanzkontrolle (EFK) nimmt die Meldungen entgegen, prüft sie und veröffentlicht sie."
+          ]
+        },
+        {
+          "h2": "Wer betroffen ist",
+          "paras": [
+            "Die in der Bundesversammlung vertretenen Parteien müssen jedes Jahr ihre Einnahmen offenlegen und Zuwendungen von mehr als CHF 15 000 pro Person und Jahr mit dem Namen der Geberin oder des Gebers angeben. Komitees und andere Akteure, die für eine Kampagne zu einer eidgenössischen Abstimmung oder zu den Nationalratswahlen mehr als CHF 50 000 aufwenden, müssen ihr Budget und die Zuwendungen über derselben Schwelle offenlegen."
+          ]
+        },
+        {
+          "h2": "Was das für eine Kampagne bedeutet",
+          "paras": [
+            "In der Praxis muss eine Kampagne ab dem ersten Franken wissen, wer wann wie viel gespendet hat, denn die Offenlegung ist vor der Abstimmung fällig und die Schlussabrechnung danach. Eine Kampagne, die Spenden erst am Schluss erfasst, muss sie unter Zeitdruck rekonstruieren.",
+            "Mehrere Kantone haben für kantonale Abstimmungen und Wahlen eigene Transparenzregeln mit anderen Schwellenwerten und Fristen, die separat geprüft werden müssen."
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "label": "Bundesgesetz über die politischen Rechte (BPR), Art. 76b bis 76d",
+          "url": "https://www.fedlex.admin.ch/eli/cc/1978/688_688_688/de"
+        },
+        {
+          "label": "Eidgenössische Finanzkontrolle (EFK), Politikfinanzierung",
+          "url": "https://www.efk.admin.ch"
+        }
+      ]
+    },
+    {
+      "slug": "unterstuetzerdatenbanken-datenschutz",
+      "date": "2026-09-28",
+      "title": "Unterstützerdatenbanken und Datenschutzgesetz",
+      "description": "Eine Liste von Unterstützerinnen und Unterstützern gibt Auskunft über deren politische Ansichten, die das Gesetz als besonders schützenswerte Daten behandelt. Was das für eine Partei oder ein Komitee ändert.",
+      "blocks": [
+        {
+          "paras": [
+            "Eine Liste der Mitglieder, Spenderinnen und Spender oder Freiwilligen einer Partei sagt etwas über die politischen Ansichten jeder Person aus, die darauf steht. Das Bundesgesetz über den Datenschutz (DSG), in Kraft seit dem 1. September 2023, stuft Daten über politische Ansichten als besonders schützenswerte Personendaten ein."
+          ]
+        },
+        {
+          "h2": "Was das Gesetz verlangt",
+          "paras": [
+            "Besonders schützenswerte Daten erfordern mehr Sorgfalt als gewöhnliche Kontaktangaben. Bringt eine Bearbeitung voraussichtlich ein hohes Risiko für die betroffenen Personen mit sich, muss die verantwortliche Stelle vorgängig eine Datenschutz-Folgenabschätzung erstellen. Unternehmen mit mehr als 250 Mitarbeitenden sowie jede Organisation, die besonders schützenswerte Daten in grossem Umfang bearbeitet, müssen ein Verzeichnis der Bearbeitungstätigkeiten führen. Eine Verletzung der Datensicherheit, die voraussichtlich zu einem hohen Risiko führt, muss dem Eidgenössischen Datenschutz- und Öffentlichkeitsbeauftragten (EDÖB) so rasch als möglich gemeldet werden."
+          ]
+        },
+        {
+          "h2": "Was das für eine Kampagne bedeutet",
+          "paras": [
+            "In der Praxis sollte eine Unterstützerdatenbank nur die Felder enthalten, die ihr Zweck erfordert, nur für die Personen zugänglich sein, die damit arbeiten, und von einem Anbieter gehostet werden, der an einen Auftragsbearbeitungsvertrag gebunden ist. Wer vor dem ersten Eintrag schriftlich festhält, wozu jedes Feld dient, kann zudem am schnellsten antworten, wenn eine unterstützende Person fragt, welche Daten über sie gespeichert sind."
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "label": "Bundesgesetz über den Datenschutz (DSG), Art. 5, 12, 22 und 24",
+          "url": "https://www.fedlex.admin.ch/eli/cc/2022/491/de"
+        },
+        {
+          "label": "Eidgenössischer Datenschutz- und Öffentlichkeitsbeauftragter (EDÖB)",
+          "url": "https://www.edoeb.admin.ch"
+        }
+      ]
+    }
+  ]
+}

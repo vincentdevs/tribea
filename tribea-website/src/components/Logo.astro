@@ -1,0 +1,8 @@
+---
+// Tribea wordmark, vectorised from the approved artwork (see /logo/README.md).
+// Draws the shape defined once per page in BrandSprite.astro, in the current text colour.
+interface Props { class?: string }
+const { class: className } = Astro.props;
+---
+
+<svg class={className} viewBox="0 0 4682 986" aria-hidden="true" focusable="false"><use href="#tribea-word" /></svg>

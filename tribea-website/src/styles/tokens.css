@@ -1,0 +1,26 @@
+/* Tribea brand colour tokens. Source of truth: docs/BRAND_GUIDELINES.md
+   The website interface uses Black, White, light grey and Blue Slate only.
+   Intense Cherry and Rosewood are for print, social media and presentations,
+   never for the website. No dark mode; the header and footer are the only dark surfaces. */
+
+:root {
+  /* The brand palette */
+  --tribea-black: #000000;
+  --tribea-white: #ffffff;
+  --tribea-blue-slate: #4c5f6b;
+  --tribea-blue-slate-5: #f3f4f5;   /* light grey: Blue Slate at 6 percent on white */
+  --tribea-cool-steel: #94a0aa;     /* lines only, and secondary text on Black */
+  --tribea-intense-cherry: #ad343e; /* print and social only */
+  --tribea-rosewood: #a76571;       /* print and social only */
+
+  /* Website roles */
+  --bg: var(--tribea-white);
+  --surface: var(--tribea-blue-slate-5);
+  --card: var(--tribea-white);
+  --border: var(--tribea-cool-steel);
+  --text: var(--tribea-black);
+  --text-muted: var(--tribea-blue-slate);
+  --accent: var(--tribea-black);
+  --accent-hover: var(--tribea-blue-slate);
+  --on-accent: var(--tribea-white);
+}

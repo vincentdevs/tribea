@@ -1,0 +1,18 @@
+/* Tribea approved typefaces. Source of truth: docs/BRAND_GUIDELINES.md */
+
+@font-face {
+  font-family: "Newsreader";
+  src: url("../fonts/Newsreader/Newsreader[opsz,wght].ttf") format("truetype");
+  font-weight: 200 800;
+  font-display: swap;
+}
+@font-face { font-family: "Lato"; src: url("../fonts/Lato/Lato-Regular.ttf") format("truetype"); font-weight: 400; font-display: swap; }
+@font-face { font-family: "Lato"; src: url("../fonts/Lato/Lato-Italic.ttf") format("truetype"); font-weight: 400; font-style: italic; font-display: swap; }
+@font-face { font-family: "Lato"; src: url("../fonts/Lato/Lato-SemiBold.ttf") format("truetype"); font-weight: 600; font-display: swap; }
+@font-face { font-family: "Lato"; src: url("../fonts/Lato/Lato-Bold.ttf") format("truetype"); font-weight: 700; font-display: swap; }
+
+:root {
+  --font-heading: "Newsreader", Georgia, "Times New Roman", serif;
+  --font-body: "Lato", "Helvetica Neue", Arial, sans-serif;
+  --font-subheading: var(--font-body);
+}

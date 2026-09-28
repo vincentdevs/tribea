@@ -1,0 +1,36 @@
+---
+// Language picker: the current language, and on click a straight panel that
+// drops down with the other languages. Each language lives on its own
+// subdomain, so every option is a plain link. Works without JavaScript.
+import { LANGS, content, type Lang } from "../i18n";
+
+interface Props {
+  lang: Lang;
+  alternates: Record<Lang, string>;
+  variant?: "menu" | "list";
+  id: string;
+}
+
+const { lang, alternates, id } = Astro.props;
+const t = content[lang];
+---
+
+<details class="lang-drop" id={id}>
+  <summary aria-label={`${t.ui.languageNav}: ${t.ui.languageNames[lang]}`}>{lang.toUpperCase()}</summary>
+  <ul aria-label={t.ui.languageNav}>
+    {
+      LANGS.map((l) => (
+        <li>
+          <a
+            href={alternates[l]}
+            hreflang={content[l].locale}
+            lang={content[l].locale}
+            aria-current={l === lang ? "true" : undefined}
+          >
+            {content[l].ui.languageNames[l]}
+          </a>
+        </li>
+      ))
+    }
+  </ul>
+</details>

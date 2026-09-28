@@ -1,0 +1,24 @@
+{
+  "name": "tribea-website",
+  "type": "module",
+  "version": "0.0.1",
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "scripts": {
+    "sync": "node scripts/sync-brand.mjs",
+    "prebuild": "node scripts/sync-brand.mjs",
+    "build": "astro build",
+    "preview": "npm run build:local && node scripts/serve.mjs",
+    "astro": "astro",
+    "postbuild": "node scripts/mark-placeholders.mjs && node scripts/split-subdomains.mjs",
+    "build:local": "TRIBEA_DOMAIN=localhost:4321 TRIBEA_PROTOCOL=http npm run build",
+    "serve": "node scripts/serve.mjs"
+  },
+  "dependencies": {
+    "astro": "^7.3.5"
+  },
+  "allowScripts": {
+    "esbuild": true
+  }
+}

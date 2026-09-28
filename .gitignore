@@ -1,0 +1,7 @@
+.DS_Store
+node_modules/
+tribea-website/dist/
+tribea-website/.astro/
+tribea-website/public/fonts/
+.env
+.env.*

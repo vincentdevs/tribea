@@ -1,0 +1,56 @@
+---
+// Tribea line icons, drawn on a 48 unit grid with a 1.25 stroke. Every drawing
+// starts at y = 6, so the top of each icon lines up with the text beside it.
+//   sealed    an envelope closed with a wax seal: the mandate stays confidential
+//   law       a classical column: every step within the law
+//   returned  a document handed back along a curved path: the data leaves with you
+interface Props {
+  name: "sealed" | "law" | "returned";
+  class?: string;
+}
+const { name, class: className } = Astro.props;
+---
+
+<svg
+  class:list={["icon", `icon--${name}`, className]}
+  viewBox="0 0 48 48"
+  aria-hidden="true"
+  focusable="false"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="1.25"
+  stroke-linecap="butt"
+  stroke-linejoin="miter"
+>
+  {
+    name === "sealed" && (
+      <>
+        <path d="M6 6h36v28H6z" />
+        <path d="M6 6l18 16L42 6" />
+        <circle cx="24" cy="24" r="5.5" fill="currentColor" stroke="none" />
+        <circle cx="24" cy="24" r="3" stroke="var(--seal-inner, #fff)" stroke-width="1" />
+      </>
+    )
+  }
+  {
+    name === "law" && (
+      <>
+        <path d="M24 6L6 15h36z" />
+        <path d="M8 18h32" />
+        <path d="M12 21v17M18 21v17M24 21v17M30 21v17M36 21v17" />
+        <path d="M8 41h32M6 44h36" />
+      </>
+    )
+  }
+  {
+    name === "returned" && (
+      <>
+        <path d="M14 6h16l6 6v20H14z" />
+        <path d="M30 6v6h6" />
+        <path d="M19 17h12M19 22h12M19 27h8" />
+        <path d="M30 36v5H10" />
+        <path d="M15 36l-5 5 5 5" />
+      </>
+    )
+  }
+</svg>

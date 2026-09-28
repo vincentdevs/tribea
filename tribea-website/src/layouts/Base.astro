@@ -1,0 +1,134 @@
+---
+import "../styles/site.css";
+import Logo from "../components/Logo.astro";
+import BrandSprite from "../components/BrandSprite.astro";
+import LanguagePicker from "../components/LanguagePicker.astro";
+import { LANGS, DOMAIN, PROTOCOL, content, href, section, type Lang } from "../i18n";
+
+interface Props {
+  lang: Lang;
+  page: string;
+  title: string;
+  description: string;
+  // The address of this page in every language, for the switcher and hreflang.
+  alternates: Record<Lang, string>;
+}
+
+const { lang, page, title, description, alternates } = Astro.props;
+const t = content[lang];
+const current = section(page);
+const headerNav = t.nav;
+const fullTitle = page === "home" ? title : `${title} | Tribea`;
+const footerCols = [
+  { title: t.ui.footerOffer, pages: ["profile", "campaign", "trust", "publicSector"] },
+  { title: t.ui.footerAgency, pages: ["policies", "method", "analysis", "about", "contact"] },
+  { title: t.ui.footerLegal, pages: ["privacy", "privacyPolicy", "legal", "accessibility"] },
+];
+---
+
+<!doctype html>
+<html lang={t.locale}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light" />
+    <title>{fullTitle}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={alternates[lang]} />
+    {LANGS.map((l) => <link rel="alternate" hreflang={content[l].locale} href={alternates[l]} />)}
+    <link rel="alternate" hreflang="x-default" href={`${PROTOCOL}://${DOMAIN}/`} />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="preload" href="/fonts/newsreader.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="/fonts/lato-regular.woff2" as="font" type="font/woff2" crossorigin />
+    <meta property="og:title" content={fullTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:locale" content={t.locale.replace("-", "_")} />
+    <slot name="head" />
+  </head>
+  <body>
+    <BrandSprite />
+    <a class="skip" href="#main">{t.ui.skip}</a>
+
+    <header class="site-header">
+      <div class="wrap">
+        <a class="wordmark" href={href(lang, "home")}><Logo class="word" /><span class="visually-hidden">Tribea, {t.ui.home}</span></a>
+
+        <nav class="nav" aria-label={t.ui.primaryNav}>
+          <ul>
+            {
+              headerNav.map((item: any) => (
+                <li>
+                  <a href={href(lang, item.page)} aria-current={current === item.page ? "page" : undefined}>
+                    {item.label}
+                  </a>
+                </li>
+              ))
+            }
+          </ul>
+          <LanguagePicker lang={lang} alternates={alternates} id="lang-header" />
+          <a class="button header-cta" href={href(lang, "contact")}>{t.ui.headerCta}</a>
+        </nav>
+
+        <details class="menu">
+          <summary>
+            <span class="open-label">{t.ui.menu}</span>
+            <span class="close-label">{t.ui.close}</span>
+          </summary>
+          <div class="menu-panel">
+            <nav aria-label={t.ui.primaryNav}>
+              <ul>
+                {
+                  t.nav.map((item: any) => (
+                    <li>
+                      <a href={href(lang, item.page)} aria-current={current === item.page ? "page" : undefined}>
+                        {item.label}
+                      </a>
+                    </li>
+                  ))
+                }
+              </ul>
+            </nav>
+            <LanguagePicker lang={lang} alternates={alternates} id="lang-menu" />
+            <a class="button" href={href(lang, "contact")}>{t.ui.headerCta}</a>
+          </div>
+        </details>
+      </div>
+    </header>
+
+    <main id="main">
+      <slot />
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <a class="wordmark" href={href(lang, "home")}><Logo class="word" /><span class="visually-hidden">Tribea, {t.ui.home}</span></a>
+            <p class="footer-tagline">{t.ui.footerTagline}</p>
+          </div>
+          {
+            footerCols.map((col) => (
+              <div class="footer-col">
+                <h2>{col.title}</h2>
+                <ul>
+                  {col.pages.map((p) => (
+                    <li>
+                      <a href={href(lang, p)}>{t.pages[p].title}</a>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))
+          }
+        </div>
+        <div class="footer-base">
+          <p>{t.ui.footerNote}</p>
+          <LanguagePicker lang={lang} alternates={alternates} id="lang-footer" />
+        </div>
+      </div>
+    </footer>
+    <script>
+      import "../site.ts";
+    </script>
+  </body>
+</html>

@@ -1,0 +1,97 @@
+---
+import Base from "../../layouts/Base.astro";
+import Sections from "../../components/Sections.astro";
+import { LANGS, ROUTES, PARENT, content, href, articleHref, absolute, formatDate, type Lang } from "../../i18n";
+
+export function getStaticPaths() {
+  const paths: any[] = [];
+  for (const lang of LANGS) {
+    for (const page of Object.keys(ROUTES)) {
+      const alternates = Object.fromEntries(LANGS.map((l) => [l, absolute(l, href(l, page))]));
+      paths.push({ params: { lang, path: ROUTES[page][lang] || undefined }, props: { page, alternates } });
+    }
+    content[lang].articles.forEach((a: any, i: number) => {
+      const alternates = Object.fromEntries(LANGS.map((l) => [l, absolute(l, articleHref(l, i))]));
+      paths.push({
+        params: { lang, path: `${ROUTES.analysis[lang]}/${a.slug}` },
+        props: { page: "analysis", article: i, alternates },
+      });
+    });
+  }
+  return paths;
+}
+
+const lang = Astro.params.lang as Lang;
+const { page, article, alternates } = Astro.props;
+const t = content[lang];
+const data = t.pages[page];
+
+const crumbs: { label: string; href?: string }[] = [{ label: t.ui.home, href: href(lang, "home") }];
+if (PARENT[page]) crumbs.push({ label: t.pages[PARENT[page]].title, href: href(lang, PARENT[page]) });
+
+const a = article !== undefined ? t.articles[article] : null;
+if (a) crumbs.push({ label: data.title, href: href(lang, "analysis") });
+else crumbs.push({ label: data.title });
+---
+
+{
+  a ? (
+    <Base lang={lang} page={page} title={a.title} description={a.description} alternates={alternates}>
+      <script type="application/ld+json" slot="head" set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "Article",
+        headline: a.title,
+        description: a.description,
+        datePublished: a.date,
+        inLanguage: t.locale,
+        publisher: { "@type": "Organization", name: "Tribea" },
+      })} />
+      <article>
+        <section class="page-head">
+          <div class="wrap">
+            <nav class="crumbs" aria-label={t.ui.breadcrumb}>
+              <ol>
+                {crumbs.map((c) => <li><a href={c.href}>{c.label}</a></li>)}
+              </ol>
+            </nav>
+            <h1>{a.title}</h1>
+            <p class="lead">{a.description}</p>
+            <p class="article-meta">{t.ui.published} <time datetime={a.date}>{formatDate(lang, a.date)}</time></p>
+          </div>
+        </section>
+        <section class="section">
+          <div class="wrap">
+            <div class="prose">
+              {a.blocks.map((b: any) => (
+                <>
+                  {b.h2 && <h2>{b.h2}</h2>}
+                  {b.paras?.map((p: string) => <p set:html={p.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>")} />)}
+                </>
+              ))}
+              <aside class="sources">
+                <h2>{t.ui.sources}</h2>
+                <ul>
+                  {a.sources.map((s: any) => <li><a href={s.url}>{s.label}</a></li>)}
+                </ul>
+              </aside>
+            </div>
+          </div>
+        </section>
+      </article>
+    </Base>
+  ) : (
+    <Base lang={lang} page={page} title={data.title} description={data.description} alternates={alternates}>
+      {page === "home" && (
+        <script type="application/ld+json" slot="head" set:html={JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          name: "Tribea",
+          description: data.description,
+          areaServed: "CH",
+          knowsLanguage: ["fr-CH", "de-CH", "it-CH", "en"],
+        })} />
+      )}
+      <Sections lang={lang} sections={data.sections} crumbs={page === "home" ? undefined : crumbs} />
+    </Base>
+  )
+}

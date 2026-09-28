@@ -1,0 +1,1109 @@
+{
+  "lang": "fr",
+  "locale": "fr-CH",
+  "ui": {
+    "skip": "Aller au contenu",
+    "menu": "Menu",
+    "close": "Fermer",
+    "primaryNav": "Navigation principale",
+    "languageNav": "Langue",
+    "languageNames": {
+      "fr": "Français",
+      "de": "Deutsch",
+      "it": "Italiano",
+      "en": "English"
+    },
+    "headerCta": "Prendre rendez-vous",
+    "breadcrumb": "Vous êtes ici",
+    "home": "Accueil",
+    "readMore": "Lire",
+    "published": "Publié le",
+    "sources": "Sources",
+    "basis": "Fondement",
+    "footerTagline": "Communication politique en Suisse, avec la technologie la plus récente, utilisée avec soin et dans le respect du droit suisse.",
+    "footerOffer": "Offre",
+    "footerAgency": "Agence",
+    "footerLegal": "Informations légales",
+    "footerNote": "Ce site ne dépose aucun cookie, ne charge aucun contenu de tiers et n'a donc besoin d'aucune bannière de consentement.",
+    "chooseLanguage": "Choisissez votre langue",
+    "form": {
+      "legend": "Votre demande",
+      "name": "Nom",
+      "email": "Adresse électronique",
+      "org": "Parti, comité ou institution",
+      "optional": "facultatif",
+      "topic": "De quoi s’agit-il ?",
+      "topics": [
+        "Une élection ou une votation",
+        "Un mandat pour une administration",
+        "Une demande de la presse",
+        "Un emploi ou un partenariat",
+        "Autre"
+      ],
+      "message": "Votre message",
+      "submit": "Envoyer la demande",
+      "note": "Nous utilisons ces données uniquement pour répondre à votre demande, et nous les effaçons une fois la réponse donnée si aucun mandat n'en découle.",
+      "pressTitle": "Presse",
+      "pressText": "Les journalistes utilisent le même formulaire en choisissant « Une demande de la presse », et un membre de l'équipe répond dans un délai de 3 jours."
+    }
+  },
+  "nav": [
+    {
+      "page": "offer",
+      "label": "Services"
+    },
+    {
+      "page": "policies",
+      "label": "Politique"
+    },
+    {
+      "page": "about",
+      "label": "À propos"
+    },
+    {
+      "page": "contact",
+      "label": "Contact"
+    }
+  ],
+  "pages": {
+    "home": {
+      "title": "Tribea, communication politique en Suisse",
+      "description": "Tribea aide les partis, les candidats, les comités et les administrations en Suisse à se faire entendre, grâce à la technologie la plus récente, utilisée avec soin et dans le respect du droit suisse.",
+      "sections": [
+        {
+          "type": "hero",
+          "h1": "Une tribune pour chaque idée qui compte",
+          "lead": "Tribea aide les partis, les candidats, les comités et les administrations en Suisse à se faire entendre, grâce à la technologie la plus récente, utilisée avec soin et dans le respect du droit suisse.",
+          "primary": {
+            "label": "Prendre rendez-vous",
+            "page": "contact"
+          },
+          "secondary": {
+            "label": "Voir les trois prestations",
+            "page": "offer"
+          },
+          "edge": "La technologie la plus récente, utilisée avec soin et dans le respect du droit suisse.",
+          "photoAlt": "Lucerne vue depuis le lac, avec les tours de la Hofkirche et un bateau à vapeur arborant le drapeau suisse"
+        },
+        {
+          "type": "duo",
+          "h2": "Le travail technique et le contrôle juridique dans une même équipe",
+          "intro": "Les personnes qui développent vos outils de campagne et celles qui les vérifient au regard du droit suisse travaillent dans la même équipe, si bien que **chaque outil, chaque annonce et chaque base de données est vérifié avant d'être utilisé**.",
+          "columns": [
+            {
+              "h3": "Nous maîtrisons les outils",
+              "items": [
+                "Nous développons nous-mêmes les sites de campagne, les outils destinés aux sympathisants et les applications de participation.",
+                "Nous menons des campagnes numériques payantes dans le respect des règles de chaque plateforme.",
+                "Nous utilisons l'IA pour rédiger, traduire et analyser, et une personne vérifie chaque résultat.",
+                "Nous menons des campagnes locales ou nationales, d'un siège au conseil communal à une votation fédérale."
+              ]
+            },
+            {
+              "h3": "Nous les utilisons avec soin",
+              "items": [
+                "Nous n'utilisons jamais de deepfakes ni de personnes synthétiques.",
+                "Nous ne ciblons jamais les personnes en fonction de leurs opinions politiques.",
+                "Nous ne conservons que les données nécessaires à un but précis, hébergées en Suisse ou dans l'UE.",
+                "Nous vérifions chaque élément de campagne au regard du droit avant sa publication."
+              ]
+            }
+          ]
+        },
+        {
+          "type": "services",
+          "h2": "Trois prestations",
+          "items": [
+            {
+              "h3": "Profil",
+              "text": "Un texte qui expose vos positions, une identité visuelle, ainsi qu'un site, une newsletter et des listes de contacts que vous gérez vous-même, pour que l'électorat sache qui vous êtes avant le début de la campagne.",
+              "page": "profile",
+              "linkLabel": "Ce que comprend Profil"
+            },
+            {
+              "h3": "Campagne",
+              "text": "Votre campagne d'élection ou de votation menée dans le respect du droit, de la récolte des signatures jusqu'au dépôt des déclarations de financement après le scrutin.",
+              "page": "campaign",
+              "linkLabel": "Ce que comprend Campagne"
+            },
+            {
+              "h3": "Confiance",
+              "text": "Les relations avec la presse, la veille médiatique, les réponses aux fausses affirmations et la protection des données de vos sympathisants, avant, pendant et après un scrutin.",
+              "page": "trust",
+              "linkLabel": "Ce que comprend Confiance"
+            }
+          ]
+        },
+        {
+          "type": "split",
+          "h2": "De la commune à la Confédération",
+          "body": [
+            "Nous travaillons à tous les niveaux de la politique suisse: un siège dans un conseil communal, une votation cantonale, une initiative populaire fédérale. Chaque niveau a ses propres règles, ses propres délais et ses propres médias, et une campagne doit s'y conformer.",
+            "**Une communication locale et multilingue fait partie de chaque mandat**. Les textes destinés à chaque région sont rédigés par des personnes de langue maternelle qui connaissent son vocabulaire et sa presse, de sorte qu'une campagne qui franchit la frontière linguistique se lit comme si elle avait été écrite sur place."
+          ],
+          "statement": true
+        },
+        {
+          "type": "proof",
+          "h2": "Une discrétion complète, dans le cadre de la loi",
+          "intro": "Le travail politique repose sur la confiance. Nous conduisons chaque mandat de sorte que rien ne puisse vous surprendre dans la presse.",
+          "items": [
+            {
+              "term": "Votre mandat reste confidentiel",
+              "value": "",
+              "text": "Nous ne citons jamais un client, ne montrons jamais son travail et **ne parlons jamais de son mandat sans son accord écrit**. Seules les personnes affectées à votre mandat ont accès à ses dossiers, et nous ne collectons que les données nécessaires, car **ce qui n'est jamais collecté ne peut pas fuiter**."
+            },
+            {
+              "term": "Chaque étape dans le cadre de la loi",
+              "value": "",
+              "text": "Chaque élément est vérifié au regard du droit avant sa publication, chaque annonce payante indique qui l'a financée et chaque don est enregistré dès le premier franc. Si un journaliste pose la question, **la réponse est déjà documentée**."
+            },
+            {
+              "term": "Vos données repartent avec vous",
+              "value": "",
+              "text": "À la fin du mandat, vos listes de contacts et vos documents vous sont remis ou effacés, selon votre choix. **Ils ne sont jamais réutilisés pour un autre client**, y compris une candidate, un candidat ou un comité du camp adverse."
+            }
+          ],
+          "links": [
+            {
+              "label": "Voir chaque outil que nous utilisons, et pourquoi",
+              "page": "privacy"
+            },
+            {
+              "label": "Lire notre politique technologique",
+              "page": "techPolicy"
+            }
+          ]
+        },
+        {
+          "type": "panel",
+          "h2": "Pour les cantons et les communes",
+          "body": [
+            "Un pôle distinct, consacré au secteur public, aide les cantons et les communes à informer la population de manière objective et à mettre en place des services numériques accessibles. Il dispose de ses propres accès aux dossiers, de ses propres contrats et de ses propres données, de sorte que **le travail réalisé pour une administration ne se mélange jamais avec celui réalisé pour un parti ou un comité**."
+          ],
+          "link": {
+            "label": "Contacter le pôle secteur public",
+            "page": "publicSector"
+          }
+        },
+        {
+          "type": "articles",
+          "h2": "Analyses",
+          "intro": "De brèves notes sourcées sur le droit suisse des campagnes, la protection des données et les nouveaux outils de vote, comme la récolte électronique de signatures et l'e-ID.",
+          "link": {
+            "label": "Toutes les analyses",
+            "page": "analysis"
+          }
+        },
+        {
+          "type": "cta",
+          "h2": "Expliquez votre besoin en toute confidentialité",
+          "text": "Votre message est lu uniquement par un membre de notre équipe, qui vous répond personnellement dans un délai de 3 jours. **Rien de ce que vous nous écrivez n'est transmis à un autre client ni à la presse**, et vos données sont effacées si aucun mandat n'en découle. Le premier échange ne vous engage à rien: nous vous disons franchement si nous pouvons vous aider, ou si vous n'avez pas besoin de nous.",
+          "primary": {
+            "label": "Prendre rendez-vous",
+            "page": "contact"
+          }
+        }
+      ]
+    },
+    "offer": {
+      "title": "Services",
+      "description": "Profil, Campagne et Confiance, les trois prestations que Tribea propose aux partis, aux candidats et aux comités en Suisse.",
+      "sections": [
+        {
+          "type": "pageHead",
+          "h1": "Nos prestations pour les partis, les candidats et les comités",
+          "lead": "Profil couvre la période entre deux campagnes, Campagne les mois qui précèdent un scrutin, et Confiance les relations avec la presse et la gestion des données tout au long de ces deux périodes. Vous pouvez commencer par n'importe laquelle de ces prestations."
+        },
+        {
+          "type": "rows",
+          "h2": "Les trois prestations",
+          "items": [
+            {
+              "h3": "Profil",
+              "text": "Un texte qui expose vos positions, une identité visuelle, un plan de contenus mensuel pour votre site, votre newsletter et vos listes de contacts, et un entraînement aux médias.",
+              "page": "profile",
+              "linkLabel": "Demander un état des lieux"
+            },
+            {
+              "h3": "Campagne",
+              "text": "Plan de campagne, récolte de signatures, campagnes numériques payantes, mobilisation, sites de campagne et déclarations de financement.",
+              "page": "campaign",
+              "linkLabel": "Planifier une campagne"
+            },
+            {
+              "h3": "Confiance",
+              "text": "Relations avec la presse, veille médiatique, réponse aux fausses informations, protection des données et contrôle juridique de chaque élément de campagne.",
+              "page": "trust",
+              "linkLabel": "Demander un examen des risques"
+            },
+            {
+              "h3": "Secteur public",
+              "text": "Un pôle distinct qui aide les cantons et les communes à informer la population de manière objective et à mettre en place des services numériques accessibles.",
+              "page": "publicSector",
+              "linkLabel": "Découvrir le pôle secteur public"
+            }
+          ]
+        },
+        {
+          "type": "split",
+          "h2": "Les règles communes aux trois prestations",
+          "body": [
+            "Chaque prestation suit la même méthode: un contrôle juridique avant toute publication, une analyse d'impact avant la constitution de toute base de données de sympathisants et un calendrier des déclarations de financement que votre campagne doit déposer.",
+            "Les administrations sont accompagnées par un pôle distinct, qui dispose de sa propre équipe, de ses propres contrats et de ses propres données."
+          ],
+          "link": {
+            "label": "Notre méthode",
+            "page": "method"
+          }
+        },
+        {
+          "type": "cta",
+          "h2": "Vous ne savez pas par où commencer",
+          "text": "Indiquez-nous l'élection ou la votation que vous préparez et sa date. Nous vous dirons quelle prestation convient, ou si vous avez réellement besoin de nous.",
+          "primary": {
+            "label": "Prendre rendez-vous",
+            "page": "contact"
+          }
+        }
+      ]
+    },
+    "profile": {
+      "title": "Profil",
+      "description": "Profil prépare les candidats, les partis et les comités avant une campagne: un texte qui expose leurs positions, une identité visuelle, ainsi qu'un site, une newsletter et des listes de contacts qu'ils gèrent eux-mêmes.",
+      "sections": [
+        {
+          "type": "pageHead",
+          "h1": "Se faire connaître avant la campagne",
+          "lead": "Profil prépare les candidates et les candidats, les partis et les comités avant le début d'une campagne: un texte qui expose leurs positions, une identité visuelle, ainsi qu'un site, une newsletter et des listes de contacts qu'ils gèrent eux-mêmes."
+        },
+        {
+          "type": "rows",
+          "h2": "Ce que vous obtenez",
+          "items": [
+            {
+              "h3": "Positions et vocabulaire",
+              "text": "Une ou deux pages qui disent ce que vous défendez, sur quels sujets et avec quels mots, comparés aux mots qu'emploient vos adversaires sur les mêmes sujets."
+            },
+            {
+              "h3": "Logo et identité visuelle",
+              "text": "Un logo, des couleurs et des modèles pour les affiches, les publications sur les réseaux sociaux et les lettres, conçus pour un usage local et multilingue, d'une seule commune à l'ensemble du pays."
+            },
+            {
+              "h3": "Plan de contenus",
+              "text": "Un plan mensuel qui indique ce qui est publié sur votre site, dans votre newsletter et dans vos groupes de messagerie, à quel moment et par qui. Ces canaux atteignent directement vos contacts, quelles que soient les modifications qu'un réseau social apporte à ses règles."
+            },
+            {
+              "h3": "Entraînement aux médias",
+              "text": "Une préparation aux interviews et aux débats à la radio, à la télévision et avec les journaux locaux, avec des exercices enregistrés puis analysés ensemble."
+            }
+          ]
+        },
+        {
+          "type": "steps",
+          "h2": "Déroulement",
+          "items": [
+            {
+              "h3": "Positions et identité visuelle",
+              "text": "En quelques semaines, nous définissons ensemble votre positionnement et votre identité visuelle, avec une séance de décision à la fin de chaque semaine."
+            },
+            {
+              "h3": "Plan de contenus mensuel",
+              "text": "Chaque mois, nous validons avec vous un plan de publications pour la période entre les campagnes, et chaque contenu est relu avant sa diffusion."
+            }
+          ]
+        },
+        {
+          "type": "rules",
+          "h2": "Les règles que nous appliquons",
+          "items": [
+            {
+              "h3": "Aucun emblème officiel",
+              "text": "Votre marque n'emprunte jamais la croix suisse ni les armoiries d'un canton ou d'une commune, ce qui évite toute impression de lien officiel.",
+              "basis": "Loi sur la protection des armoiries (LPAP)"
+            },
+            {
+              "h3": "Des contacts fondés sur le consentement",
+              "text": "Vos listes de contacts reposent sur le consentement, et la date, la source et la formulation de chaque consentement sont conservées.",
+              "basis": "Loi fédérale sur la protection des données (LPD), loi fédérale contre la concurrence déloyale (LCD)"
+            },
+            {
+              "h3": "Contrôlé avant publication",
+              "text": "Chaque message est vérifié par une deuxième personne avant sa diffusion.",
+              "basis": "Notre méthode"
+            }
+          ]
+        },
+        {
+          "type": "cta",
+          "h2": "Commencer par un état des lieux",
+          "text": "Lors d'un premier entretien, nous examinons vos supports actuels, votre site et votre couverture médiatique, et nous dressons la liste de ce qu'il faut changer en priorité.",
+          "primary": {
+            "label": "Demander un état des lieux",
+            "page": "contact"
+          }
+        }
+      ]
+    },
+    "campaign": {
+      "title": "Campagne",
+      "description": "Campagne accompagne les campagnes d'élection et de votation dans le respect du droit suisse, de la première analyse de l'électorat aux déclarations de financement déposées après le scrutin.",
+      "sections": [
+        {
+          "type": "pageHead",
+          "h1": "Mener votre campagne dans le respect des règles",
+          "lead": "Une votation ou une élection implique des délais de récolte de signatures, des règles sur la publicité et des déclarations de financement répartis sur plusieurs mois. Campagne prend en charge l'ensemble, de la première analyse de l'électorat aux déclarations déposées après le scrutin."
+        },
+        {
+          "type": "rows",
+          "h2": "Ce que vous obtenez",
+          "items": [
+            {
+              "h3": "Plan de campagne",
+              "text": "Objectifs, messages, canaux, budget et calendrier en quelques pages, validés avec vous avant toute dépense."
+            },
+            {
+              "h3": "Récolte de signatures",
+              "text": "Une récolte pour les initiatives populaires et les référendums conforme au code de conduite de la Chancellerie fédérale, avec des personnes formées à la récolte et des listes vérifiées."
+            },
+            {
+              "h3": "Campagnes numériques payantes",
+              "text": "Des annonces conformes aux règles de chaque plateforme en matière de contenu politique, chaque message payant indiquant qui l'a financé."
+            },
+            {
+              "h3": "Mobilisation",
+              "text": "Des rappels et des appels à voter envoyés uniquement aux personnes qui ont accepté de les recevoir."
+            },
+            {
+              "h3": "Sites de campagne",
+              "text": "Des sites rapides et accessibles, avec des formulaires de dons conformes qui enregistrent ce qu'exigent les règles de financement."
+            },
+            {
+              "h3": "Déclarations de financement",
+              "text": "Les déclarations dues au Contrôle fédéral des finances (CDF) et aux cantons qui ont leurs propres règles, préparées dans les délais."
+            }
+          ]
+        },
+        {
+          "type": "split",
+          "h2": "Prêts pour la suite",
+          "body": [
+            "La récolte électronique de signatures est en préparation au niveau fédéral, et l'identité électronique suisse, l'e-ID, a été acceptée en votation le 28 septembre 2025.",
+            "Nous préparons votre campagne à ces deux outils, afin qu'elle puisse récolter des signatures et vérifier l'identité de ses soutiens en ligne dès que la loi le permet."
+          ],
+          "link": {
+            "label": "Lire nos analyses",
+            "page": "analysis"
+          }
+        },
+        {
+          "type": "rules",
+          "h2": "Les règles que nous appliquons",
+          "items": [
+            {
+              "h3": "Aucun ciblage selon les opinions politiques",
+              "text": "Les opinions politiques sont des données personnelles sensibles, et nous ne les utilisons pas pour choisir qui voit une annonce.",
+              "basis": "Loi fédérale sur la protection des données (LPD), art. 5"
+            },
+            {
+              "h3": "Aucun deepfake",
+              "text": "Nous ne créons ni ne publions jamais d'images, de voix ou de vidéos synthétiques de personnes réelles.",
+              "basis": "Notre politique technologique"
+            },
+            {
+              "h3": "Chaque message payant est signé",
+              "text": "Chaque annonce indique la personne ou le comité qui l'a financée.",
+              "basis": "Règles des plateformes et notre méthode"
+            },
+            {
+              "h3": "Un financement documenté",
+              "text": "Les dons et les budgets de campagne sont enregistrés dès le premier franc, si bien que la déclaration se rédige à partir de données déjà complètes.",
+              "basis": "Loi fédérale sur les droits politiques (LDP), art. 76b à 76d"
+            }
+          ]
+        },
+        {
+          "type": "cta",
+          "h2": "Planifier votre campagne",
+          "text": "Indiquez-nous la date du scrutin et l'ordre de grandeur de votre budget, et nous vous enverrons une première esquisse du plan.",
+          "primary": {
+            "label": "Planifier une campagne",
+            "page": "contact"
+          }
+        }
+      ]
+    },
+    "trust": {
+      "title": "Confiance",
+      "description": "Confiance couvre les relations avec la presse, la réponse aux fausses informations, la sécurité des données de sympathisants et le contrôle juridique de chaque élément de campagne, avant, pendant et après un scrutin.",
+      "sections": [
+        {
+          "type": "pageHead",
+          "h1": "Presse, données et contrôles juridiques",
+          "lead": "Confiance couvre le travail qui entoure une campagne: les questions des journalistes, les fausses affirmations qui circulent, la sécurité des données de vos sympathisants et le contrôle juridique de chaque élément avant sa publication."
+        },
+        {
+          "type": "rows",
+          "h2": "Ce que vous obtenez",
+          "items": [
+            {
+              "h3": "Relations avec la presse",
+              "text": "Communiqués, interviews et entretiens de fond pour les rédactions locales, régionales et nationales, dans la langue dans laquelle chacune publie."
+            },
+            {
+              "h3": "Veille",
+              "text": "Une veille quotidienne des médias et des réseaux sociaux qui traitent de votre sujet, envoyée sous la forme d'un bref résumé écrit."
+            },
+            {
+              "h3": "Réponse aux fausses informations",
+              "text": "Une réponse rapide et documentée lorsqu'un document falsifié ou une fausse affirmation vous concernant circule, avec les éléments qui permettent de la corriger."
+            },
+            {
+              "h3": "Protection des données des bases de sympathisants",
+              "text": "Le registre des activités de traitement, l'analyse d'impact et les mesures de sécurité que vos bases de données exigent."
+            },
+            {
+              "h3": "Contrôle juridique de chaque élément de campagne",
+              "text": "Affiches, publications, lettres et annonces sont vérifiées au regard du droit avant leur publication."
+            }
+          ]
+        },
+        {
+          "type": "steps",
+          "h2": "Déroulement",
+          "items": [
+            {
+              "h3": "Une personne de contact désignée",
+              "text": "Une personne de notre équipe connaît votre dossier et répond lorsqu'un journaliste appelle ou qu'une fausse information circule."
+            },
+            {
+              "h3": "Un plan de réponse convenu à l'avance",
+              "text": "Qui décide, qui s'exprime et ce qui est dit sont fixés avant toute crise, afin que personne n'improvise sous pression."
+            },
+            {
+              "h3": "Un point mensuel",
+              "text": "Chaque mois, nous passons en revue ce qui a changé dans les médias, dans le droit et dans vos données, et nous adaptons le plan."
+            }
+          ]
+        },
+        {
+          "type": "cta",
+          "h2": "Demander un examen des risques",
+          "text": "Nous examinons vos relations avec la presse, les données de vos sympathisants et vos supports de campagne, et nous vous envoyons une liste écrite des risques constatés, classés par urgence.",
+          "primary": {
+            "label": "Demander un examen des risques",
+            "page": "contact"
+          }
+        }
+      ]
+    },
+    "publicSector": {
+      "title": "Secteur public",
+      "description": "Le pôle secteur public de Tribea, distinct du reste de l'agence, aide les cantons et les communes à informer la population de manière objective et à créer des services numériques accessibles.",
+      "sections": [
+        {
+          "type": "pageHead",
+          "h1": "Informer la population de manière objective",
+          "lead": "Les cantons et les communes doivent expliquer les votations, les projets et les prestations à l'ensemble de la population, de manière complète, équilibrée et accessible. Notre pôle secteur public les aide dans cette tâche."
+        },
+        {
+          "type": "rows",
+          "h2": "Ce que fait le pôle",
+          "items": [
+            {
+              "h3": "Information objective sur les votations",
+              "text": "Des explications qui présentent un projet et ses conséquences de manière complète et sans prendre parti, comme les autorités y sont tenues."
+            },
+            {
+              "h3": "Services numériques accessibles",
+              "text": "Des sites et des prestations en ligne conformes aux règles pour l'accessibilité des contenus web (WCAG), utilisables par les personnes en situation de handicap."
+            },
+            {
+              "h3": "Communication locale et multilingue",
+              "text": "Des textes rédigés pour chaque commune, région ou canton par des rédactrices et des rédacteurs de langue maternelle, avec les termes que votre administration emploie déjà."
+            },
+            {
+              "h3": "Outils de participation",
+              "text": "Des consultations et des applications de participation qui ne collectent que les données nécessaires à leur but et publient l'usage qui est fait des résultats."
+            }
+          ]
+        },
+        {
+          "type": "rules",
+          "h2": "Comment le pôle reste séparé",
+          "intro": "Comme nous travaillons aussi pour des partis et des comités, le pôle secteur public est séparé du reste de l'agence par des règles appliquées à chaque mandat.",
+          "items": [
+            {
+              "h3": "Ses propres accès",
+              "text": "Seules les personnes affectées au mandat d'une administration peuvent ouvrir ses dossiers."
+            },
+            {
+              "h3": "Ses propres contrats",
+              "text": "Les mandats suivent les règles des marchés publics et ne sont jamais groupés avec des travaux pour des clients politiques."
+            },
+            {
+              "h3": "Ses propres données",
+              "text": "Les données d'une administration sont stockées séparément et ne sont jamais utilisées pour un autre client."
+            },
+            {
+              "h3": "Aucun mandat en conflit",
+              "text": "Nous ne conseillons pas un parti ou un comité sur une votation lorsque nous informons la population sur cette même votation pour une administration."
+            }
+          ]
+        },
+        {
+          "type": "cta",
+          "h2": "Contacter le pôle secteur public",
+          "text": "Présentez-nous votre projet, ou demandez-nous des références auprès d'administrations avec lesquelles nous avons travaillé.",
+          "primary": {
+            "label": "Contacter le pôle secteur public",
+            "page": "contact"
+          }
+        }
+      ]
+    },
+    "method": {
+      "title": "Notre méthode",
+      "description": "La méthode de Tribea: un contrôle juridique avant publication, une analyse d'impact pour chaque base de données de sympathisants et un calendrier des déclarations de financement.",
+      "sections": [
+        {
+          "type": "pageHead",
+          "h1": "Notre méthode",
+          "lead": "Chaque mandat suit la même méthode, afin que les règles s'appliquent de la même façon, qu'il s'agisse d'une candidate ou d'un candidat, d'un parti, d'un comité ou d'une administration."
+        },
+        {
+          "type": "steps",
+          "h2": "La méthode, du premier entretien au rapport final",
+          "items": [
+            {
+              "h3": "Analyse de la situation de départ",
+              "text": "Nous partons des faits: le calendrier du scrutin, le corps électoral, les arguments déjà en circulation et les règles applicables."
+            },
+            {
+              "h3": "Le plan",
+              "text": "Un plan concis fixe les objectifs, les messages, les canaux, le budget et les échéances, et vous l'approuvez avant le début des travaux."
+            },
+            {
+              "h3": "Analyse d'impact des bases de sympathisants",
+              "text": "Avant de collecter la moindre donnée personnelle, nous consignons pourquoi elle est nécessaire, combien de temps elle est conservée et comment elle est protégée."
+            },
+            {
+              "h3": "Contrôle juridique avant publication",
+              "text": "Une deuxième personne vérifie chaque élément au regard des règles sur les campagnes, la protection des données et la publicité avant sa publication."
+            },
+            {
+              "h3": "Calendrier des déclarations de financement",
+              "text": "Les délais de déclaration des dons et des budgets sont fixés au départ et suivis jusqu'au dépôt de la dernière déclaration."
+            },
+            {
+              "h3": "Rapport final",
+              "text": "Après le scrutin, vous recevez un rapport sur ce qui a été fait, ce que cela a coûté et les enseignements tirés, et les données sont supprimées ou restituées comme convenu."
+            }
+          ]
+        },
+        {
+          "type": "duo",
+          "h2": "Deux documents que nous publions",
+          "intro": "Nos règles sont écrites et publiques, afin que nos clients, les journalistes ou les conseillers à la protection des données puissent vérifier que nous les respectons.",
+          "columns": [
+            {
+              "h3": "Politique technologique",
+              "text": "L'usage que nous faisons de l'IA, qui en vérifie les résultats et ce que nous refusons de faire.",
+              "page": "techPolicy",
+              "linkLabel": "Lire la politique technologique"
+            },
+            {
+              "h3": "La protection des données en clair",
+              "text": "Chaque outil utilisé par le site et par l'agence, son lieu d'hébergement et sa raison d'être.",
+              "page": "privacy",
+              "linkLabel": "Voir tous nos outils"
+            }
+          ]
+        },
+        {
+          "type": "cta",
+          "h2": "Appliquer la méthode à votre projet",
+          "text": "Le premier entretien nous permet de vérifier ensemble si la méthode convient à votre situation.",
+          "primary": {
+            "label": "Prendre rendez-vous",
+            "page": "contact"
+          }
+        }
+      ]
+    },
+    "techPolicy": {
+      "title": "Politique technologique",
+      "description": "L'usage que Tribea fait de l'IA et des autres technologies, qui en vérifie les résultats et ce que l'agence refuse de faire.",
+      "sections": [
+        {
+          "type": "pageHead",
+          "h1": "Politique technologique",
+          "lead": "Cette politique indique à quelles fins nous utilisons la technologie, qui répond du résultat et ce que nous refusons de faire, quel que soit le client. Elle s'applique à l'ensemble du personnel et à chaque mandat."
+        },
+        {
+          "type": "prose",
+          "blocks": [
+            {
+              "h2": "À quoi nous servent les outils d'IA",
+              "paras": [
+                "Nous utilisons des outils d'IA pour trois tâches:"
+              ],
+              "list": [
+                "la rédaction de textes, qu'une personne réécrit ensuite et approuve",
+                "la traduction entre les langues nationales, qu'une rédactrice ou un rédacteur de langue maternelle vérifie ensuite",
+                "l'analyse de grands volumes de documents publics, comme la couverture médiatique ou les réponses à une consultation"
+              ]
+            },
+            {
+              "h2": "Qui vérifie les résultats",
+              "paras": [
+                "Aucun résultat produit par un outil d'IA n'est publié ni transmis à un client sans avoir été vérifié par une personne nommément désignée dans notre équipe. Cette personne répond du résultat comme si elle l'avait rédigé elle-même."
+              ]
+            },
+            {
+              "h2": "Ce que nous ne faisons jamais",
+              "list": [
+                "créer des images, des voix ou des vidéos synthétiques de personnes réelles",
+                "présenter comme réelle une personne générée par une machine, par exemple un faux sympathisant ou un faux témoin",
+                "recourir à une automatisation cachée, par exemple des robots qui publient en se faisant passer pour des citoyens",
+                "choisir qui voit un message politique en fonction de ses opinions politiques",
+                "saisir les données personnelles d'un client dans un outil qui les utilise pour entraîner ses modèles"
+              ]
+            },
+            {
+              "h2": "Comment nous choisissons nos outils",
+              "paras": [
+                "Nous ne choisissons un outil que si nous comprenons ce qu'il fait des données qu'il reçoit. Les outils qui traitent des données personnelles sont hébergés en Suisse ou dans l'Union européenne et font l'objet d'un contrat de sous-traitance. Les outils utilisés actuellement figurent sur notre page consacrée à la protection des données."
+              ]
+            },
+            {
+              "h2": "Modifications de cette politique",
+              "paras": [
+                "Cette politique a été mise à jour pour la dernière fois le 28 septembre 2026. Toute modification est datée et publiée sur cette page."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "privacy": {
+      "title": "La protection des données en clair",
+      "description": "Chaque outil utilisé par le site et par l'agence Tribea, son lieu d'hébergement et sa raison d'être, expliqués en termes simples pour le public.",
+      "sections": [
+        {
+          "type": "pageHead",
+          "h1": "La protection des données en clair",
+          "lead": "Cette page recense chaque outil utilisé par le site et par l'agence, le lieu où il est hébergé et la raison pour laquelle nous l'utilisons. Elle explique notre pratique aux citoyennes, aux citoyens et aux journalistes, et complète la déclaration de protection des données sans la remplacer."
+        },
+        {
+          "type": "table",
+          "h2": "Les outils que nous utilisons",
+          "columns": [
+            "Fonction",
+            "Lieu d'hébergement",
+            "Raison"
+          ],
+          "rows": [
+            [
+              "Diffuse ce site",
+              "Suisse",
+              "Publier le site depuis des serveurs situés en Suisse"
+            ],
+            [
+              "Compte les visites sans cookies",
+              "Suisse",
+              "Savoir quelles pages sont lues, uniquement sous forme agrégée"
+            ],
+            [
+              "Reçoit le formulaire de contact",
+              "Suisse",
+              "Répondre à votre demande"
+            ],
+            [
+              "Envoie la newsletter",
+              "Suisse ou Union européenne",
+              "Envoyer nos analyses aux personnes qui les ont demandées"
+            ],
+            [
+              "Permet de réserver un premier entretien",
+              "Suisse ou Union européenne",
+              "Vous laisser choisir un créneau sans échange de courriels"
+            ],
+            [
+              "Gère nos courriels",
+              "Suisse ou Union européenne",
+              "Correspondre avec nos clients et les journalistes"
+            ]
+          ]
+        },
+        {
+          "type": "split",
+          "h2": "Ce que ce site ne fait pas",
+          "body": [
+            "Il ne dépose aucun cookie, ne charge aucun pixel publicitaire ni aucun module de réseau social, et n'intègre aucune carte ni aucune vidéo qui se chargerait avant votre clic. C'est pourquoi il n'a pas besoin de bannière de consentement.",
+            "Nos statistiques de visite enregistrent des adresses IP tronquées et ne sont consultées que sous forme de totaux."
+          ],
+          "link": {
+            "label": "Lire la déclaration de protection des données",
+            "page": "privacyPolicy"
+          }
+        }
+      ]
+    },
+    "analysis": {
+      "title": "Analyses",
+      "description": "De brèves notes sourcées sur le droit suisse des campagnes, la protection des données et les nouveaux outils de vote.",
+      "sections": [
+        {
+          "type": "pageHead",
+          "h1": "Analyses",
+          "lead": "De brèves notes sourcées sur le droit suisse des campagnes, la protection des données et les nouveaux outils de vote, comme la récolte électronique de signatures et l'e-ID. Chaque note cite ses sources, afin que vous puissiez les vérifier."
+        },
+        {
+          "type": "articleList"
+        },
+        {
+          "type": "newsletter",
+          "h2": "Recevoir les nouvelles notes par courriel",
+          "text": "Nous envoyons un bref courriel lorsqu'une nouvelle note est publiée. Vous confirmez votre adresse par un second courriel, et chaque message contient un lien de désinscription en un clic.",
+          "label": "Adresse électronique",
+          "button": "S'abonner",
+          "consent": "Votre adresse sert uniquement à l'envoi de ces notes. Voir la déclaration de protection des données."
+        }
+      ]
+    },
+    "about": {
+      "title": "À propos",
+      "description": "L'équipe de Tribea, son indépendance et sa politique en matière de clients et de conflits d'intérêts.",
+      "sections": [
+        {
+          "type": "pageHead",
+          "h1": "Qui nous sommes",
+          "lead": "Tribea est une agence de communication politique en Suisse. Son équipe réunit des personnes qui développent des outils numériques et des personnes qui connaissent le droit suisse des campagnes et de la protection des données."
+        },
+        {
+          "type": "rules",
+          "h2": "Clients et conflits d'intérêts",
+          "intro": "Nous travaillons pour des acteurs politiques et pour des administrations. Ces règles le rendent possible.",
+          "items": [
+            {
+              "h3": "Un seul camp par scrutin",
+              "text": "Nous ne conseillons jamais deux camps opposés lors d'une même élection ou d'une même votation."
+            },
+            {
+              "h3": "Des conflits signalés",
+              "text": "Si un nouveau mandat risque d'entrer en conflit avec un mandat en cours, nous en informons les deux clients avant de l'accepter, ou nous le refusons."
+            },
+            {
+              "h3": "Aucun mandat contraire à nos règles",
+              "text": "Nous refusons tout mandat qui exigerait des deepfakes, un ciblage selon les opinions politiques ou un financement non déclaré."
+            },
+            {
+              "h3": "Neutres en notre propre nom",
+              "text": "L'agence ne prend position sur aucune votation ni aucune élection sur ses propres canaux, car les administrations comptent aussi parmi ses clients."
+            },
+            {
+              "h3": "Des travaux montrés uniquement avec accord",
+              "text": "Nous ne citons un client ou ne publions une étude de cas qu'avec son accord écrit."
+            }
+          ]
+        },
+        {
+          "type": "cta",
+          "h2": "Travailler avec nous",
+          "text": "Nous recherchons des personnes qui rédigent, développent ou conseillent dans une ou plusieurs langues nationales, ainsi que des partenaires qui appliquent les mêmes règles.",
+          "primary": {
+            "label": "Prendre contact",
+            "page": "contact"
+          }
+        }
+      ]
+    },
+    "contact": {
+      "title": "Contact",
+      "description": "Contacter Tribea: un court formulaire, un lien de réservation et une personne nommément désignée qui vous répond.",
+      "sections": [
+        {
+          "type": "pageHead",
+          "h1": "Contact",
+          "lead": "Présentez-nous ce que vous préparez. Un membre de l'équipe lit chaque demande et y répond dans un délai de 3 jours."
+        },
+        {
+          "type": "contact"
+        }
+      ]
+    },
+    "legal": {
+      "title": "Mentions légales",
+      "description": "Mentions légales de Tribea.",
+      "sections": [
+        {
+          "type": "pageHead",
+          "h1": "Mentions légales",
+          "lead": "Informations sur l'entreprise responsable de ce site."
+        },
+        {
+          "type": "prose",
+          "blocks": [
+            {
+              "h2": "Entreprise",
+              "paras": [
+                "Tribea, Suisse"
+              ]
+            },
+            {
+              "h2": "Contact",
+              "paras": [
+                "Veuillez utiliser le formulaire de contact de ce site. Un membre de l'équipe répond dans un délai de 3 jours."
+              ]
+            },
+            {
+              "h2": "Responsabilité",
+              "paras": [
+                "Nous vérifions avec soin le contenu de ce site, mais nous ne pouvons pas garantir qu'il soit en tout temps complet, exact et à jour. Les liens vers d'autres sites sont fournis à titre d'information, et nous ne répondons pas de leur contenu."
+              ]
+            },
+            {
+              "h2": "Crédits photographiques",
+              "paras": [
+                "Photographie de la page d'accueil: Diana Shturm, Unsplash."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "privacyPolicy": {
+      "title": "Déclaration de protection des données",
+      "description": "Déclaration de protection des données de Tribea selon la loi fédérale sur la protection des données (LPD).",
+      "sections": [
+        {
+          "type": "pageHead",
+          "h1": "Déclaration de protection des données",
+          "lead": "Cette déclaration indique quelles données personnelles nous traitons par l'intermédiaire de ce site, à quelles fins, où elles sont stockées, qui les reçoit, combien de temps elles sont conservées et comment vous pouvez exercer vos droits selon la loi fédérale sur la protection des données (LPD)."
+        },
+        {
+          "type": "prose",
+          "blocks": [
+            {
+              "h2": "Responsable du traitement",
+              "paras": [
+                "Tribea, Suisse. Pour toute question relative à la protection des données, écrivez-nous au moyen du formulaire de contact de ce site."
+              ]
+            },
+            {
+              "h2": "Consultation du site",
+              "paras": [
+                "Lorsque vous ouvrez une page, le serveur enregistre les données techniques nécessaires pour l'afficher et pour protéger le site: la date et l'heure, la page demandée, le type de navigateur et une adresse IP tronquée de sorte qu'elle ne vous identifie plus. Ces données sont conservées uniquement aussi longtemps que la sécurité du site l'exige, puis effacées.",
+                "Nos statistiques de visite reposent sur les mêmes données tronquées, ne déposent aucun cookie et ne sont consultées que sous forme de totaux."
+              ]
+            },
+            {
+              "h2": "Formulaire de contact et réservation",
+              "paras": [
+                "Lorsque vous nous écrivez, nous traitons votre nom, votre adresse électronique, votre organisation si vous l'indiquez, et votre message, uniquement pour répondre à votre demande. Nous conservons cette correspondance uniquement le temps nécessaire pour y répondre, sauf si elle débouche sur un mandat, auquel cas les règles de conservation du mandat s'appliquent."
+              ]
+            },
+            {
+              "h2": "Newsletter",
+              "paras": [
+                "Si vous vous abonnez, nous traitons votre adresse électronique pour vous envoyer nos notes. Votre abonnement est confirmé par un second courriel, et nous conservons la date, la source et la formulation de votre consentement. Vous pouvez vous désabonner en tout temps au moyen du lien figurant dans chaque message."
+              ]
+            },
+            {
+              "h2": "Destinataires et hébergement",
+              "paras": [
+                "Vos données sont traitées par les prestataires mentionnés sur notre page consacrée à la protection des données, qui agissent pour notre compte dans le cadre d'un contrat de sous-traitance. Le site et ses données sont hébergés en Suisse, et certains services peuvent traiter des données dans l'Union européenne, que la Suisse reconnaît comme offrant une protection adéquate des données."
+              ]
+            },
+            {
+              "h2": "Vos droits",
+              "paras": [
+                "Vous pouvez nous demander quelles données nous détenons sur vous, les faire rectifier ou effacer, et vous opposer à leur traitement, en nous écrivant au moyen du formulaire de contact. Si vous estimez que nous n'avons pas respecté la loi, vous pouvez vous adresser au Préposé fédéral à la protection des données et à la transparence (PFPDT)."
+              ]
+            },
+            {
+              "h2": "Modifications",
+              "paras": [
+                "Cette déclaration a été mise à jour pour la dernière fois le 28 septembre 2026."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "accessibility": {
+      "title": "Accessibilité",
+      "description": "Déclaration d'accessibilité du site de Tribea.",
+      "sections": [
+        {
+          "type": "pageHead",
+          "h1": "Accessibilité",
+          "lead": "Ce site est conçu pour satisfaire au niveau AA des règles pour l'accessibilité des contenus web (WCAG) 2.2, afin que les personnes en situation de handicap puissent l'utiliser avec les outils dont elles se servent."
+        },
+        {
+          "type": "prose",
+          "blocks": [
+            {
+              "h2": "Ce que nous avons fait",
+              "list": [
+                "un contraste du texte d'au moins 4,5 pour 1 sur toutes les pages",
+                "une utilisation complète au clavier, avec un indicateur de focus visible",
+                "des titres et des repères de navigation que les lecteurs d'écran peuvent suivre",
+                "un texte que l'on peut agrandir jusqu'à 200 pour cent sans perte de contenu",
+                "des animations qui se désactivent lorsque votre appareil demande de réduire les mouvements"
+              ]
+            },
+            {
+              "h2": "État",
+              "paras": [
+                "Un audit externe d'accessibilité est prévu avant la mise en ligne. Ses résultats et les éventuels problèmes connus seront publiés sur cette page."
+              ]
+            },
+            {
+              "h2": "Signaler un problème",
+              "paras": [
+                "Si un élément de ce site est difficile à utiliser, signalez-le-nous au moyen du formulaire de contact. Nous répondons dans un délai de 3 jours."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "policies": {
+      "title": "Politique",
+      "description": "Les règles que Tribea applique à chaque mandat: sa méthode, sa politique technologique, le traitement des données et l'accessibilité du site.",
+      "sections": [
+        {
+          "type": "pageHead",
+          "h1": "Les règles que nous appliquons",
+          "lead": "Chaque mandat suit des règles écrites, et nous les publions afin qu'un client, un journaliste ou un conseiller à la protection des données puisse vérifier que nous les respectons."
+        },
+        {
+          "type": "rows",
+          "h2": "Nos règles publiées",
+          "items": [
+            {
+              "h3": "Notre méthode",
+              "text": "Les six étapes que suit chaque mandat, de la première analyse au rapport final, avec le contrôle juridique avant toute publication.",
+              "page": "method",
+              "linkLabel": "Lire la méthode"
+            },
+            {
+              "h3": "Politique technologique",
+              "text": "Ce pour quoi nous utilisons l'IA, qui en vérifie les résultats, et ce que nous refusons de faire pour tout client.",
+              "page": "techPolicy",
+              "linkLabel": "Lire la politique technologique"
+            },
+            {
+              "h3": "La protection des données en clair",
+              "text": "Chaque outil qu'utilisent le site et l'agence, ce qu'il fait et où il est hébergé.",
+              "page": "privacy",
+              "linkLabel": "Voir les outils utilisés"
+            },
+            {
+              "h3": "Déclaration de protection des données",
+              "text": "Le texte juridique qui précise quelles données nous traitons, pourquoi, pendant combien de temps et comment exercer vos droits.",
+              "page": "privacyPolicy",
+              "linkLabel": "Lire la déclaration"
+            },
+            {
+              "h3": "Accessibilité",
+              "text": "Comment le site est conçu pour les personnes en situation de handicap, et comment signaler un problème.",
+              "page": "accessibility",
+              "linkLabel": "Lire la déclaration d'accessibilité"
+            },
+            {
+              "h3": "Clients et conflits d'intérêts",
+              "text": "Pourquoi nous ne conseillons jamais deux camps opposés dans un même scrutin, et quand nous refusons un mandat.",
+              "page": "about",
+              "linkLabel": "Lire notre politique"
+            }
+          ]
+        },
+        {
+          "type": "cta",
+          "h2": "Une question sur nos règles",
+          "text": "Écrivez-nous votre question, et un membre de l'équipe vous répondra dans un délai de 3 jours.",
+          "primary": {
+            "label": "Poser une question",
+            "page": "contact"
+          }
+        }
+      ]
+    }
+  },
+  "articles": [
+    {
+      "slug": "transparence-financement-politique",
+      "date": "2026-09-28",
+      "title": "Ce qu'exigent les règles fédérales de transparence",
+      "description": "Depuis le 23 octobre 2022, les partis et les comités de campagne actifs au niveau fédéral doivent rendre public leur financement. Un bref résumé de qui est concerné et de ce qui doit être déclaré.",
+      "blocks": [
+        {
+          "paras": [
+            "Depuis le 23 octobre 2022, la loi fédérale sur les droits politiques (LDP) oblige les acteurs politiques actifs au niveau fédéral à rendre public leur financement. Le Contrôle fédéral des finances (CDF) reçoit les déclarations, les contrôle et les publie."
+          ]
+        },
+        {
+          "h2": "Qui est concerné",
+          "paras": [
+            "Les partis représentés à l'Assemblée fédérale doivent déclarer chaque année leurs recettes et indiquer le nom de toute personne qui leur a versé plus de CHF 15 000 au cours d'une année. Les comités et les autres acteurs qui dépensent plus de CHF 50 000 pour une campagne en vue d'une votation fédérale ou de l'élection au Conseil national doivent déclarer leur budget et les dons supérieurs à CHF 15 000."
+          ]
+        },
+        {
+          "h2": "Ce que cela signifie pour une campagne",
+          "paras": [
+            "Concrètement, une campagne doit savoir dès son premier franc qui a donné quoi et quand, car la déclaration est due avant le scrutin et le décompte final après celui-ci. Une campagne qui n'enregistre les dons qu'à la fin doit les reconstituer dans l'urgence.",
+            "Plusieurs cantons ont leurs propres règles de transparence pour les votations et les élections cantonales, avec des seuils et des délais différents, qu'il faut vérifier séparément."
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "label": "Loi fédérale sur les droits politiques (LDP), art. 76b à 76d",
+          "url": "https://www.fedlex.admin.ch/eli/cc/1978/688_688_688/fr"
+        },
+        {
+          "label": "Contrôle fédéral des finances (CDF), financement de la politique",
+          "url": "https://www.efk.admin.ch"
+        }
+      ]
+    },
+    {
+      "slug": "bases-sympathisants-protection-donnees",
+      "date": "2026-09-28",
+      "title": "Les bases de données de sympathisants et la loi sur la protection des données",
+      "description": "Une liste de sympathisants révèle leurs opinions politiques, que la loi considère comme des données sensibles. Ce que cela change pour un parti ou un comité.",
+      "blocks": [
+        {
+          "paras": [
+            "Une liste des membres, des donateurs ou des bénévoles d'un parti renseigne sur les opinions politiques de chaque personne qui y figure. La loi fédérale sur la protection des données (LPD), en vigueur depuis le 1er septembre 2023, range les données sur les opinions politiques parmi les données personnelles sensibles."
+          ]
+        },
+        {
+          "h2": "Ce qu'exige la loi",
+          "paras": [
+            "Les données sensibles appellent davantage de précautions que de simples coordonnées. Lorsqu'un traitement est susceptible d'entraîner un risque élevé pour les personnes concernées, le responsable du traitement doit procéder au préalable à une analyse d'impact relative à la protection des données. Les entreprises occupant plus de 250 personnes, ainsi que toute organisation qui traite des données sensibles à grande échelle, doivent tenir un registre des activités de traitement. Une violation de la sécurité des données susceptible d'entraîner un risque élevé doit être annoncée dès que possible au Préposé fédéral à la protection des données et à la transparence (PFPDT)."
+          ]
+        },
+        {
+          "h2": "Ce que cela signifie pour une campagne",
+          "paras": [
+            "Concrètement, une base de données de sympathisants ne devrait contenir que les champs nécessaires à son but, n'être accessible qu'aux personnes qui l'utilisent et être hébergée par un prestataire lié par un contrat de sous-traitance. Consigner la raison d'être de chaque champ avant la première saisie est aussi le moyen le plus rapide de répondre à une personne qui demande quelles données vous détenez à son sujet."
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "label": "Loi fédérale sur la protection des données (LPD), art. 5, 12, 22 et 24",
+          "url": "https://www.fedlex.admin.ch/eli/cc/2022/491/fr"
+        },
+        {
+          "label": "Préposé fédéral à la protection des données et à la transparence (PFPDT)",
+          "url": "https://www.edoeb.admin.ch"
+        }
+      ]
+    }
+  ]
+}
