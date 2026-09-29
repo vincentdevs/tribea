@@ -28,7 +28,7 @@ if (process.env.TRIBEA_MODE === "path") {
       html = html
         .replace(/((?:href|src|action)=")\/(?!\/)/g, `$1${BASE}/`)
         .replace(/(srcset=")([^"]*)/g, (_, k, v) => k + v.replace(/(^|,\s*)\/(?!\/)/g, `$1${BASE}/`))
-        .replace(/url\("\/(?!\/)/g, `url("${BASE}/`);
+        .replace(/url\((['"]?)\/(?!\/)/g, `url($1${BASE}/`);
       writeFileSync(file, html);
     }
   }
