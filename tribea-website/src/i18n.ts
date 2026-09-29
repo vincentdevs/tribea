@@ -53,8 +53,13 @@ export const DEFAULT_LANG: Lang = "de";
 // Vercel): the four languages under /de/, /fr/, /it/ and /en/ of one origin.
 export const MODE: "subdomain" | "path" = process.env.TRIBEA_MODE === "path" ? "path" : "subdomain";
 
+// In path mode the site can also sit under a base path, for example /tribea on
+// GitHub Pages. Root-relative links in the built HTML are rewritten by
+// scripts/split-subdomains.mjs; absolute addresses take the base here.
+export const BASE = (process.env.TRIBEA_BASE ?? "").replace(/\/$/, "");
+
 export function origin(lang: Lang): string {
-  return MODE === "path" ? `${PROTOCOL}://${DOMAIN}` : `${PROTOCOL}://${lang}.${DOMAIN}`;
+  return MODE === "path" ? `${PROTOCOL}://${DOMAIN}${BASE}` : `${PROTOCOL}://${lang}.${DOMAIN}`;
 }
 
 // Address of a page inside its own language site. In subdomain mode there is no

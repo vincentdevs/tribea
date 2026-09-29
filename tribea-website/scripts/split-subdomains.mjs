@@ -1,7 +1,7 @@
 // Turns dist/{lang}/ into one self-contained site per subdomain:
 // fr.tribea.ch serves dist/fr, de.tribea.ch serves dist/de, and so on.
 // Copies the shared assets into each language and writes its robots.txt and sitemap.xml.
-import { cpSync, existsSync, readdirSync, rmSync, statSync, writeFileSync } from "node:fs";
+import { cpSync, existsSync, readdirSync, readFileSync, rmSync, statSync, writeFileSync } from "node:fs";
 import { join, relative } from "node:path";
 
 const LANGS = ["de", "fr", "it", "en"];
@@ -14,7 +14,35 @@ const shared = readdirSync(dist).filter((n) => !LANGS.includes(n));
 // Nothing is split; one sitemap and robots.txt at the root, and a redirect map
 // for the bare path in vercel.json, by Accept-Language, German by default.
 if (process.env.TRIBEA_MODE === "path") {
-  const origin = `${PROTOCOL}://${DOMAIN}`;
+  const BASE = (process.env.TRIBEA_BASE ?? "").replace(/\/$/, "");
+  const origin = `${PROTOCOL}://${DOMAIN}${BASE}`;
+  if (BASE) {
+    // every root-relative address in the HTML (links, images, fonts, forms) moves under the base
+    const walkHtml = (dir) =>
+      readdirSync(dir).flatMap((n) => {
+        const p = join(dir, n);
+        return statSync(p).isDirectory() ? walkHtml(p) : n.endsWith(".html") ? [p] : [];
+      });
+    for (const file of walkHtml(dist)) {
+      let html = readFileSync(file, "utf8");
+      html = html
+        .replace(/((?:href|src|action)=")\/(?!\/)/g, `$1${BASE}/`)
+        .replace(/(srcset=")([^"]*)/g, (_, k, v) => k + v.replace(/(^|,\s*)\/(?!\/)/g, `$1${BASE}/`))
+        .replace(/url\("\/(?!\/)/g, `url("${BASE}/`);
+      writeFileSync(file, html);
+    }
+  }
+  // GitHub Pages cannot redirect by Accept-Language, so the bare address carries a
+  // small page that sends the browser to its language, German by default.
+  writeFileSync(
+    join(dist, "index.html"),
+    `<!doctype html><html lang="de"><head><meta charset="utf-8"><title>Tribea</title><meta name="robots" content="noindex">` +
+      `<meta http-equiv="refresh" content="1;url=${BASE}/de/">` +
+      `<script>(function(){var l=(navigator.languages||[navigator.language||"de"]).join(",").toLowerCase();` +
+      `var m=l.match(/\\b(de|fr|it|en)\\b/);location.replace("${BASE}/"+(m?m[1]:"de")+"/");})();</script>` +
+      `</head><body><p><a href="${BASE}/de/">Deutsch</a> · <a href="${BASE}/fr/">Français</a> · <a href="${BASE}/it/">Italiano</a> · <a href="${BASE}/en/">English</a></p></body></html>\n`,
+  );
+  writeFileSync(join(dist, ".nojekyll"), "");
   const urls = LANGS.flatMap((lang) =>
     pages(join(dist, lang)).map((p) => "/" + relative(dist, p).replace(/index\.html$/, "")),
   ).sort();

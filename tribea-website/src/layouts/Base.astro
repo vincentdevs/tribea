@@ -3,7 +3,7 @@ import "../styles/site.css";
 import Logo from "../components/Logo.astro";
 import BrandSprite from "../components/BrandSprite.astro";
 import LanguagePicker from "../components/LanguagePicker.astro";
-import { LANGS, DOMAIN, PROTOCOL, content, href, section, type Lang } from "../i18n";
+import { LANGS, DOMAIN, PROTOCOL, BASE, content, href, section, type Lang } from "../i18n";
 
 interface Props {
   lang: Lang;
@@ -36,7 +36,7 @@ const footerCols = [
     <meta name="description" content={description} />
     <link rel="canonical" href={alternates[lang]} />
     {LANGS.map((l) => <link rel="alternate" hreflang={content[l].locale} href={alternates[l]} />)}
-    <link rel="alternate" hreflang="x-default" href={`${PROTOCOL}://${DOMAIN}/`} />
+    <link rel="alternate" hreflang="x-default" href={`${PROTOCOL}://${DOMAIN}${BASE}/`} />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <link rel="preload" href="/fonts/newsreader.woff2" as="font" type="font/woff2" crossorigin />
     <link rel="preload" href="/fonts/lato-regular.woff2" as="font" type="font/woff2" crossorigin />
