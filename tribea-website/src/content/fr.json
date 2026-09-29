@@ -53,8 +53,8 @@
       "label": "Services"
     },
     {
-      "page": "policies",
-      "label": "Politique"
+      "page": "method",
+      "label": "Méthode"
     },
     {
       "page": "about",
@@ -72,7 +72,7 @@
       "sections": [
         {
           "type": "hero",
-          "h1": "Une tribune pour chaque idée qui compte",
+          "h1": "Une tribune améliorée pour vos idées",
           "lead": "Tribea aide les partis, les candidats, les comités et les administrations en Suisse à se faire entendre, grâce à la technologie la plus récente, utilisée avec soin et dans le respect du droit suisse.",
           "primary": {
             "label": "Prendre rendez-vous",
@@ -113,6 +113,7 @@
         {
           "type": "services",
           "h2": "Trois prestations",
+          "intro": "Chaque prestation couvre une étape de votre travail: **votre profil avant la campagne, la campagne elle-même jusqu'aux déclarations de financement, puis vos relations avec la presse et les données de vos sympathisants avant, pendant et après le scrutin**.",
           "items": [
             {
               "h3": "Profil",
@@ -564,12 +565,12 @@
     },
     "method": {
       "title": "Notre méthode",
-      "description": "La méthode de Tribea: un contrôle juridique avant publication, une analyse d'impact pour chaque base de données de sympathisants et un calendrier des déclarations de financement.",
+      "description": "Comment Tribea travaille, les trois prestations proposées et les règles de confidentialité appliquées à chaque mandat.",
       "sections": [
         {
           "type": "pageHead",
           "h1": "Notre méthode",
-          "lead": "Chaque mandat suit la même méthode, afin que les règles s'appliquent de la même façon, qu'il s'agisse d'une candidate ou d'un candidat, d'un parti, d'un comité ou d'une administration."
+          "lead": "Cette page réunit notre façon de travailler, les prestations que nous proposons et les règles de confidentialité qui s'appliquent à chaque mandat. La même méthode vaut pour une candidate ou un candidat, un parti, un comité ou une administration."
         },
         {
           "type": "steps",
@@ -602,21 +603,99 @@
           ]
         },
         {
-          "type": "duo",
-          "h2": "Deux documents que nous publions",
-          "intro": "Nos règles sont écrites et publiques, afin que nos clients, les journalistes ou les conseillers à la protection des données puissent vérifier que nous les respectons.",
-          "columns": [
+          "type": "services",
+          "h2": "Trois prestations",
+          "intro": "Chaque prestation couvre une étape de votre travail: **votre profil avant la campagne, la campagne elle-même jusqu'aux déclarations de financement, puis vos relations avec la presse et les données de vos sympathisants avant, pendant et après le scrutin**.",
+          "items": [
+            {
+              "h3": "Profil",
+              "text": "Un texte qui expose vos positions, une identité visuelle, ainsi qu'un site, une newsletter et des listes de contacts que vous gérez vous-même, pour que l'électorat sache qui vous êtes avant le début de la campagne.",
+              "page": "profile",
+              "linkLabel": "Ce que comprend Profil"
+            },
+            {
+              "h3": "Campagne",
+              "text": "Votre campagne d'élection ou de votation menée dans le respect du droit, de la récolte des signatures jusqu'au dépôt des déclarations de financement après le scrutin.",
+              "page": "campaign",
+              "linkLabel": "Ce que comprend Campagne"
+            },
+            {
+              "h3": "Confiance",
+              "text": "Les relations avec la presse, la veille médiatique, les réponses aux fausses affirmations et la protection des données de vos sympathisants, avant, pendant et après un scrutin.",
+              "page": "trust",
+              "linkLabel": "Ce que comprend Confiance"
+            }
+          ]
+        },
+        {
+          "type": "proof",
+          "h2": "Une discrétion complète, dans le cadre de la loi",
+          "intro": "Le travail politique repose sur la confiance. Nous conduisons chaque mandat de sorte que rien ne puisse vous surprendre dans la presse.",
+          "items": [
+            {
+              "term": "Votre mandat reste confidentiel",
+              "value": "",
+              "text": "Nous ne citons jamais un client, ne montrons jamais son travail et **ne parlons jamais de son mandat sans son accord écrit**. Seules les personnes affectées à votre mandat ont accès à ses dossiers, et nous ne collectons que les données nécessaires, car **ce qui n'est jamais collecté ne peut pas fuiter**."
+            },
+            {
+              "term": "Chaque étape dans le cadre de la loi",
+              "value": "",
+              "text": "Chaque élément est vérifié au regard du droit avant sa publication, chaque annonce payante indique qui l'a financée et chaque don est enregistré dès le premier franc. Si un journaliste pose la question, **la réponse est déjà documentée**."
+            },
+            {
+              "term": "Vos données repartent avec vous",
+              "value": "",
+              "text": "À la fin du mandat, vos listes de contacts et vos documents vous sont remis ou effacés, selon votre choix. **Ils ne sont jamais réutilisés pour un autre client**, y compris une candidate, un candidat ou un comité du camp adverse."
+            }
+          ],
+          "links": [
+            {
+              "label": "Voir chaque outil que nous utilisons, et pourquoi",
+              "page": "privacy"
+            },
+            {
+              "label": "Lire notre politique technologique",
+              "page": "techPolicy"
+            },
+            {
+              "label": "Lire la déclaration",
+              "page": "privacyPolicy"
+            }
+          ]
+        },
+        {
+          "type": "rows",
+          "h2": "Nos règles publiées",
+          "items": [
             {
               "h3": "Politique technologique",
-              "text": "L'usage que nous faisons de l'IA, qui en vérifie les résultats et ce que nous refusons de faire.",
+              "text": "Ce pour quoi nous utilisons l'IA, qui en vérifie les résultats, et ce que nous refusons de faire pour tout client.",
               "page": "techPolicy",
               "linkLabel": "Lire la politique technologique"
             },
             {
               "h3": "La protection des données en clair",
-              "text": "Chaque outil utilisé par le site et par l'agence, son lieu d'hébergement et sa raison d'être.",
+              "text": "Chaque outil qu'utilisent le site et l'agence, ce qu'il fait et où il est hébergé.",
               "page": "privacy",
-              "linkLabel": "Voir tous nos outils"
+              "linkLabel": "Voir les outils utilisés"
+            },
+            {
+              "h3": "Déclaration de protection des données",
+              "text": "Le texte juridique qui précise quelles données nous traitons, pourquoi, pendant combien de temps et comment exercer vos droits.",
+              "page": "privacyPolicy",
+              "linkLabel": "Lire la déclaration"
+            },
+            {
+              "h3": "Accessibilité",
+              "text": "Comment le site est conçu pour les personnes en situation de handicap, et comment signaler un problème.",
+              "page": "accessibility",
+              "linkLabel": "Lire la déclaration d'accessibilité"
+            },
+            {
+              "h3": "Clients et conflits d'intérêts",
+              "text": "Pourquoi nous ne conseillons jamais deux camps opposés dans un même scrutin, et quand nous refusons un mandat.",
+              "page": "about",
+              "linkLabel": "Lire notre politique"
             }
           ]
         },
@@ -967,68 +1046,6 @@
               ]
             }
           ]
-        }
-      ]
-    },
-    "policies": {
-      "title": "Politique",
-      "description": "Les règles que Tribea applique à chaque mandat: sa méthode, sa politique technologique, le traitement des données et l'accessibilité du site.",
-      "sections": [
-        {
-          "type": "pageHead",
-          "h1": "Les règles que nous appliquons",
-          "lead": "Chaque mandat suit des règles écrites, et nous les publions afin qu'un client, un journaliste ou un conseiller à la protection des données puisse vérifier que nous les respectons."
-        },
-        {
-          "type": "rows",
-          "h2": "Nos règles publiées",
-          "items": [
-            {
-              "h3": "Notre méthode",
-              "text": "Les six étapes que suit chaque mandat, de la première analyse au rapport final, avec le contrôle juridique avant toute publication.",
-              "page": "method",
-              "linkLabel": "Lire la méthode"
-            },
-            {
-              "h3": "Politique technologique",
-              "text": "Ce pour quoi nous utilisons l'IA, qui en vérifie les résultats, et ce que nous refusons de faire pour tout client.",
-              "page": "techPolicy",
-              "linkLabel": "Lire la politique technologique"
-            },
-            {
-              "h3": "La protection des données en clair",
-              "text": "Chaque outil qu'utilisent le site et l'agence, ce qu'il fait et où il est hébergé.",
-              "page": "privacy",
-              "linkLabel": "Voir les outils utilisés"
-            },
-            {
-              "h3": "Déclaration de protection des données",
-              "text": "Le texte juridique qui précise quelles données nous traitons, pourquoi, pendant combien de temps et comment exercer vos droits.",
-              "page": "privacyPolicy",
-              "linkLabel": "Lire la déclaration"
-            },
-            {
-              "h3": "Accessibilité",
-              "text": "Comment le site est conçu pour les personnes en situation de handicap, et comment signaler un problème.",
-              "page": "accessibility",
-              "linkLabel": "Lire la déclaration d'accessibilité"
-            },
-            {
-              "h3": "Clients et conflits d'intérêts",
-              "text": "Pourquoi nous ne conseillons jamais deux camps opposés dans un même scrutin, et quand nous refusons un mandat.",
-              "page": "about",
-              "linkLabel": "Lire notre politique"
-            }
-          ]
-        },
-        {
-          "type": "cta",
-          "h2": "Une question sur nos règles",
-          "text": "Écrivez-nous votre question, et un membre de l'équipe vous répondra dans un délai de 3 jours.",
-          "primary": {
-            "label": "Poser une question",
-            "page": "contact"
-          }
         }
       ]
     }

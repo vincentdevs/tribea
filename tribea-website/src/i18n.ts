@@ -3,7 +3,7 @@ import fr from "./content/fr.json";
 import de from "./content/de.json";
 import it from "./content/it.json";
 
-export const LANGS = ["fr", "de", "it", "en"] as const;
+export const LANGS = ["de", "fr", "it", "en"] as const;
 export type Lang = (typeof LANGS)[number];
 
 export const content: Record<Lang, any> = { en, fr, de, it };
@@ -30,7 +30,6 @@ export const ROUTES: Record<string, Record<Lang, string>> = {
     it: "metodo/protezione-dati",
   },
   analysis: { en: "analysis", fr: "analyses", de: "analysen", it: "analisi" },
-  policies: { en: "policy", fr: "politique", de: "richtlinie", it: "politica" },
   about: { en: "about", fr: "a-propos", de: "ueber-uns", it: "chi-siamo" },
   contact: { en: "contact", fr: "contact", de: "kontakt", it: "contatto" },
   legal: { en: "legal-notice", fr: "mentions-legales", de: "impressum", it: "note-legali" },
@@ -47,17 +46,24 @@ export const ROUTES: Record<string, Record<Lang, string>> = {
 // For a local preview, build with TRIBEA_DOMAIN=localhost:4321 TRIBEA_PROTOCOL=http.
 export const DOMAIN = process.env.TRIBEA_DOMAIN ?? "tribea.ch";
 export const PROTOCOL = process.env.TRIBEA_PROTOCOL ?? "https";
-export const DEFAULT_LANG: Lang = "fr";
+export const DEFAULT_LANG: Lang = "de";
+
+// Two ways to serve the site. "subdomain" (the production layout): one site per
+// language on its own subdomain. "path" (previews on a single host such as
+// Vercel): the four languages under /de/, /fr/, /it/ and /en/ of one origin.
+export const MODE: "subdomain" | "path" = process.env.TRIBEA_MODE === "path" ? "path" : "subdomain";
 
 export function origin(lang: Lang): string {
-  return `${PROTOCOL}://${lang}.${DOMAIN}`;
+  return MODE === "path" ? `${PROTOCOL}://${DOMAIN}` : `${PROTOCOL}://${lang}.${DOMAIN}`;
 }
 
-// Address of a page inside its own language site, without a language prefix.
+// Address of a page inside its own language site. In subdomain mode there is no
+// language prefix; in path mode the language is the first segment.
 export function href(lang: Lang, page: string): string {
   const slug = ROUTES[page]?.[lang];
   if (slug === undefined) throw new Error(`Unknown page key "${page}"`);
-  return `/${slug ? slug + "/" : ""}`;
+  const prefix = MODE === "path" ? `/${lang}` : "";
+  return `${prefix}/${slug ? slug + "/" : ""}`;
 }
 
 export function articleHref(lang: Lang, index: number): string {
@@ -76,11 +82,10 @@ export const PARENT: Record<string, string> = {
   campaign: "offer",
   trust: "offer",
   publicSector: "offer",
-  method: "policies",
-  techPolicy: "policies",
-  privacy: "policies",
-  privacyPolicy: "policies",
-  accessibility: "policies",
+  techPolicy: "method",
+  privacy: "method",
+  privacyPolicy: "method",
+  accessibility: "method",
 };
 
 // Which top-level navigation item a page belongs to.

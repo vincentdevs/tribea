@@ -107,3 +107,68 @@ document.querySelectorAll<HTMLElement>("[data-focus-group]").forEach((group) => 
     if (!group.contains(e.target as Node)) clear();
   });
 });
+
+// 6. Pointer ring and button pull. Only for a fine pointer that can hover and
+//    when no reduced motion is requested. The native cursor stays visible, the
+//    ring trails it, and the loop sleeps once the ring has caught up.
+const finePointer = window.matchMedia("(hover: hover) and (pointer: fine)").matches;
+if (finePointer && !reduce) {
+  const ring = document.createElement("div");
+  ring.className = "pointer-ring";
+  ring.setAttribute("aria-hidden", "true");
+  document.body.append(ring);
+
+  let x = -100, y = -100, rx = -100, ry = -100, running = false;
+  const step = () => {
+    rx += (x - rx) * 0.2;
+    ry += (y - ry) * 0.2;
+    ring.style.transform = `translate3d(${rx}px, ${ry}px, 0)`;
+    if (Math.abs(x - rx) > 0.1 || Math.abs(y - ry) > 0.1) requestAnimationFrame(step);
+    else running = false;
+  };
+
+  const LINKS = "a, summary, label, input, textarea, select, [data-focus-item], [role='button']";
+  document.addEventListener("pointermove", (e) => {
+    if (e.pointerType !== "mouse") return;
+    x = e.clientX;
+    y = e.clientY;
+    ring.classList.add("is-visible");
+    const target = e.target as Element;
+    const onButton = !!target.closest(".button");
+    ring.classList.toggle("is-button", onButton);
+    ring.classList.toggle("is-link", !onButton && !!target.closest(LINKS));
+    if (!running) {
+      running = true;
+      requestAnimationFrame(step);
+    }
+  }, { passive: true });
+  document.addEventListener("pointerdown", () => ring.classList.add("is-down"));
+  document.addEventListener("pointerup", () => ring.classList.remove("is-down"));
+  document.documentElement.addEventListener("pointerleave", () => ring.classList.remove("is-visible"));
+
+  // While a text field has focus the ring steps away, so it never sits over
+  // what is being typed. It comes back with the next mouse move after the
+  // field is left.
+  const TYPING = "input:not([type='checkbox']):not([type='radio']):not([type='submit']), textarea, select, [contenteditable]";
+  document.addEventListener("focusin", (e) => {
+    if ((e.target as Element).matches?.(TYPING)) ring.classList.add("is-typing");
+  });
+  document.addEventListener("focusout", (e) => {
+    if ((e.target as Element).matches?.(TYPING)) ring.classList.remove("is-typing");
+  });
+
+  // Buttons lean up to 6px towards the pointer and settle back when it leaves.
+  document.querySelectorAll<HTMLElement>(".button").forEach((button) => {
+    button.addEventListener("pointermove", (e) => {
+      const r = button.getBoundingClientRect();
+      const dx = (e.clientX - (r.left + r.width / 2)) / (r.width / 2);
+      const dy = (e.clientY - (r.top + r.height / 2)) / (r.height / 2);
+      button.style.setProperty("--pull-x", `${(dx * 6).toFixed(1)}px`);
+      button.style.setProperty("--pull-y", `${(dy * 4).toFixed(1)}px`);
+    });
+    button.addEventListener("pointerleave", () => {
+      button.style.removeProperty("--pull-x");
+      button.style.removeProperty("--pull-y");
+    });
+  });
+}

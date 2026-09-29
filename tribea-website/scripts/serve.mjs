@@ -6,8 +6,8 @@ import { createServer } from "node:http";
 import { createReadStream, existsSync, statSync } from "node:fs";
 import { extname, join, normalize } from "node:path";
 
-const LANGS = ["fr", "de", "it", "en"];
-const DEFAULT_LANG = "fr";
+const LANGS = ["de", "fr", "it", "en"];
+const DEFAULT_LANG = "de";
 const PORT = Number(process.env.PORT ?? 4321);
 const dist = new URL("../dist/", import.meta.url).pathname;
 const TYPES = {

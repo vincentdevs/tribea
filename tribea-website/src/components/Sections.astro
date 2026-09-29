@@ -6,9 +6,13 @@ interface Props {
   lang: Lang;
   sections: any[];
   crumbs?: { label: string; href?: string }[];
+  page?: string;
 }
 
-const { lang, sections, crumbs } = Astro.props;
+const { lang, sections, crumbs, page } = Astro.props;
+// Pages that have a header illustration in public/images (art-{page}-*.webp).
+const ART = ["offer", "profile", "campaign", "trust", "publicSector", "method", "techPolicy", "privacy", "analysis", "about", "contact"];
+const art = page && ART.includes(page) ? page : null;
 const t = content[lang];
 const f = t.ui.form;
 // Content marks important passages with **double asterisks**; they render as <strong>.
@@ -38,38 +42,39 @@ const articles = t.articles.map((a: any, i: number) => ({ ...a, url: articleHref
       case "hero":
         return (
           <section class="hero">
-              <picture class="hero-bg">
-              <source media="(max-width: 700px)" type="image/webp" srcset="/images/hero-narrow-600.webp 600w, /images/hero-narrow-900.webp 900w" sizes="100vw" />
-              <img
-                src="/images/hero-wide-1600.webp"
-                srcset="/images/hero-wide-1100.webp 1100w, /images/hero-wide-1600.webp 1600w, /images/hero-wide-2400.webp 2400w"
-                sizes="100vw"
-                width="1600"
-                height="615"
-                alt={s.photoAlt}
-                fetchpriority="high"
-                decoding="async"
-              />
-            </picture>
-              <div class="wrap">
+            <div class="wrap">
               <div class="hero-grid">
-                <h1 class="hero-title">
-                  {s.h1.split(" ").map((w: string, n: number) => (
-                    <>
-                      <span class="word" style={`--i:${n}`}><span>{w}</span></span>{" "}
-                    </>
-                  ))}
-                </h1>
-                <div class="hero-side">
-                  <p class="lead" set:html={rich(s.lead)} />
-                  <div class="actions">
-                    <a class="button" href={link(s.primary.page)}>{s.primary.label}</a>
-                    <a class="button button--quiet" href={link(s.secondary.page)}>{s.secondary.label}</a>
+                <div class="hero-text">
+                  <h1 class="hero-title">
+                    {s.h1.split(" ").map((w: string, n: number) => (
+                      <>
+                        <span class="word" style={`--i:${n}`}><span>{w}</span></span>{" "}
+                      </>
+                    ))}
+                  </h1>
+                  <div class="hero-side">
+                    <p class="lead" set:html={rich(s.lead)} />
+                    <div class="actions">
+                      <a class="button" href={link(s.primary.page)}><span class="button-label">{s.primary.label}</span></a>
+                      <a class="button button--quiet" href={link(s.secondary.page)}><span class="button-label">{s.secondary.label}</span></a>
+                    </div>
                   </div>
                 </div>
+                <picture class="hero-art" aria-hidden="true">
+                  <img
+                    src="/images/art-home-wide-1600.webp"
+                    srcset="/images/art-home-wide-1100.webp 1100w, /images/art-home-wide-1600.webp 1600w, /images/art-home-wide-2400.webp 2400w"
+                    sizes="(min-width: 900px) 55vw, 100vw"
+                    width="1600"
+                    height="800"
+                    alt=""
+                    fetchpriority="high"
+                    decoding="async"
+                  />
+                </picture>
               </div>
             </div>
-            </section>
+          </section>
         );
 
       case "pageHead":
@@ -85,8 +90,26 @@ const articles = t.articles.map((a: any, i: number) => ({ ...a, url: articleHref
                   </ol>
                 </nav>
               )}
-              <h1>{s.h1}</h1>
-              <p class="lead" set:html={rich(s.lead)} />
+              <div class="page-head-grid">
+                <div>
+                  <h1>{s.h1}</h1>
+                  <p class="lead" set:html={rich(s.lead)} />
+                </div>
+                {art && (
+                  <picture class="page-head-art" aria-hidden="true">
+                    <img
+                      src={`/images/art-${art}-wide-1100.webp`}
+                      srcset={`/images/art-${art}-wide-1100.webp 1100w, /images/art-${art}-wide-1600.webp 1600w`}
+                      sizes="(min-width: 900px) 50vw, 100vw"
+                      width="1600"
+                      height="800"
+                      alt=""
+                      loading="eager"
+                      decoding="async"
+                    />
+                  </picture>
+                )}
+              </div>
             </div>
           </section>
         );
@@ -148,6 +171,7 @@ const articles = t.articles.map((a: any, i: number) => ({ ...a, url: articleHref
             <div class="wrap">
               <div class="section-head">
                 <h2>{s.h2}</h2>
+                {s.intro && <p set:html={rich(s.intro)} />}
               </div>
               <div class="services">
                 <div class="services-list">
@@ -333,7 +357,7 @@ const articles = t.articles.map((a: any, i: number) => ({ ...a, url: articleHref
                 </div>
                 <div class="form-foot">
                   <p class="form-note">{f.note}</p>
-                  <button class="button" type="submit">{f.submit}</button>
+                  <button class="button" type="submit"><span class="button-label">{f.submit}</span></button>
                 </div>
               </form>
             </div>
@@ -431,7 +455,7 @@ const articles = t.articles.map((a: any, i: number) => ({ ...a, url: articleHref
                   <div class="newsletter-row">
                     <input id="nl-email" name="email" type="email" autocomplete="email" required />
                     <input type="hidden" name="lang" value={lang} />
-                    <button class="button" type="submit">{s.button}</button>
+                    <button class="button" type="submit"><span class="button-label">{s.button}</span></button>
                   </div>
                   <p class="hint">
                     <a href={link("privacyPolicy")}>{s.consent}</a>
@@ -479,7 +503,7 @@ const articles = t.articles.map((a: any, i: number) => ({ ...a, url: articleHref
                 </div>
                 <p class="form-note">{f.note}</p>
                 <div>
-                  <button class="button" type="submit">{f.submit}</button>
+                  <button class="button" type="submit"><span class="button-label">{f.submit}</span></button>
                 </div>
               </form>
               <aside>

@@ -53,8 +53,8 @@
       "label": "Servizi"
     },
     {
-      "page": "policies",
-      "label": "Politica"
+      "page": "method",
+      "label": "Metodo"
     },
     {
       "page": "about",
@@ -72,7 +72,7 @@
       "sections": [
         {
           "type": "hero",
-          "h1": "Una tribuna per ogni idea che conta",
+          "h1": "Una tribuna migliore per le sue idee",
           "lead": "Tribea aiuta partiti, candidati, comitati e amministrazioni in Svizzera a farsi ascoltare, grazie alla tecnologia più recente, usata con cura e nel rispetto del diritto svizzero.",
           "primary": {
             "label": "Fissare un incontro",
@@ -113,6 +113,7 @@
         {
           "type": "services",
           "h2": "Tre modi in cui la aiutiamo",
+          "intro": "Ogni prestazione copre una fase del suo lavoro: **il suo profilo prima della campagna, la campagna stessa fino alle dichiarazioni sul finanziamento, poi i rapporti con la stampa e i dati dei suoi sostenitori prima, durante e dopo la votazione**.",
           "items": [
             {
               "h3": "Profilo",
@@ -564,12 +565,12 @@
     },
     "method": {
       "title": "Come lavoriamo",
-      "description": "Il metodo di Tribea: verifica giuridica prima della pubblicazione, valutazione d'impatto per ogni banca dati di sostenitori e calendario delle dichiarazioni sul finanziamento.",
+      "description": "Come lavora Tribea, i tre servizi che offre e le regole di riservatezza applicate a ogni mandato.",
       "sections": [
         {
           "type": "pageHead",
           "h1": "Come lavoriamo",
-          "lead": "Ogni mandato segue lo stesso metodo, così le regole si applicano allo stesso modo, che il cliente sia una candidata o un candidato, un partito, un comitato o un'amministrazione."
+          "lead": "Questa pagina riunisce il nostro modo di lavorare, i servizi che offriamo e le regole di riservatezza che valgono per ogni mandato. Lo stesso metodo si applica a una candidata o a un candidato, a un partito, a un comitato o a un'amministrazione."
         },
         {
           "type": "steps",
@@ -602,21 +603,99 @@
           ]
         },
         {
-          "type": "duo",
-          "h2": "Due documenti che pubblichiamo",
-          "intro": "Le nostre regole sono scritte e pubbliche, così un cliente, un giornalista o un consulente per la protezione dei dati può chiederci di rispettarle.",
-          "columns": [
+          "type": "services",
+          "h2": "Tre modi in cui la aiutiamo",
+          "intro": "Ogni prestazione copre una fase del suo lavoro: **il suo profilo prima della campagna, la campagna stessa fino alle dichiarazioni sul finanziamento, poi i rapporti con la stampa e i dati dei suoi sostenitori prima, durante e dopo la votazione**.",
+          "items": [
+            {
+              "h3": "Profilo",
+              "text": "Una posizione scritta, un'identità visiva e un sito web, una newsletter ed elenchi di contatti gestiti da lei, così l'elettorato sa chi è prima che inizi la campagna.",
+              "page": "profile",
+              "linkLabel": "Che cosa comprende Profilo"
+            },
+            {
+              "h3": "Campagna",
+              "text": "La sua campagna elettorale o di votazione condotta nel rispetto della legge, dalla raccolta delle firme alle dichiarazioni sul finanziamento presentate dopo la votazione.",
+              "page": "campaign",
+              "linkLabel": "Che cosa comprende Campagna"
+            },
+            {
+              "h3": "Fiducia",
+              "text": "Relazioni con la stampa, monitoraggio dei media, risposte alle affermazioni false e protezione dei dati dei suoi sostenitori, prima, durante e dopo una votazione.",
+              "page": "trust",
+              "linkLabel": "Che cosa comprende Fiducia"
+            }
+          ]
+        },
+        {
+          "type": "proof",
+          "h2": "Discrezione completa, nel rispetto della legge",
+          "intro": "Il lavoro politico si fonda sulla fiducia. Conduciamo ogni mandato in modo che nulla possa sorprenderla sulla stampa.",
+          "items": [
+            {
+              "term": "Il suo mandato resta confidenziale",
+              "value": "",
+              "text": "Non citiamo mai un cliente, non mostriamo il suo lavoro e **non parliamo del suo mandato senza consenso scritto**. Solo le persone assegnate al suo mandato hanno accesso ai documenti, e raccogliamo solo i dati necessari, perché **ciò che non viene mai raccolto non può finire in una fuga di dati**."
+            },
+            {
+              "term": "Ogni passo nel rispetto della legge",
+              "value": "",
+              "text": "Ogni elemento viene verificato sotto il profilo giuridico prima della pubblicazione, ogni annuncio a pagamento indica chi l'ha finanziato e ogni donazione è registrata dal primo franco. Se un giornalista chiede, **la risposta è già documentata**."
+            },
+            {
+              "term": "I suoi dati restano suoi",
+              "value": "",
+              "text": "Alla fine del mandato, i suoi elenchi di contatti e i suoi materiali le vengono restituiti o cancellati, a sua scelta. **Non vengono mai riutilizzati per un altro cliente**, nemmeno per candidati o comitati dello schieramento opposto."
+            }
+          ],
+          "links": [
+            {
+              "label": "Vedere tutti gli strumenti che usiamo e perché",
+              "page": "privacy"
+            },
+            {
+              "label": "Leggere la nostra politica tecnologica",
+              "page": "techPolicy"
+            },
+            {
+              "label": "Leggere l'informativa",
+              "page": "privacyPolicy"
+            }
+          ]
+        },
+        {
+          "type": "rows",
+          "h2": "Le nostre regole pubblicate",
+          "items": [
             {
               "h3": "Politica tecnologica",
-              "text": "Per che cosa usiamo l'IA, chi ne verifica i risultati e che cosa ci rifiutiamo di fare.",
+              "text": "Per che cosa usiamo l'IA, chi ne verifica i risultati e che cosa rifiutiamo di fare per qualsiasi cliente.",
               "page": "techPolicy",
               "linkLabel": "Leggere la politica tecnologica"
             },
             {
-              "h3": "Protezione dei dati in parole semplici",
-              "text": "Ogni strumento usato dal sito e dall'agenzia, dove è ospitato e perché.",
+              "h3": "La protezione dei dati spiegata",
+              "text": "Ogni strumento che usano il sito e l'agenzia, che cosa fa e dove è ospitato.",
               "page": "privacy",
-              "linkLabel": "Vedere tutti gli strumenti che usiamo"
+              "linkLabel": "Vedere gli strumenti usati"
+            },
+            {
+              "h3": "Informativa sulla protezione dei dati",
+              "text": "Il testo giuridico che precisa quali dati trattiamo, perché, per quanto tempo e come esercitare i suoi diritti.",
+              "page": "privacyPolicy",
+              "linkLabel": "Leggere l'informativa"
+            },
+            {
+              "h3": "Accessibilità",
+              "text": "Come il sito è concepito per le persone con disabilità e come segnalare un problema.",
+              "page": "accessibility",
+              "linkLabel": "Leggere la dichiarazione di accessibilità"
+            },
+            {
+              "h3": "Clienti e conflitti d'interesse",
+              "text": "Perché non consigliamo mai due schieramenti opposti nella stessa votazione e quando rifiutiamo un mandato.",
+              "page": "about",
+              "linkLabel": "Leggere la nostra politica"
             }
           ]
         },
@@ -967,68 +1046,6 @@
               ]
             }
           ]
-        }
-      ]
-    },
-    "policies": {
-      "title": "Politica",
-      "description": "Le regole che Tribea applica a ogni mandato: il metodo, la politica tecnologica, il trattamento dei dati e l'accessibilità del sito.",
-      "sections": [
-        {
-          "type": "pageHead",
-          "h1": "Le regole che applichiamo",
-          "lead": "Ogni mandato segue regole scritte, e le pubblichiamo affinché un cliente, un giornalista o un consulente per la protezione dei dati possa verificare che le rispettiamo."
-        },
-        {
-          "type": "rows",
-          "h2": "Le nostre regole pubblicate",
-          "items": [
-            {
-              "h3": "Il nostro metodo",
-              "text": "Le sei tappe che segue ogni mandato, dalla prima analisi al rapporto finale, con la verifica giuridica prima di ogni pubblicazione.",
-              "page": "method",
-              "linkLabel": "Leggere il metodo"
-            },
-            {
-              "h3": "Politica tecnologica",
-              "text": "Per che cosa usiamo l'IA, chi ne verifica i risultati e che cosa rifiutiamo di fare per qualsiasi cliente.",
-              "page": "techPolicy",
-              "linkLabel": "Leggere la politica tecnologica"
-            },
-            {
-              "h3": "La protezione dei dati spiegata",
-              "text": "Ogni strumento che usano il sito e l'agenzia, che cosa fa e dove è ospitato.",
-              "page": "privacy",
-              "linkLabel": "Vedere gli strumenti usati"
-            },
-            {
-              "h3": "Informativa sulla protezione dei dati",
-              "text": "Il testo giuridico che precisa quali dati trattiamo, perché, per quanto tempo e come esercitare i suoi diritti.",
-              "page": "privacyPolicy",
-              "linkLabel": "Leggere l'informativa"
-            },
-            {
-              "h3": "Accessibilità",
-              "text": "Come il sito è concepito per le persone con disabilità e come segnalare un problema.",
-              "page": "accessibility",
-              "linkLabel": "Leggere la dichiarazione di accessibilità"
-            },
-            {
-              "h3": "Clienti e conflitti d'interesse",
-              "text": "Perché non consigliamo mai due schieramenti opposti nella stessa votazione e quando rifiutiamo un mandato.",
-              "page": "about",
-              "linkLabel": "Leggere la nostra politica"
-            }
-          ]
-        },
-        {
-          "type": "cta",
-          "h2": "Una domanda sulle nostre regole",
-          "text": "Ci scriva la sua domanda, e una persona del team le risponderà entro 3 giorni.",
-          "primary": {
-            "label": "Porre una domanda",
-            "page": "contact"
-          }
         }
       ]
     }

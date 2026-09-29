@@ -4,11 +4,57 @@
 import { cpSync, existsSync, readdirSync, rmSync, statSync, writeFileSync } from "node:fs";
 import { join, relative } from "node:path";
 
-const LANGS = ["fr", "de", "it", "en"];
+const LANGS = ["de", "fr", "it", "en"];
 const DOMAIN = process.env.TRIBEA_DOMAIN ?? "tribea.ch";
 const PROTOCOL = process.env.TRIBEA_PROTOCOL ?? "https";
 const dist = new URL("../dist/", import.meta.url).pathname;
 const shared = readdirSync(dist).filter((n) => !LANGS.includes(n));
+
+// Path mode (TRIBEA_MODE=path): one host, the languages under /de/, /fr/, /it/, /en/.
+// Nothing is split; one sitemap and robots.txt at the root, and a redirect map
+// for the bare path in vercel.json, by Accept-Language, German by default.
+if (process.env.TRIBEA_MODE === "path") {
+  const origin = `${PROTOCOL}://${DOMAIN}`;
+  const urls = LANGS.flatMap((lang) =>
+    pages(join(dist, lang)).map((p) => "/" + relative(dist, p).replace(/index\.html$/, "")),
+  ).sort();
+  writeFileSync(
+    join(dist, "sitemap.xml"),
+    `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls
+      .map((u) => `  <url><loc>${origin}${u}</loc></url>`)
+      .join("\n")}\n</urlset>\n`,
+  );
+  writeFileSync(join(dist, "robots.txt"), `User-agent: *\nAllow: /\n\nSitemap: ${origin}/sitemap.xml\n`);
+  const byLanguage = ["fr", "it", "en"].map((l) => ({
+    source: "/",
+    has: [{ type: "header", key: "accept-language", value: `${l}.*` }],
+    destination: `/${l}/`,
+    permanent: false,
+  }));
+  writeFileSync(
+    join(dist, "vercel.json"),
+    JSON.stringify(
+      {
+        trailingSlash: true,
+        redirects: [...byLanguage, { source: "/", destination: "/de/", permanent: false }],
+        headers: [
+          {
+            source: "/(.*)",
+            headers: [
+              { key: "Content-Security-Policy", value: "default-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; form-action 'self'" },
+              { key: "Referrer-Policy", value: "strict-origin-when-cross-origin" },
+              { key: "X-Content-Type-Options", value: "nosniff" },
+            ],
+          },
+        ],
+      },
+      null,
+      2,
+    ) + "\n",
+  );
+  console.log(`${DOMAIN} (path mode): ${urls.length} pages`);
+  process.exit(0);
+}
 
 function pages(dir) {
   return readdirSync(dir).flatMap((name) => {

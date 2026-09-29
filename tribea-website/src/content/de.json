@@ -53,8 +53,8 @@
       "label": "Leistungen"
     },
     {
-      "page": "policies",
-      "label": "Richtlinie"
+      "page": "method",
+      "label": "Arbeitsweise"
     },
     {
       "page": "about",
@@ -72,7 +72,7 @@
       "sections": [
         {
           "type": "hero",
-          "h1": "Eine Bühne für jede Idee, die zählt",
+          "h1": "Eine bessere Bühne für Ihre Ideen",
           "lead": "Tribea hilft Parteien, Kandidierenden, Komitees und Verwaltungen in der Schweiz, Gehör zu finden: mit der neuesten Technologie, sorgfältig eingesetzt und im Einklang mit Schweizer Recht.",
           "primary": {
             "label": "Termin vereinbaren",
@@ -113,6 +113,7 @@
         {
           "type": "services",
           "h2": "Unsere drei Leistungen",
+          "intro": "Jede Leistung deckt einen Abschnitt Ihrer Arbeit ab: **Ihr Profil vor der Kampagne, die Kampagne selbst bis zur Offenlegung der Finanzierung, dann Ihre Medienarbeit und Ihre Unterstützerdaten vor, während und nach der Abstimmung**.",
           "items": [
             {
               "h3": "Profil",
@@ -564,12 +565,12 @@
     },
     "method": {
       "title": "Arbeitsweise",
-      "description": "Die Methode von Tribea: eine rechtliche Prüfung vor der Veröffentlichung, eine Datenschutz-Folgenabschätzung für jede Unterstützerdatenbank und ein Terminplan für die Offenlegung der Finanzierung.",
+      "description": "Wie Tribea arbeitet, welche drei Leistungen wir anbieten und welche Regeln zur Vertraulichkeit für jedes Mandat gelten.",
       "sections": [
         {
           "type": "pageHead",
           "h1": "So arbeiten wir",
-          "lead": "Jedes Mandat folgt derselben Methode, damit die Regeln gleich angewendet werden, ob wir für Kandidierende, eine Partei, ein Komitee oder eine Verwaltung arbeiten."
+          "lead": "Diese Seite zeigt, wie wir arbeiten, welche Leistungen wir anbieten und welche Regeln zur Vertraulichkeit für jedes Mandat gelten. Dieselbe Methode gilt für Kandidierende, Parteien, Komitees und Verwaltungen."
         },
         {
           "type": "steps",
@@ -602,21 +603,99 @@
           ]
         },
         {
-          "type": "duo",
-          "h2": "Zwei Dokumente, die wir veröffentlichen",
-          "intro": "Unsere Regeln sind schriftlich festgehalten und öffentlich, damit Kundschaft, Medienschaffende und Datenschutzbeauftragte uns daran messen können.",
-          "columns": [
+          "type": "services",
+          "h2": "Unsere drei Leistungen",
+          "intro": "Jede Leistung deckt einen Abschnitt Ihrer Arbeit ab: **Ihr Profil vor der Kampagne, die Kampagne selbst bis zur Offenlegung der Finanzierung, dann Ihre Medienarbeit und Ihre Unterstützerdaten vor, während und nach der Abstimmung**.",
+          "items": [
             {
-              "h3": "Technologierichtlinie",
-              "text": "Wofür wir KI einsetzen, wer ihre Ergebnisse prüft und was wir ablehnen.",
+              "h3": "Profil",
+              "text": "Eine schriftliche Position, ein visueller Auftritt sowie eine Website, ein Newsletter und Kontaktlisten, über die Sie selbst verfügen, damit die Stimmberechtigten vor Beginn der Kampagne wissen, wer Sie sind.",
+              "page": "profile",
+              "linkLabel": "Was Profil umfasst"
+            },
+            {
+              "h3": "Kampagne",
+              "text": "Wir führen Ihre Wahl- oder Abstimmungskampagne nach den geltenden Regeln, von der Unterschriftensammlung bis zur Offenlegung der Finanzierung nach der Abstimmung.",
+              "page": "campaign",
+              "linkLabel": "Was Kampagne umfasst"
+            },
+            {
+              "h3": "Vertrauen",
+              "text": "Medienarbeit, Medienbeobachtung, Antworten auf Falschbehauptungen und der Schutz Ihrer Unterstützerdaten, vor, während und nach einer Abstimmung.",
+              "page": "trust",
+              "linkLabel": "Was Vertrauen umfasst"
+            }
+          ]
+        },
+        {
+          "type": "proof",
+          "h2": "Volle Diskretion, im Rahmen des Gesetzes",
+          "intro": "Politische Arbeit beruht auf Vertrauen. Wir führen jedes Mandat so, dass Sie nichts davon in den Medien überrascht.",
+          "items": [
+            {
+              "term": "Ihr Mandat bleibt vertraulich",
+              "value": "",
+              "text": "Wir nennen keine Auftraggebenden, zeigen keine Arbeiten und **sprechen über kein Mandat ohne schriftliche Zustimmung**. Nur die Personen, die Ihrem Mandat zugeteilt sind, haben Zugriff auf die Unterlagen, und wir erheben nur die Daten, die es braucht, denn **was nie erhoben wird, kann auch nicht abfliessen**."
+            },
+            {
+              "term": "Jeder Schritt im Rahmen des Gesetzes",
+              "value": "",
+              "text": "Jedes Element wird vor der Veröffentlichung rechtlich geprüft, jedes bezahlte Inserat nennt, wer es finanziert hat, und jede Spende wird ab dem ersten Franken erfasst. Fragen Medienschaffende nach, **ist die Antwort bereits dokumentiert**."
+            },
+            {
+              "term": "Ihre Daten gehen mit Ihnen",
+              "value": "",
+              "text": "Am Ende des Mandats werden Ihre Kontaktlisten und Unterlagen nach Ihrer Wahl zurückgegeben oder gelöscht. **Sie werden nie für andere Auftraggebende verwendet**, auch nicht für Kandidierende oder Komitees der Gegenseite."
+            }
+          ],
+          "links": [
+            {
+              "label": "Alle eingesetzten Tools und ihr Zweck",
+              "page": "privacy"
+            },
+            {
+              "label": "Unsere Technologierichtlinie lesen",
+              "page": "techPolicy"
+            },
+            {
+              "label": "Datenschutzerklärung lesen",
+              "page": "privacyPolicy"
+            }
+          ]
+        },
+        {
+          "type": "rows",
+          "h2": "Unsere veröffentlichten Regeln",
+          "items": [
+            {
+              "h3": "Technologie-Richtlinie",
+              "text": "Wofür wir KI einsetzen, wer die Ergebnisse prüft und was wir für niemanden tun.",
               "page": "techPolicy",
-              "linkLabel": "Technologierichtlinie lesen"
+              "linkLabel": "Richtlinie lesen"
             },
             {
               "h3": "Datenschutz verständlich erklärt",
-              "text": "Jedes Tool, das die Website und die Agentur nutzen, wo es gehostet wird und warum.",
+              "text": "Jedes Werkzeug, das die Website und die Agentur nutzen, was es tut und wo es gehostet wird.",
               "page": "privacy",
-              "linkLabel": "Alle eingesetzten Tools ansehen"
+              "linkLabel": "Werkzeuge ansehen"
+            },
+            {
+              "h3": "Datenschutzerklärung",
+              "text": "Der rechtliche Text dazu, welche Daten wir bearbeiten, weshalb, wie lange und wie Sie Ihre Rechte ausüben.",
+              "page": "privacyPolicy",
+              "linkLabel": "Datenschutzerklärung lesen"
+            },
+            {
+              "h3": "Barrierefreiheit",
+              "text": "Wie die Website für Menschen mit Behinderungen gebaut ist und wie Sie ein Problem melden.",
+              "page": "accessibility",
+              "linkLabel": "Erklärung zur Barrierefreiheit lesen"
+            },
+            {
+              "h3": "Auftraggebende und Interessenkonflikte",
+              "text": "Warum wir nie zwei gegnerische Lager in derselben Abstimmung beraten und wann wir ein Mandat ablehnen.",
+              "page": "about",
+              "linkLabel": "Unsere Regeln lesen"
             }
           ]
         },
@@ -967,68 +1046,6 @@
               ]
             }
           ]
-        }
-      ]
-    },
-    "policies": {
-      "title": "Richtlinie",
-      "description": "Die Regeln, die Tribea bei jedem Mandat anwendet: die Arbeitsweise, die Technologie-Richtlinie, der Umgang mit Daten und die Barrierefreiheit der Website.",
-      "sections": [
-        {
-          "type": "pageHead",
-          "h1": "Die Regeln, nach denen wir arbeiten",
-          "lead": "Jedes Mandat folgt schriftlichen Regeln, und wir veröffentlichen sie, damit Auftraggebende, Medienschaffende oder Datenschutzberatende prüfen können, dass wir sie einhalten."
-        },
-        {
-          "type": "rows",
-          "h2": "Unsere veröffentlichten Regeln",
-          "items": [
-            {
-              "h3": "Unsere Arbeitsweise",
-              "text": "Die sechs Schritte jedes Mandats, von der ersten Analyse bis zum Schlussbericht, mit der rechtlichen Prüfung vor jeder Veröffentlichung.",
-              "page": "method",
-              "linkLabel": "Arbeitsweise lesen"
-            },
-            {
-              "h3": "Technologie-Richtlinie",
-              "text": "Wofür wir KI einsetzen, wer die Ergebnisse prüft und was wir für niemanden tun.",
-              "page": "techPolicy",
-              "linkLabel": "Richtlinie lesen"
-            },
-            {
-              "h3": "Datenschutz verständlich erklärt",
-              "text": "Jedes Werkzeug, das die Website und die Agentur nutzen, was es tut und wo es gehostet wird.",
-              "page": "privacy",
-              "linkLabel": "Werkzeuge ansehen"
-            },
-            {
-              "h3": "Datenschutzerklärung",
-              "text": "Der rechtliche Text dazu, welche Daten wir bearbeiten, weshalb, wie lange und wie Sie Ihre Rechte ausüben.",
-              "page": "privacyPolicy",
-              "linkLabel": "Datenschutzerklärung lesen"
-            },
-            {
-              "h3": "Barrierefreiheit",
-              "text": "Wie die Website für Menschen mit Behinderungen gebaut ist und wie Sie ein Problem melden.",
-              "page": "accessibility",
-              "linkLabel": "Erklärung zur Barrierefreiheit lesen"
-            },
-            {
-              "h3": "Auftraggebende und Interessenkonflikte",
-              "text": "Warum wir nie zwei gegnerische Lager in derselben Abstimmung beraten und wann wir ein Mandat ablehnen.",
-              "page": "about",
-              "linkLabel": "Unsere Regeln lesen"
-            }
-          ]
-        },
-        {
-          "type": "cta",
-          "h2": "Eine Frage zu unseren Regeln",
-          "text": "Schreiben Sie uns Ihre Frage, und eine Person aus dem Team antwortet innert 3 Tagen.",
-          "primary": {
-            "label": "Frage stellen",
-            "page": "contact"
-          }
         }
       ]
     }

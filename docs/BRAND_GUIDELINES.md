@@ -8,6 +8,7 @@ The implementation files sit next to it:
 - `styles/fonts.css` declares the `@font-face` rules and the `--font-*` variables.
 - `styles/tokens.css` declares the colour variables.
 - `logo/` holds the wordmark and the symbol as SVG.
+- `docs/GOTCHAS.md` lists what must not be repeated and the checks every new page or artifact passes.
 - `tribea-website/README.md` records every decision locked for the website and the mistakes not to repeat.
 
 In code, import both stylesheets and use the variables rather than hard-coded font names or hex values.
@@ -123,7 +124,7 @@ Ruled out for text: Cool Steel on White (2.67:1).
 
 ## Components (website)
 
-1. **Buttons:** sharp corners, 54px high (44px in the header). Primary is Black with White text; secondary is White with a Black 1px border. On hover a Blue Slate fill slides in from left to right. The header button is White on Black.
+1. **Buttons:** sharp corners, 54px high (44px in the header). Primary is Black with White text, and a White fill wipes in from the left on hover. Secondary is White with no outline, and a Black fill wipes in on hover. Any button turns Blue Slate when pressed. The header button is White on Black with a Blue Slate hover.
 2. **Links:** Blue Slate with a Cool Steel underline that tightens and darkens on hover.
 3. **Language picker:** the current language code only (for example "FR"), no frame, underlined on hover. On click, a straight Black panel drops down, opening to the right of the code and away from the call to action, listing the four languages by their own name.
 4. **Forms:** no boxes. Each field is a single 1px Black line that never changes weight or colour; the label turns Black with a small square beside it when the field is active. Choices are small squares that fill with Black.

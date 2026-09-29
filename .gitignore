@@ -5,3 +5,6 @@ tribea-website/.astro/
 tribea-website/public/fonts/
 .env
 .env.*
+
+# earlier illustration versions, kept locally for reference only
+tribea-website/assets/illustrations/line-v1/

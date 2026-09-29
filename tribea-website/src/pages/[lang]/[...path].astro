@@ -91,7 +91,7 @@ else crumbs.push({ label: data.title });
           knowsLanguage: ["fr-CH", "de-CH", "it-CH", "en"],
         })} />
       )}
-      <Sections lang={lang} sections={data.sections} crumbs={page === "home" ? undefined : crumbs} />
+      <Sections lang={lang} sections={data.sections} crumbs={page === "home" ? undefined : crumbs} page={a ? undefined : page} />
     </Base>
   )
 }

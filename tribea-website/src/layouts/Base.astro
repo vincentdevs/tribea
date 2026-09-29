@@ -21,7 +21,7 @@ const headerNav = t.nav;
 const fullTitle = page === "home" ? title : `${title} | Tribea`;
 const footerCols = [
   { title: t.ui.footerOffer, pages: ["profile", "campaign", "trust", "publicSector"] },
-  { title: t.ui.footerAgency, pages: ["policies", "method", "analysis", "about", "contact"] },
+  { title: t.ui.footerAgency, pages: ["method", "analysis", "about", "contact"] },
   { title: t.ui.footerLegal, pages: ["privacy", "privacyPolicy", "legal", "accessibility"] },
 ];
 ---
@@ -66,7 +66,7 @@ const footerCols = [
             }
           </ul>
           <LanguagePicker lang={lang} alternates={alternates} id="lang-header" />
-          <a class="button header-cta" href={href(lang, "contact")}>{t.ui.headerCta}</a>
+          <a class="button header-cta" href={href(lang, "contact")}><span class="button-label">{t.ui.headerCta}</span></a>
         </nav>
 
         <details class="menu">
@@ -89,7 +89,7 @@ const footerCols = [
               </ul>
             </nav>
             <LanguagePicker lang={lang} alternates={alternates} id="lang-menu" />
-            <a class="button" href={href(lang, "contact")}>{t.ui.headerCta}</a>
+            <a class="button" href={href(lang, "contact")}><span class="button-label">{t.ui.headerCta}</span></a>
           </div>
         </details>
       </div>

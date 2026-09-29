@@ -1,8 +1,8 @@
 # Tribea Website
 
-The public website of Tribea, a political communication agency in Switzerland, in French, German, Italian and English. It serves parties, candidates, committees and administrations, and it is built to prove what the agency promises its clients: nothing loads from third parties, no cookie is set, and no consent banner is needed.
+The public website of Tribea, a political communication agency in Switzerland, in German, French, Italian and English. It serves parties, candidates, committees and administrations, and it is built to prove what the agency promises its clients: nothing loads from third parties, no cookie is set, and no consent banner is needed.
 
-**Before changing anything, read this file and `../docs/BRAND_GUIDELINES.md`.** Every rule below was decided with the client on 28 September 2026, most of them after a first version got it wrong. Changing one of them needs the client's explicit approval.
+**Before changing anything, read this file, `../docs/BRAND_GUIDELINES.md` and `../docs/GOTCHAS.md`.** Every rule below was decided with the client on 28 September 2026, most of them after a first version got it wrong. Changing one of them needs the client's explicit approval.
 
 ---
 
@@ -33,9 +33,9 @@ The build runs four steps: it builds WOFF2 fonts from `../fonts` and copies the 
 
 ### Structure
 
-- **One subdomain per language:** `fr.tribea.ch`, `de.tribea.ch`, `it.tribea.ch`, `en.tribea.ch`. The bare domain redirects to the browser language, French by default. There is no language chooser page.
-- **Navigation:** Services, Politique (singular), À propos, Contact, then the main button, then the language code at the far right.
-- **Services** lists Profil, Campagne, Confiance and Secteur public. **Politique** gathers the method, the technology policy, privacy in plain language, the privacy policy, accessibility and the conflicts policy. **Analyses** is reached from the home page and the footer, not the navigation.
+- **One subdomain per language:** `de.tribea.ch`, `fr.tribea.ch`, `it.tribea.ch`, `en.tribea.ch`, always listed in that order. The bare domain redirects to the browser language, German by default. There is no language chooser page.
+- **Navigation:** Services, Méthode, À propos, Contact, then the main button, then the language code at the far right. In the other languages the second item is Arbeitsweise, Metodo and Method.
+- **Services** lists Profil, Campagne, Confiance and Secteur public. **Méthode** (`/methode/`) explains how we work (the six steps), the three services, the confidentiality rules of every mandate and the list of published rules; the technology policy, privacy in plain language, the privacy policy and accessibility sit one level below it. The former Politique page was removed on 28 September 2026 and its content moved into Méthode. **Analyses** is reached from the home page and the footer, not the navigation.
 - **Every page ends with a real contact form** (name, email, message), never a lone button.
 
 ### Look
@@ -45,9 +45,11 @@ The build runs four steps: it builds WOFF2 fonts from `../fonts` and copies the 
 - **Logo:** wordmark only in the header and footer. The round symbol is the favicon, White on a Black square.
 - **Fonts:** Newsreader 500 for headings, Lato for everything else.
 - **Text:** headings Black; all body text Lato 17px on 1.65 in Blue Slate; only the hero introduction is larger; bold passages in Black.
-- **Hero (home page only):** full height, text left and centred vertically, headline on two lines in every language, the Lucerne photograph (Diana Shturm, Unsplash, credited in the legal notice) as a Blue Slate duotone at 85 percent opacity under a 70 percent White layer. Inner pages have no photograph.
+- **Hero (home page):** full height, text left and centred vertically, headline on two lines in every language ("Une tribune améliorée pour vos idées" and its three localizations, since 29 September 2026). Beside the text, built like the inner page headers only larger, a monochrome watercolour of a candidate in a dark blazer and tie in a lively, friendly exchange with residents on a Swiss market square, painted with an irregular wash border rather than a straight edge, at full opacity, in the flow of the page (7 of 12 columns on desktop, below the text on phones) so the untouched paper of the painting sits under the headline, no gradient, no fade. The Lucerne photograph was retired on 29 September 2026; its files remain in `public/images` until removed.
+- **Header illustrations (every content page):** a loose monochrome watercolour, indigo washes on white paper with a few ink lines, recoloured to a Blue Slate duotone by `scripts/build-illustrations.py` from `assets/illustrations/{page}-source.png`, shown beside the heading at full opacity, no gradient, smaller than the hero one, below the text on phones. The first line-drawing set was rejected the same day as too plain and is kept in `assets/illustrations/line-v1/` for reference only. Each scene is modern, set in present-day Switzerland, and shows the page's subject through the agency's values: people talking, documents checked before use, data handed back, no flags, no deepfake imagery, no crowd. The legal notice, privacy policy, accessibility statement and articles have none. The list of pages with a drawing is `ART` in `src/components/Sections.astro`.
 - **Sharp corners everywhere.** No rounded buttons, boxes or fields.
-- **Buttons:** Black or White with a Black border; on hover a Blue Slate fill slides in from the left.
+- **Buttons:** the primary is Black and a White fill wipes in from the left on hover; the secondary is White with no outline and a Black fill wipes in on hover. Either one turns Blue Slate when clicked. Both lean up to 6px towards the pointer. The header button keeps a Blue Slate hover because it sits on Black.
+- **Pointer ring:** a thin Cool Steel ring trails the native cursor, widens in Blue Slate over links and fields, and steps aside over buttons. Fine pointers only, off for reduced motion.
 - **Language picker:** the code only ("FR"), no frame; a straight Black panel drops down, opening to the right, away from the button.
 - **Forms:** one 1px Black line per field, never a box, never a colour or weight change; square choice boxes; the list of topics ends with « Autre ».
 - **Lines:** separators only between items, never above the first or below the last. Rows in two columns share their lines.
@@ -82,9 +84,9 @@ Each of these shipped in an earlier version on 28 September 2026 and was rejecte
 | Cherry or Rosewood on step numbers, buttons or rules | The website is Black, White, grey, Blue Slate | Blue Slate |
 | A language chooser page at `/`, then boxed language pills, then arrows | Friction, visual noise | Subdomain redirect, code-only picker, straight panel |
 | Eyebrows, accent bars under headings, the line under the hero buttons | Generated-design tells | Headings carry their own weight |
-| Hand-drawn scene illustrations, bento grids, stats bands, watermark symbol, frame rails | Template look | Photography on the home hero, drawn icons, typographic sections |
+| Flat stock-style scene illustrations, bento grids, stats bands, watermark symbol, frame rails | Template look | Since 29 September 2026, one commissioned-style line drawing per page header in Blue Slate, drawn icons, typographic sections |
 | Scroll-triggered fades on every section, the rotating guarantees carousel | Motion without a reason | Interaction-only motion |
-| Photograph in every page header | Repetitive | Home hero only |
+| The same photograph in every page header | Repetitive | One drawing per page, each showing that page's subject |
 | Boxed form fields, round radios, a hint under the message field | Heavy, cluttered | Single-line fields, square choices |
 | Lines above the first and below the last item | Frames a list that needs no frame | Lines between items only |
 | Mixed paragraph sizes (15, 16, 18px) and mixed colours | Looked unfinished | One body style |

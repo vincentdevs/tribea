@@ -53,8 +53,8 @@
       "label": "Services"
     },
     {
-      "page": "policies",
-      "label": "Policy"
+      "page": "method",
+      "label": "Method"
     },
     {
       "page": "about",
@@ -72,7 +72,7 @@
       "sections": [
         {
           "type": "hero",
-          "h1": "A tribune for every idea that matters",
+          "h1": "A better platform for your ideas",
           "lead": "Tribea helps parties, candidates, committees and administrations in Switzerland be heard, with the latest technology used with care and within Swiss law.",
           "primary": {
             "label": "Book a first conversation",
@@ -113,6 +113,7 @@
         {
           "type": "services",
           "h2": "Three ways we help",
+          "intro": "Each service covers one stage of your work: **your profile before the campaign, the campaign itself up to the finance declarations, then your press relations and supporter data before, during and after the vote**.",
           "items": [
             {
               "h3": "Profile",
@@ -564,12 +565,12 @@
     },
     "method": {
       "title": "How we work",
-      "description": "Tribea's method: a legal check before publication, an impact assessment for every supporter database, and a calendar of finance declarations.",
+      "description": "How Tribea works, the three services it offers and the confidentiality rules applied to every mandate.",
       "sections": [
         {
           "type": "pageHead",
           "h1": "How we work",
-          "lead": "Every mandate follows the same method, so the rules are applied in the same way whether the client is a candidate, a party, a committee or an administration."
+          "lead": "This page sets out how we work, the services we offer and the confidentiality rules that apply to every mandate. The same method applies whether the client is a candidate, a party, a committee or an administration."
         },
         {
           "type": "steps",
@@ -602,21 +603,99 @@
           ]
         },
         {
-          "type": "duo",
-          "h2": "Two documents we publish",
-          "intro": "Our rules are written down and public, so a client, a journalist or a data protection officer can hold us to them.",
-          "columns": [
+          "type": "services",
+          "h2": "Three ways we help",
+          "intro": "Each service covers one stage of your work: **your profile before the campaign, the campaign itself up to the finance declarations, then your press relations and supporter data before, during and after the vote**.",
+          "items": [
+            {
+              "h3": "Profile",
+              "text": "A written position, a visual identity, and a website, newsletter and contact lists that you control, so voters know who you are before the campaign starts.",
+              "page": "profile",
+              "linkLabel": "What Profile includes"
+            },
+            {
+              "h3": "Campaign",
+              "text": "Your election or vote campaign run within the law, from collecting signatures to filing the finance declarations after the vote.",
+              "page": "campaign",
+              "linkLabel": "What Campaign includes"
+            },
+            {
+              "h3": "Trust",
+              "text": "Press relations, media monitoring, answers to false claims and the protection of your supporter data, before, during and after a vote.",
+              "page": "trust",
+              "linkLabel": "What Trust includes"
+            }
+          ]
+        },
+        {
+          "type": "proof",
+          "h2": "Full discretion, within the law",
+          "intro": "Political work depends on trust. We handle every mandate so that nothing about it can surprise you in the press.",
+          "items": [
+            {
+              "term": "Your mandate stays confidential",
+              "value": "",
+              "text": "We never name a client, show their work or **talk about their mandate without written consent**. Only the people assigned to your mandate can open its files, and we collect only the data it needs, because **what is never collected cannot leak**."
+            },
+            {
+              "term": "Every step within the law",
+              "value": "",
+              "text": "Every item is checked against the law before it is published, every paid message names who paid for it, and every donation is recorded from the first franc. If a journalist asks, **the answer is already documented**."
+            },
+            {
+              "term": "Your data leaves with you",
+              "value": "",
+              "text": "At the end of the mandate, your contact lists and materials are returned to you or deleted, as you choose. **They are never reused for another client**, including a candidate or committee on the opposing side."
+            }
+          ],
+          "links": [
+            {
+              "label": "See every tool we use and why",
+              "page": "privacy"
+            },
+            {
+              "label": "Read our technology policy",
+              "page": "techPolicy"
+            },
+            {
+              "label": "Read the privacy policy",
+              "page": "privacyPolicy"
+            }
+          ]
+        },
+        {
+          "type": "rows",
+          "h2": "Our published rules",
+          "items": [
             {
               "h3": "Technology policy",
-              "text": "What we use AI for, who reviews its output, and what we refuse to do.",
+              "text": "What we use AI for, who reviews its output, and what we refuse to do for any client.",
               "page": "techPolicy",
               "linkLabel": "Read the technology policy"
             },
             {
               "h3": "Privacy in plain language",
-              "text": "Every tool the website and the agency use, where it is hosted and why.",
+              "text": "Every tool the website and the agency use, what it does and where it is hosted.",
               "page": "privacy",
-              "linkLabel": "See every tool we use"
+              "linkLabel": "See the tools we use"
+            },
+            {
+              "h3": "Privacy policy",
+              "text": "The legal statement on which data we process, why, for how long and how you exercise your rights.",
+              "page": "privacyPolicy",
+              "linkLabel": "Read the privacy policy"
+            },
+            {
+              "h3": "Accessibility",
+              "text": "How the website is built for people with disabilities, and how to report a problem.",
+              "page": "accessibility",
+              "linkLabel": "Read the accessibility statement"
+            },
+            {
+              "h3": "Clients and conflicts",
+              "text": "Why we never advise two opposing camps in the same vote, and when we decline a mandate.",
+              "page": "about",
+              "linkLabel": "Read our policy on conflicts"
             }
           ]
         },
@@ -967,68 +1046,6 @@
               ]
             }
           ]
-        }
-      ]
-    },
-    "policies": {
-      "title": "Policy",
-      "description": "The rules Tribea applies to every mandate: its method, its technology policy, how it handles data and how the website is made accessible.",
-      "sections": [
-        {
-          "type": "pageHead",
-          "h1": "The rules we work by",
-          "lead": "Every mandate follows written rules, and they are published so that a client, a journalist or a data protection officer can check that we keep them."
-        },
-        {
-          "type": "rows",
-          "h2": "Our published rules",
-          "items": [
-            {
-              "h3": "Our method",
-              "text": "The six steps every mandate follows, from the first analysis to the final report, with the legal check before anything is published.",
-              "page": "method",
-              "linkLabel": "Read the method"
-            },
-            {
-              "h3": "Technology policy",
-              "text": "What we use AI for, who reviews its output, and what we refuse to do for any client.",
-              "page": "techPolicy",
-              "linkLabel": "Read the technology policy"
-            },
-            {
-              "h3": "Privacy in plain language",
-              "text": "Every tool the website and the agency use, what it does and where it is hosted.",
-              "page": "privacy",
-              "linkLabel": "See the tools we use"
-            },
-            {
-              "h3": "Privacy policy",
-              "text": "The legal statement on which data we process, why, for how long and how you exercise your rights.",
-              "page": "privacyPolicy",
-              "linkLabel": "Read the privacy policy"
-            },
-            {
-              "h3": "Accessibility",
-              "text": "How the website is built for people with disabilities, and how to report a problem.",
-              "page": "accessibility",
-              "linkLabel": "Read the accessibility statement"
-            },
-            {
-              "h3": "Clients and conflicts",
-              "text": "Why we never advise two opposing camps in the same vote, and when we decline a mandate.",
-              "page": "about",
-              "linkLabel": "Read our policy on conflicts"
-            }
-          ]
-        },
-        {
-          "type": "cta",
-          "h2": "A question about our rules",
-          "text": "Write to us with your question, and a member of the team will answer within 3 days.",
-          "primary": {
-            "label": "Ask a question",
-            "page": "contact"
-          }
         }
       ]
     }

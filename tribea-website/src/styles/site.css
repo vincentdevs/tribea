@@ -2131,3 +2131,218 @@ main a:not(.button) { font-size: inherit; }
   --seal-inner: var(--tribea-white);
 }
 .tint .guarantee-icon { --seal-inner: var(--surface); }
+
+/* ---------- Calls to action, fourth version ----------
+   One behaviour for every button, so two buttons side by side never disagree.
+   Hover: the colours stay as they are, a line draws itself under the label from
+   the left, the label moves 3px and the button leans towards the pointer.
+   Click: the button turns Blue Slate with White text.
+   Primary: Black with White text. Secondary: White with Black text, no outline. */
+.button {
+  transition: color 160ms ease, border-color 160ms ease, background-color 160ms ease,
+    translate 380ms cubic-bezier(0.2, 0.7, 0.2, 1);
+  translate: var(--pull-x, 0px) var(--pull-y, 0px);
+}
+.button::before { display: none; }
+.button:hover {
+  color: var(--tribea-white);
+  border-color: var(--tribea-black);
+}
+.button > .button-label {
+  position: relative;
+  display: inline-block;
+  transition: transform 380ms cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+.button > .button-label::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -5px;
+  height: 1px;
+  background: currentColor;
+  transform: scaleX(0);
+  transform-origin: left center;
+  transition: transform 380ms cubic-bezier(0.65, 0, 0.35, 1);
+}
+.button:hover > .button-label { transform: translateX(3px); }
+.button:hover > .button-label::after { transform: scaleX(1); }
+
+.button--quiet,
+.button--quiet:hover {
+  background: var(--tribea-white);
+  color: var(--tribea-black);
+  border-color: var(--tribea-white);
+}
+.site-header .header-cta,
+.site-header .header-cta:hover,
+.menu-panel .button,
+.menu-panel .button:hover {
+  background: var(--tribea-white);
+  color: var(--tribea-black);
+  border-color: var(--tribea-white);
+}
+/* pressed: every call to action turns Blue Slate */
+.button:active,
+.button:active:hover,
+.button--quiet:active,
+.site-header .header-cta:active,
+.menu-panel .button:active {
+  background: var(--tribea-blue-slate);
+  color: var(--tribea-white);
+  border-color: var(--tribea-blue-slate);
+}
+
+/* ---------- Pointer ring ----------
+   A thin ring trails the native cursor, which stays visible. It widens over
+   links and fields and steps aside over buttons, which answer on their own.
+   Only on devices with a fine pointer and without a reduced-motion request. */
+.pointer-ring {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 60;
+  width: 34px;
+  height: 34px;
+  margin: -17px 0 0 -17px;
+  border: 1px solid var(--tribea-cool-steel);
+  border-radius: 50%;
+  pointer-events: none;
+  opacity: 0;
+  transition: width 260ms cubic-bezier(0.2, 0.7, 0.2, 1), height 260ms cubic-bezier(0.2, 0.7, 0.2, 1),
+    margin 260ms cubic-bezier(0.2, 0.7, 0.2, 1), border-color 200ms ease, opacity 200ms ease;
+  will-change: transform;
+}
+.pointer-ring.is-visible { opacity: 1; }
+.pointer-ring.is-link {
+  width: 56px;
+  height: 56px;
+  margin: -28px 0 0 -28px;
+  border-color: var(--tribea-blue-slate);
+}
+.pointer-ring.is-button { opacity: 0; }
+.pointer-ring.is-down {
+  width: 24px;
+  height: 24px;
+  margin: -12px 0 0 -12px;
+}
+@media (hover: none), (pointer: coarse), (prefers-reduced-motion: reduce) {
+  .pointer-ring { display: none; }
+  .button { translate: none; }
+}
+
+/* Two-column lists (duo): the items had 14px between them and the columns
+   40px, which read as one dense block. Same rhythm as the other separated lists. */
+.duo { column-gap: clamp(40px, 6vw, 96px); }
+.duo-col h3 { margin-bottom: 12px; }
+.duo-col li { padding-block: 22px; }
+.duo-col li:first-of-type { padding-top: 12px; }
+
+/* More room between a section introduction and what follows it, so large
+   titles (guarantees, services, duo columns) do not sit on the intro. */
+.section-head:has(h2 + p) { margin-bottom: clamp(48px, 5.5vw, 72px); }
+.pointer-ring.is-typing { opacity: 0; }
+
+/* ---------- Header illustrations ----------
+   Blue Slate line drawings on white at half opacity, no gradient, no fade.
+   Home: the drawing covers the whole hero behind the text.
+   Inner pages: a smaller drawing beside the heading, below it on phones. */
+.hero-bg { position: absolute; inset: 0; z-index: -1; }
+.hero-bg img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 100% 100%;
+  opacity: 0.3;
+  animation: none;
+}
+.hero-bg::after { display: none; }
+.hero-grid { max-width: 66rem; display: block; }
+.hero h1 { text-wrap: balance; }
+
+.page-head-grid {
+  display: grid;
+  gap: 32px clamp(32px, 4vw, 72px);
+  align-items: center;
+}
+.page-head-art {
+  display: block;
+  max-width: 34rem;
+  opacity: 1;
+}
+.page-head-art img { display: block; width: 100%; height: auto; }
+@media (min-width: 900px) {
+  .page-head-grid { grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); }
+  .page-head-art { justify-self: end; }
+}
+.page-head-grid { grid-template-columns: minmax(0, 1fr); }
+.page-head-art { width: 100%; }
+@media (min-width: 900px) { .page-head-grid { grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); } }
+/* On phones the hero painting sits below the text instead of behind it,
+   so the headline and the buttons stay on white. */
+@media (max-width: 899px) {
+  .hero { display: flex; flex-direction: column; min-height: 0; padding-bottom: 0; }
+  .hero > .wrap { order: 1; }
+  .hero-bg { order: 2; position: relative; inset: auto; margin-top: 40px; }
+  .hero-bg img { height: auto; object-fit: contain; object-position: 50% 50%; }
+}
+
+/* the hero painting keeps its own proportions, a little smaller than the hero,
+   and hangs from the lower right corner so the group stands there */
+@media (min-width: 900px) {
+  .hero-bg img {
+    position: absolute;
+    right: -10%;
+    bottom: 7%;
+    width: auto;
+    height: 84%;
+    object-fit: unset;
+  }
+}
+
+/* Guarantee icons: the drawn line icons, a third larger and with a heavier
+   stroke (1.75 on the 48 unit grid instead of 1.25). The drawing starts at
+   6/48 of the box on every icon, so the negative top margin keeps its top on
+   the title's cap height. */
+.guarantee { grid-template-columns: 60px minmax(0, 5fr) minmax(0, 7fr); }
+.guarantee-icon,
+.guarantee-icon.icon--sealed,
+.guarantee-icon.icon--law,
+.guarantee-icon.icon--returned {
+  width: 42px;
+  height: 42px;
+  margin-top: calc(-42px * 6 / 48);
+  stroke-width: 1.75;
+}
+@media (max-width: 900px) {
+  .guarantee { grid-template-columns: 48px minmax(0, 1fr); }
+  .guarantee-icon,
+  .guarantee-icon.icon--sealed,
+  .guarantee-icon.icon--law,
+  .guarantee-icon.icon--returned { width: 34px; height: 34px; margin-top: calc(-34px * 6 / 48); }
+}
+
+/* hero headline: three lines, a fifth smaller than before */
+.hero h1 { font-size: clamp(1.4rem, 0.28rem + 4.72vw, 4.2rem); }
+.hero h1 { max-width: 12ch; }
+
+/* ---------- Hero, same build as the inner page headers ----------
+   The painting sits beside the text at full opacity, in the flow of the page,
+   only larger than on the inner pages because the hero has the room. */
+.hero { min-height: 0; display: block; padding-block: clamp(48px, 7vw, 104px); }
+.hero-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 40px clamp(32px, 4vw, 64px);
+  align-items: center;
+  max-width: none;
+}
+.hero-text { max-width: 40rem; }
+.hero-art { display: block; width: 100%; opacity: 1; }
+.hero-art img { display: block; width: 100%; height: auto; }
+@media (min-width: 900px) {
+  .hero-grid { grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); }
+  .hero-art { justify-self: end; }
+  .hero h1 { max-width: 12ch; }
+}
