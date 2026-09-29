@@ -49,3 +49,4 @@
 - Added a path mode (`TRIBEA_MODE=path`) so the site can be previewed on one host, and deployed the static output to Vercel at https://tribea-seven.vercel.app/. Repository made public on GitHub.
 - Main call to action renamed "Obtenir conseil" (Beratung erhalten, Chiedere consiglio, Get advice) in the header and the hero, and deployed.
 - Moved the public preview from Vercel to GitHub Pages at https://vincentdevs.github.io/tribea/, published by a workflow on every push to main (base-path support added to path mode, language redirect page at the root). The Vercel project was removed.
+- Secondary button given a 1.5px Black outline so it reads as a button on white.

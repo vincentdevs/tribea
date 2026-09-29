@@ -40,7 +40,7 @@ It sits beside three files and never replaces them. `docs/BRAND_GUIDELINES.md` h
 
 **Forms.** Every page ends with a real contact form (name, email, message), never a lone button. Each field is one 1px Black line that never changes weight or colour, never a box. Choices are small squares, never round radios. There is no hint text under the message field, and the list of topics ends with « Autre ».
 
-**Buttons.** The primary is Black with White text and a White fill that wipes in from the left on hover. The secondary is White with no outline and a Black fill on hover. Both turn Blue Slate when pressed and lean up to 6px towards the pointer. They are 54px high (44px in the header), and every label sits in a `.button-label` span so it can slide 3px on hover.
+**Buttons.** The primary is Black with White text and a White fill that wipes in from the left on hover. The secondary is White with a 1.5px Black outline. Both turn Blue Slate when pressed and lean up to 6px towards the pointer. They are 54px high (44px in the header), and every label sits in a `.button-label` span so it can slide 3px on hover.
 
 **Pointer ring.** A thin ring trails the native cursor, which always stays visible. It widens over links and fields and disappears over buttons, it hides while a text field has focus so it never sits over what is being typed, and it only runs for a mouse on a device that can hover, never under reduced motion. Never hide the system cursor or use a blend mode, which produces colours outside the palette.
 

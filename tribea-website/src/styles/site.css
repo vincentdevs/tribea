@@ -2172,7 +2172,7 @@ main a:not(.button) { font-size: inherit; }
 .button--quiet:hover {
   background: var(--tribea-white);
   color: var(--tribea-black);
-  border-color: var(--tribea-white);
+  border: 1.5px solid var(--tribea-black);
 }
 .site-header .header-cta,
 .site-header .header-cta:hover,
