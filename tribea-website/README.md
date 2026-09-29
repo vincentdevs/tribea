@@ -14,7 +14,7 @@ npm run preview    # builds for local addresses and serves http://localhost:4321
 npm run build      # production build: one folder per subdomain in dist/
 ```
 
-The build runs four steps: it builds WOFF2 fonts from `../fonts` and copies the colour tokens from `../styles` (`scripts/sync-brand.mjs`, needs Python with `fontTools` and `brotli`), builds the site with Astro, marks any unfilled `[PLACEHOLDER]` in visible text (`scripts/mark-placeholders.mjs`, the count must stay at 0), and splits the output into one site per subdomain with its own sitemap (`scripts/split-subdomains.mjs`). Server setup is in `../docs/DEPLOYMENT.md`.
+The build runs four steps: it builds WOFF2 fonts from `../fonts` and copies the colour tokens from `../styles` (`scripts/sync-brand.mjs`, needs Python with `fontTools` and `brotli`), builds the site with Astro, marks any unfilled `[PLACEHOLDER]` in visible text (`scripts/mark-placeholders.mjs`, the count must stay at 0), and splits the output into one site per subdomain with its own sitemap (`scripts/split-subdomains.mjs`). Server setup is in `../docs/DEPLOYMENT.md`, which also covers the public preview on GitHub Pages (`TRIBEA_MODE=path`, `TRIBEA_BASE=/tribea`).
 
 | Path | What it holds |
 |---|---|

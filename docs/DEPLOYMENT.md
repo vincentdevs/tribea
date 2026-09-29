@@ -54,14 +54,12 @@ server {
 
 The `Content-Security-Policy` header allows nothing from other domains, so the promise of zero third-party requests is enforced by the server as well as by the code. One wildcard certificate for `*.tribea.ch` plus `tribea.ch` covers the four subdomains and the bare domain.
 
-## Preview on one host (path mode)
+## Public preview on GitHub Pages (path mode)
 
-For a preview on a single host such as Vercel, where one site per subdomain is not available, build with `TRIBEA_MODE=path` and the host's domain:
+The public repository publishes itself to https://vincentdevs.github.io/tribea/ on every push to `main`, through `.github/workflows/pages.yml`. The workflow installs Node, Python with `fonttools`, `brotli`, `numpy` and `pillow`, runs the normal build with three variables, and hands `tribea-website/dist` to GitHub Pages:
 
 ```bash
-cd tribea-website
-TRIBEA_MODE=path TRIBEA_DOMAIN=tribea-seven.vercel.app npm run build
-cd dist && vercel deploy --prod --yes
+TRIBEA_MODE=path TRIBEA_BASE=/tribea TRIBEA_DOMAIN=vincentdevs.github.io npm run build
 ```
 
-The four languages then live under `/de/`, `/fr/`, `/it/` and `/en/` of the same origin, every link and `hreflang` carries the language prefix, one `sitemap.xml` sits at the root, and the build writes a `vercel.json` into `dist/` with the bare-path redirect by `Accept-Language` (German by default) and the same security headers as the nginx example. Nothing is built on Vercel: the folder is uploaded as it is, so the font pipeline stays local. The live preview is at https://tribea-seven.vercel.app/. The production layout stays the subdomain one above.
+`TRIBEA_MODE=path` puts the four languages under `/de/`, `/fr/`, `/it/` and `/en/` of one origin instead of one subdomain each, and `TRIBEA_BASE` moves every link, image, font and form address under the repository's path. The bare address carries a small page that sends the browser to its language (German by default), since GitHub Pages cannot read `Accept-Language`; one `sitemap.xml` sits at the root. The production layout stays the subdomain one above, and the GitHub Pages copy is a preview, not the client's domain.

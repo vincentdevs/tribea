@@ -48,3 +48,4 @@
 - Home painting edited again: the candidate now wears a dark blazer, white shirt and tie, and the piece is a looser aquarelle with an irregular, bleeding border on all sides. Headline held to three lines on phones too (max-width 12ch at every width). Previous version kept as `assets/illustrations/line-v1/home-watercolour-v3.png`.
 - Added a path mode (`TRIBEA_MODE=path`) so the site can be previewed on one host, and deployed the static output to Vercel at https://tribea-seven.vercel.app/. Repository made public on GitHub.
 - Main call to action renamed "Obtenir conseil" (Beratung erhalten, Chiedere consiglio, Get advice) in the header and the hero, and deployed.
+- Moved the public preview from Vercel to GitHub Pages at https://vincentdevs.github.io/tribea/, published by a workflow on every push to main (base-path support added to path mode, language redirect page at the root). The Vercel project was removed.
