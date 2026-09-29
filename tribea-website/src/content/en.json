@@ -13,7 +13,7 @@
       "it": "Italiano",
       "en": "English"
     },
-    "headerCta": "Book a conversation",
+    "headerCta": "Get advice",
     "breadcrumb": "You are here",
     "home": "Home",
     "readMore": "Read",
@@ -75,7 +75,7 @@
           "h1": "A better platform for your ideas",
           "lead": "Tribea helps parties, candidates, committees and administrations in Switzerland be heard, with the latest technology used with care and within Swiss law.",
           "primary": {
-            "label": "Book a first conversation",
+            "label": "Get advice",
             "page": "contact"
           },
           "secondary": {

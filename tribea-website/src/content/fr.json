@@ -13,7 +13,7 @@
       "it": "Italiano",
       "en": "English"
     },
-    "headerCta": "Prendre rendez-vous",
+    "headerCta": "Obtenir conseil",
     "breadcrumb": "Vous êtes ici",
     "home": "Accueil",
     "readMore": "Lire",
@@ -75,7 +75,7 @@
           "h1": "Une tribune améliorée pour vos idées",
           "lead": "Tribea aide les partis, les candidats, les comités et les administrations en Suisse à se faire entendre, grâce à la technologie la plus récente, utilisée avec soin et dans le respect du droit suisse.",
           "primary": {
-            "label": "Prendre rendez-vous",
+            "label": "Obtenir conseil",
             "page": "contact"
           },
           "secondary": {

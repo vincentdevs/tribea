@@ -13,7 +13,7 @@
       "it": "Italiano",
       "en": "English"
     },
-    "headerCta": "Fissare un incontro",
+    "headerCta": "Chiedere consiglio",
     "breadcrumb": "Si trova qui",
     "home": "Pagina iniziale",
     "readMore": "Leggere",
@@ -75,7 +75,7 @@
           "h1": "Una tribuna migliore per le sue idee",
           "lead": "Tribea aiuta partiti, candidati, comitati e amministrazioni in Svizzera a farsi ascoltare, grazie alla tecnologia più recente, usata con cura e nel rispetto del diritto svizzero.",
           "primary": {
-            "label": "Fissare un incontro",
+            "label": "Chiedere consiglio",
             "page": "contact"
           },
           "secondary": {
